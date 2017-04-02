@@ -1,0 +1,33 @@
+.vas {
+	background-color: @china-red;
+	height: 55.5px;
+	
+	a {
+		color: white;
+		padding-left: 55px;
+		display: block;
+		line-height: 55.5px;
+		
+		&::before {
+			content: '';
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: 18px;
+			margin-top: 17.75px;
+			background: url('../img/vas-bag.png') no-repeat;
+			background-size: 21px 18.5px;
+		}
+		
+		&::after {
+			content: '';
+			  width: 100px;
+			  height: 100px;
+			  position: absolute;
+			  right: -73px;
+			  margin-top: 20.75px;
+			  background: url('../img/arrow-right.png') no-repeat;
+			  background-size: 8.5px 14.5px;
+		}
+	}
+}

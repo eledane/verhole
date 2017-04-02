@@ -1,0 +1,76 @@
+.calculator-wcl-new {
+	
+	.calculator-doodle {
+		
+		.doodle {
+			position: relative;
+			
+			&.talking-calculator {
+				display: block;
+				margin: auto;
+				top: -20px;
+				position: relative;
+			}
+		}
+	}
+	
+	.vac {
+		text-align: center;
+		margin-bottom: 15px;
+
+		@media (min-width: @screen-md-min) {
+			text-align: center;
+		}
+
+		a {
+			background: url('../img/vas-bag-grey.png') left center no-repeat;
+			padding-left: 60px;
+			font-weight: bold;
+			@media (min-width: @screen-sm-min) {
+				white-space: nowrap;
+			}
+		}
+	}
+	
+	.loan-list{
+		margin-top: 0;
+		text-align: center;
+		margin-bottom: 15px;
+
+		@media (min-width: @screen-md-min) {
+			text-align: right;
+		}
+
+		@media (max-width: @screen-xs-max) {
+			margin-bottom: 30px;
+		}
+	}
+
+	.faq-calc {
+		margin-bottom: 15px;
+		@media (min-width: @screen-md-min) {
+			text-align: left;
+		}
+		a {
+			background: url('../img/otaznikFaq.png') left center no-repeat;
+			padding-left: 36px;
+			font-weight: bold;
+		}
+	}
+	
+	.calculator-footer {
+		
+	}
+}
+
+.wcl-wcl1 {
+	.calculator-wcl-new {
+		.calculator-doodle {			
+			.doodle {
+				&.talking-calculator {
+					display: none;
+				}
+			}
+		}
+	}
+}

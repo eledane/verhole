@@ -1,0 +1,223 @@
+.loan-process {
+	padding: 0;
+	position: relative;
+
+	h2.title {
+		position: absolute;
+		top: 7px;
+		z-index: 5;
+		color: #fff;
+		font-weight: bold;
+		.red-h2;
+		
+		@media(min-width: @screen-md-min) {
+			top: -25px;
+			color: #fff !important;
+		}
+		&.loan-process-hp-mobile {
+			@media(max-width: @screen-md) {
+				position: absolute;
+				left: 50%;
+				.translateX(-50%);
+			}
+		}
+	}
+
+	
+	color: #fff;
+
+	.img-wrapper {
+		margin: 0 auto;
+		width: 100%;
+		height: 330px;
+		.cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		@media(min-width: @screen-md-min) {
+			.border-radius(160px);
+			width: 200px;
+			height: 200px;
+		}
+	}
+	.carousel-container {
+
+		.swiper-wrapper {
+
+			.swiper-slide {
+					
+				.swiper-slide-content {
+					height: @loanProcessCarouselHeight;
+					background: #768e94;
+
+					.text-wrapper {
+						width: 100%;
+						text-align: center;
+						top: 20px;
+						left: 50%;
+						.translateX(-50%);
+
+						h2 {
+							white-space: nowrap;
+						}
+
+						@media(min-width: @screen-xs-min) {
+						}
+
+						@media(min-width: @screen-sm-min) {
+							top: 40px;
+						}
+					}
+
+					.step-info {
+						width: 100%;
+						margin: 0 auto;
+						//height: 100%;
+						//padding-top: 15px;
+						@media(min-width: @screen-xs-min) {
+							//padding-top: 30px;
+						}
+						@media(min-width: @screen-sm-min) {
+							width: 320px;
+						}
+						.vertical-align {
+							height: 131px;
+							display: table;
+							width: 100%;
+
+							.content-wrapper {
+								display: table-cell;
+								vertical-align: middle;
+
+								h3 {
+									margin-top: 0;
+									font-family: OpenSans;
+									color:  #ffffff;
+									font-size: 20px;
+									line-height: 24px;
+									font-weight: 700;
+									text-align: center;
+									white-space: nowrap;
+								}
+
+								p {
+									.loanProcessP;
+									text-align: center;
+									padding: 0 10px;
+									margin: 0;
+								}
+							}
+						}
+
+						.btn-get {
+
+							span {
+							}
+						}
+					}
+					
+				}
+			}
+		}
+
+		.swiper-pagination {
+
+			.swiper-pagination-switch {
+				border-color: #fff;
+
+				&:first-child {
+				}
+
+				&.swiper-active-switch {
+					background: #fff;
+				}
+			}
+		}
+
+		.swiper-next, .swiper-prev {
+			@media(max-width: @screen-xs-max) {
+				top: 157px;
+			}
+			&:hover {
+			}
+		}
+		.swiper-prev {
+		}
+
+	}
+}
+
+.loan-process-desktop {
+	@media (min-width: @screen-sm-min) {
+		padding-bottom: 0 !important;
+	}
+}
+
+
+.lp-step1,
+.lp-step2,
+.lp-step3,
+.lp-step4
+{
+	z-index: 1;
+}
+
+
+.lp-step1:after,
+.lp-step2:after,
+.lp-step3:after
+ {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 200px;
+	height: 200px;
+	z-index: -1;
+	margin-left: 138px;
+	top: 80px;
+	background: data-uri('../img/loan-process/step1.png') left top no-repeat;
+}
+
+.lp-step2:after {
+	margin-left: 127px;
+	top: 105px;
+	background: url('../img/loan-process/step2.png') left top no-repeat;
+}
+
+.lp-step1:before,
+.lp-step2:before,
+.lp-step3:before,
+.lp-step4:before
+{
+	content: '1';
+	color: red;
+	font-weight: bold;
+	line-height: 40px;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 100%;
+	left: 51px;
+	.box-shadow(2px 2px 0.1px rgba(0, 0, 0, 0.1));
+}
+
+.lp-step1:before {
+	background-color: @china-red;
+	color: #fff;
+}
+
+.lp-step2:before {
+	content: '2';
+}
+
+.lp-step3:before {
+	content: '3';
+}
+
+.lp-step4:before {
+	content: '4';
+	background-color: #74D14E;
+	color: #fff;
+}
+

@@ -1,0 +1,77 @@
+
+.languages a.en{
+    opacity: 0.75;
+}
+
+.languages a.cn{
+    opacity: 0.5;
+}
+
+.languages a:hover {
+    opacity: 1;
+}
+
+.actualValue {
+    width: 102px;
+}
+
+.step .wrap{
+    height: 395px;
+}
+
+.step {
+    height: 395px;
+}
+
+.arrows{
+    height: 395px;
+    text-align: center;
+    line-height: 395px;
+    margin-top: -395px;
+}
+
+.stepHeader{   
+    margin-top: 0px;
+}
+
+.dot3 .dotDesc{
+    line-height: 20px;
+    padding-top: 9px;
+}
+
+@media (max-width: 1385px) and (min-width: 768px){
+.stepWrapper {
+    height: 480px;
+}
+}
+
+@media (min-width:850px){   
+    .dot3{
+        margin-right: -39px;
+    }   
+    
+}
+
+@media (min-width: 768px){    
+    .arrows{
+        float: left;
+        margin-top: 0px;
+        height: 450px;
+        line-height: 450px;
+    }
+    
+    .step .wrap {
+        height: 450px;
+    }
+    
+    .step::after {
+        top: 4px;
+        left: 5px;
+        height: 546px;
+        width: 381px;
+        content: "";
+        background: no-repeat url('../../img/stepBackgroundEn.png');
+        z-index: -1;
+        position: absolute;
+    }
+}

@@ -1,0 +1,578 @@
+.tabpanel .container .tabs-menu-faqSecti{visibility: hidden}
+section.faq a.link-with-arrow-left{color:#fff}
+
+
+@charset 'utf-8';
+/* CSS Document */
+.d-right ul, .d-right li {
+list-style: none;
+}
+
+.d-right ul {
+
+padding: 0;
+}
+
+.d-right ul li{
+line-height: 0.428571;
+}
+
+
+.downloadPart{
+    width: 100%;
+}
+.downloadPart .pc{
+    display: none;
+}
+.d-main{
+    width: 100%;
+    position: relative;
+}
+.textP{
+    padding:15% 0;
+}
+.d-main h3{
+    font-size: 18px;
+    line-height: 40px;
+    color: #000;
+    text-align: center
+}
+.d-main h4{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #333;
+    text-align: center;
+}
+.d-main .btn-app{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+.d-main .phoneImg{
+    text-align: center;
+}
+.d-main .phoneImg img{
+    width: 60%;
+}
+.d-bottom{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.d-bottom .bottomImg{
+    width: 100%;
+    overflow: hidden;
+}
+.d-bottom .bottomImg1{
+    width: 68%;
+    float: left;
+}
+.d-bottom .bottomImg2{
+    width: 32%;
+    float: left;
+}
+.d-bottom .d-b-close{
+    position: absolute;
+    height: 100%;
+    width: 9%;
+    top: 0;
+    left: 0;
+    background: none;
+}
+
+.d-right{
+    display: none;
+}
+.d-right-m{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0;
+    display: none;
+}
+.d-right-m a{
+    display: inline-block;
+    width: 50% ;
+}
+.d-right-m a img{
+    width: 100%;
+}
+.d-right-m a.db1{
+    background: url("../img/appblock/download_db01.png") no-repeat;
+    background-size:100% 100%;
+}
+.d-right-m a.db2{
+    background: url("../img/appblock/download_db02.png") no-repeat;
+    background-size:100% 100%;
+}
+.d-right-m a.db1.on{
+    background: url("../img/appblock/download_db01_on.png") no-repeat;
+    background-size:100% 100%;
+}
+.d-right-m a.db2.on{
+    background: url("../img/appblock/download_db02_on.png") no-repeat;
+    background-size:100% 100%;
+}
+.bigBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background: #000;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.applicationForm{
+    width: 90%;
+    position: absolute;
+}
+
+.d-bottom {z-index: 1101 !important}
+
+    .d-right-m-side{
+        position: fixed;
+        z-index: 200;
+        right: 0;
+        bottom: 86px;
+        width: 85px;
+        height: 10px;
+        display: none;
+    }
+
+    .d-right-m-side li.r2 a{
+         background: url("../img/appblock/app_mobile_download_new.png");
+         display: inline-block;
+         width: 100px;
+         height: 80px;
+    }
+ 
+    .d-right-m-side li.r2 a:hover{
+         background: url("../img/appblock/app_mobile_download_new.png");
+         display: inline-block;
+         width: 100px;
+         height: 80px;
+    }
+
+  .d-right-m-side li{
+        position: relative;
+       list-style: none;
+    }
+    .d-right-m-side .rInfo{
+        position: absolute;
+        left: -180px;
+        top: 50%;
+        margin-top: -72px;
+        width: 180px;
+        height: 145px;
+        display: none;
+    }
+   
+
+
+
+
+//new css end
+
+ @media only screen and (max-device-width:319px){
+
+.appblock-float .mobile {margin-top: 15% !important;}
+}
+
+ @media only screen and (min-device-width:320px) and (max-device-width:414px){
+
+.appfloat-header{ top: 44px !important}
+.appblock-float .mobile {margin-top: -1% !important;}
+}
+
+ @media only screen and (min-width:320px) and (max-width:414px){
+
+.appfloat-header{ top: 46px !important}
+.appblock-float .mobile {margin-top: -1% !important;}
+
+.statistics__table__cell .statistics__table__description{ width: calc(20% - -13px); }
+
+.statistics__table__cell .statistics__table__value{ width: calc(32% - 23px); }
+
+.onepercentv3 .section-lc .cta .cta-box{
+    width: 150% !important;
+    max-width: 360px !important;
+    margin-left: -50px !important;
+}
+
+
+
+.loan-list{
+text-align: center !important;
+}
+.vas-list {
+text-align: center !important;
+margin-top: 1px !important;
+}
+
+.swiper-update{
+margin-top: 48px;
+}
+
+}
+
+
+@media (max-width: 767px){
+
+.appblock-float .pc {display:none}
+.appblock-float .mobile {margin-top: 0}
+
+.promotion-detail .promotion-bg-2 { background-image:none !important}
+
+.promotion-detail .promotion-bg-2 .winter-promotion-bg { padding-top: 0;}
+
+.wcl-section-new .wilc-first-apply-button, .wcl-section-new .wilc-third-apply-button   {
+text-align: center !important;
+margin-top: 30px;
+}
+
+.wcl-section-new .first-screen-wcl{
+
+font-weight: bold;
+font-size: 18px !important;
+margin: 10px 0 !important;
+}
+
+.wcl-section-new .third-screen-wcl{
+
+ width: 100% !important;
+}
+
+.wcl-section-three img{
+
+    max-width: 112.5% !important;
+    margin-left: 63px !important;
+}
+
+.impatient-people .simple-steps li{
+font-size: 15px !important
+}
+
+
+.client-hotline {
+
+margin-left: 0 !important;
+
+}
+
+footer .client-hotline:after{
+
+    left: 52% !important;
+    bottom: -38px !important;
+    margin-right: -16px;
+
+}
+
+
+}
+@media (min-width: 768px){
+    .downloadPart .mobile{
+        display: none;
+    }
+    .downloadPart .pc{
+        display: block;
+     	text-align: center;
+    }
+
+   .appblock-float .pc{
+ 
+    text-align: center;
+    }
+
+    .d-main{
+        width: 750px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .d-main .phoneImg{
+        width: 250px;
+    }
+    .textP{
+        position: absolute;
+        width: 500px;
+        left: 250px;
+        top: 0;
+        text-align: center;
+        padding-top: 90px;
+    }
+    .d-main h3{
+        font-size: 40px;
+        font-weight: normal;
+        line-height: 80px;
+        color: #000;
+    }
+    .d-main h4{
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 40px;
+        color: #333;
+    }
+
+    .d-bottom{
+        width: 100%;
+        position: fixed;
+        top:auto;
+        bottom: 0;
+        left: 0;
+        height: 101px;
+        z-index: 100;
+        background: url("../img/appblock/download_app_bg.png");
+        background-size: auto 100%;
+    }
+    .d-bottom .bottomImg{
+        width: 80%;
+    }
+    .d-bottom .d-b-close{
+        position: absolute;
+        width: auto;
+        height: auto;
+        display: inline-block;
+        top: 40px;
+        left:auto;
+        right: 40px;
+        background: url("../img/appblock/download_icon_close.png") no-repeat left center;
+        font-size: 16px;
+        color: #fff;
+        line-height: 20px;
+        padding-left:20px;
+    }
+
+    .d-right{
+        position: fixed;
+        z-index: 200;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 60%;
+        display: block;
+    }
+    .d-right li.r1 a{
+         background: url("../img/appblock/download_right_01.png");
+         display: inline-block;
+         width: 100px;
+         height: 65px;
+    }
+    .d-right li.r1 a:hover{
+         background: url("../img/appblock/download_right_01_on.png");
+         display: inline-block;
+         width: 100px;
+         height: 65px;
+    }
+    .d-right li.r2 a{
+         background: url("../img/appblock/download_right_02.png");
+         display: inline-block;
+         width: 100px;
+         height: 64px;
+    }
+    .d-right li.r2 a:hover{
+         background: url("../img/appblock/download_right_02_on.png");
+         display: inline-block;
+         width: 100px;
+         height: 64px;
+    }
+    .d-right li.r3 a{
+         background: url("../img/appblock/download_right_03.png");
+         display: inline-block;
+         width: 100px;
+         height: 64px;
+    }
+    .d-right li.r3 a:hover{
+         background: url("../img/appblock/download_right_03_on.png");
+         display: inline-block;
+         width: 100px;
+         height: 64px;
+    }
+    .d-right li{
+        position: relative;
+    }
+    .d-right .rInfo{
+        position: absolute;
+        left: -180px;
+        top: 50%;
+        margin-top: -72px;
+        width: 180px;
+        height: 145px;
+        display: none;
+    }
+    .d-right li.r3 .rInfo{
+        top:auto;
+        margin-top: 0;
+        bottom: 0;
+    }
+
+    .d-right-m-side {
+        display: none !important;
+        height: 0;
+    }
+
+
+}
+
+
+
+
+@media (min-width: 992px){
+    .d-main{
+        width: 960px;
+    }
+    .d-main .phoneImg{
+        width: 360px;
+    }
+    .textP{
+        width: 600px;
+        left: 360px;
+        padding-top: 90px;
+    }
+    .d-main h3{
+        font-size: 50px;
+        line-height: 100px;
+    }
+    .d-main h4{
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+   .d-bottom{
+        height: 161px;
+    }
+    .d-bottom .bottomImg{
+        width: auto
+    }
+
+.header-menu-hotline{display:none}
+
+}
+
+@media (min-width: 1200px){
+    .d-main{
+        width: 1200px;
+    }
+    .d-main .phoneImg{
+        width: auto;
+    }
+    .textP{
+        width: 770px;
+        left: 430px;
+        padding-top: 90px;
+    }
+    .d-main h3{
+        font-size: 50px;
+        line-height: 130px;
+    }
+    .d-main h4{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .d-bottom{
+        height: 200px;
+        background: url("../img/appblock/download_app_bg.png");    
+}
+
+}
+.d-bottom {z-index: 100}
+.d-right-m {z-index: 100}
+
+.wcl-section-three .simple-steps li:nth-child(3):before {
+ content: '3' !important;
+}
+
+.wcl-section-three .simple-steps li:nth-child(4):before {
+ content: '4' !important;
+}
+
+.wcl-section-three .simple-steps li:nth-child(5):before {
+ content: '5' !important;
+}
+
+.impatient-people .simple-steps li:last-child:before {
+background:none;
+}
+
+.impatient-people .simple-steps li:not(:last-child):after{
+background:none;
+}
+
+.impatient-people .simple-steps li{
+font-size: 20px;
+font-weight: normal;
+}
+
+.wcl-section-new .btn {
+
+max-width: 259px;
+}
+
+.wcl-section-three img{ 
+max-width: 51.5%;
+margin-left: 63px;
+ }
+
+.wcl-section-new .wilc-first-apply-button, .wcl-section-new .wilc-third-apply-button   {
+text-align: right;
+}
+
+.wcl-section-new .first-screen-wcl{
+
+font-size: 27px;
+margin: 15px 0;
+}
+
+.client-hotline {
+
+margin-left: 7.333333%;
+
+}
+
+
+.client-hotline:after {
+
+/*
+    left: 59% !important;
+    bottom: 4px !important;
+    margin-right: -26px;
+*/
+    left: 57% !important;
+    bottom: 4px !important;
+    width: 140px;
+
+
+}
+
+
+.vas-list a{
+    background: url(../img/vas-bag-grey.png) left center no-repeat;
+    background-size: 22px 22px;
+    padding-left: 36px;
+}
+
+.vas-list {
+    font-weight: bold;
+    text-align: left;
+    margin-top: -15px;
+    margin-bottom: 14px;
+
+}
+
+.home-cal-update{
+width: 50%;
+}
+
+.loan-list{
+text-align: right;
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+.leave-form-provinces .form-control{
+padding: 6px 8px !important;
+}
+}

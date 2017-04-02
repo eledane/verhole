@@ -1,0 +1,32 @@
+{
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:jbernek/seed-core.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/CakeDC/search.git"
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "kcfinder",
+				"version": "2.53",
+				"source": {
+					"url": "https://github.com/sunhater/kcfinder.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		}
+	],
+	"require": {
+		"cakephp/cakephp": "2.4.5",
+		"Seed": "=0.0.88",
+		"cakedc/search": "=2.2.1"
+	},
+	"config": {
+		"vendor-dir": "Vendor"
+	}
+}

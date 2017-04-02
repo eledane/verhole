@@ -1,0 +1,263 @@
+.promotion-detail {
+	.promotion-detail-content {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.hide-detail-mobile {
+		@media(max-width: @screen-xs-max) {
+			visibility: hidden;
+		}
+	}
+	padding: 0;
+	p {
+		font-size: @font-size-small;
+	}
+	h1 {
+		font-size: 20px !important;
+		margin-bottom: 10px !important;
+		text-align: center;
+		margin-top: 17px;
+		margin-bottom: 30px;
+		color: @china-red;
+		&.text-center {
+			@media (max-width: @screen-xs-max) {
+				text-align: center;
+			}
+		}
+	}
+	.cta-wrapper {
+		padding-bottom: 50px;
+		.box {
+			.box-part {
+				h1 {
+					font-size: 28px !important;
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+	.loan-list {
+	  font-weight: bold;
+	  text-align: center;
+	  margin-top: 14px;
+	  margin-bottom: 14px;
+	  
+	  a {
+	    background: url('../img/loan-list.png') left center no-repeat;
+	    background-size: 22px 22px;
+	    padding-left: 36px;
+	    text-decoration: none;
+	  }
+	}
+	
+	.header {
+		height: 402px;
+		background-position: 50% 15%;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		position: relative;
+		.cover;
+		.btn-get {
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			.translateX(-50%);
+		}
+		.text-wrapper {
+			width: 48%;
+			position: absolute;
+			left: 50%;
+			top: 7%;
+			text-align: left;
+
+			h1 {
+				text-align: left;
+				.carouselH2;
+			}
+
+			p {
+				.mainCarouselP;
+			}
+
+			@media(min-width: @screen-xs-min) {
+				top: 15%;
+			}
+
+			@media(min-width: @screen-sm-min) {
+
+			}
+
+		}
+		.time-wrapper {
+			text-align: center;
+			position: absolute;
+			bottom: 51px;
+			left: 50%;
+			.translateX(-50%);
+			width: 300px;
+
+			.btn {
+				position: static;
+				width: 100%;
+				span {
+					vertical-align: middle;
+				}
+				@media (max-width: @screen-xs-max) {
+					width: 90%;
+				}
+			}
+			@media (min-width: @screen-md-min) {
+				.translateX(20%);
+			}
+		}
+		.time {
+			width: 100%;
+			text-align: center;
+			@media (min-width: 991px) {
+				width: auto;
+				left: 50%;
+			}
+
+			h3 {
+				margin: 0;
+				.mainCarouselP;
+			}
+
+			.countdown {
+
+				margin-top: 10px;
+
+				> span {
+					display: inline-block;
+					position: relative;
+					margin-right: 30px;
+
+					&:after {
+						content: ':';
+						display: inline-block;
+						position: absolute;
+						top: 50%;
+						right: -20px;
+						color:  rgba(74, 76, 78, 0.4);
+						font-size: 20px;
+						line-height: 24px;
+						font-weight: 600;
+						.translateY(-50%);
+					}
+
+					&:last-child {
+						margin-right: 0;
+
+						&:after {
+							display: none;
+						}
+
+					}
+
+					> span {
+						display: block;
+						color: #000;
+
+						&:first-child {
+							font-weight: bold;
+							.carouselTimeNumber;
+						}
+
+						&:last-child {
+							.carouselTimeText;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+	}
+}
+.promotion-header {
+	.product-header-wrapper {
+		@media (max-width: @screen-sm) {
+			height: 550px;
+		}
+		.promotion-testimonial {
+			color: white;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			max-width: 300px;
+			text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+			* {
+				text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+			}
+			@media (max-width: @screen-lg) {
+				display: none;
+			}
+		}
+		.product-caption {
+			.btn-group {
+				a {
+					font-weight: bold;
+					white-space: nowrap;
+					&.btn {
+						font-weight: 600;
+						padding: 6px 12px;
+						text-decoration: none;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			.promotion-description {
+				margin-top: 40px;
+			}
+			.remaining-time {
+				color: @text-extra-light-gray;
+				span {
+					color: white;
+				}
+				.countdown {
+					span {
+						font-weight: normal;
+						margin-right: 5px;
+						display: inline-block;
+						html[lang="en"] & {
+							&.minutes {
+								min-width: 75px;
+							}
+							&.seconds {
+								min-width: 75px;
+							}
+						}
+						html[lang="vn"] & {
+							&.seconds {
+								min-width: 60px;
+							}
+						}
+					}
+				}
+			}
+			.caption-title {
+				color: white;
+				font-size: 32px;
+				margin-bottom: 0;
+				margin-top: 0;
+				+ .remaining-time {
+					margin-top: 15px;
+				}
+			}
+			.caption-name {
+				color: white;
+				font-size: 24px;
+				margin-bottom: 10px;
+				font-weight: bold;
+			}
+		}
+	}
+}

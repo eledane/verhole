@@ -1,0 +1,123 @@
+header:
+    title: "Nakupujte zboží na splátky ze všech českých e-shopů na jednom místě"
+    insert_link: "Vložte odkaz na produkt sem a nakupujte"
+
+menu:
+    show_navigation: "Zobrazit navigaci"
+    home: "Domů"
+    benefits: "Výhody Koupito"
+    terms: "Všeobecné podmínky"
+
+how_it_works:
+    titles:
+        title: "Jak to funguje?"
+        search_product: "Vyhledejte produkt"
+        copy_address: "Zkopírujte adresu"
+        loan_count: "Zvolte počet splátek"
+        done: "Hotovo"
+    images:
+        search_product: "img/how-it-works/01.png"
+        copy_address: "img/how-it-works/02.png"
+        loan_count: "img/how-it-works/03.png"
+        done: "img/how-it-works/04.png"
+    content:
+        search_product: "Vyberte si zboží na libovolném e-shopu (až 5 kusů z různých e-shopů)"
+        copy_address: "Zkopírujte URL (webovou) adresu vybraného produktu do našeho nákupního košíku (Ctrl C + Ctrl V). <br/><a href='#' data-toggle='modal' data-target='#how-to'>Jak zkopírovat adresu</a>"
+        loan_count: "Zvolte počet splátek tak, jak vám to vyhovuje (1-24 měsíců)"
+        done: "Nákup všech produktů a žádost o spotřebitelský úvěr vyřešíte jednou objednávkou"
+
+benefits:
+    titles:
+        title: "Výhody <strong>Koupito</strong>"
+        anything: "Cokoliv ze všech českých e-shopů"
+        monthly_payment: "Měsíční splátka tak, jak vám to vyhovuje"
+        saves_time: "Šetří Váš čas"
+        clear_interest: "Férový a jasný úrok 1% měsíčně"
+    images:
+        anything: "img/benefits/01.png"
+        monthly_payment: "img/benefits/06.png"
+        saves_time: "img/benefits/03.png"
+        clear_interest: "img/benefits/04.png"
+    content:
+        anything: "Nakupujte na splátky cokoliv potřebujete, a to i z obchodů, které splátky samy nenabízí."
+        monthly_payment: "Splátky si můžete rozložit od 1 do 12 měsíců a kdykoliv vše předčasně splatit."
+        saves_time: "Jedinou objednávkou můžete koupit až 5 věcí z různých e-shopů v hodnotě 500 až 50 000 Kč."
+        clear_interest: "U nás přesne víte, kolik zaplatíte navíc. První měsíc vám úrok odpustíme a každý další měsíc zaplatíte jen 1% z ceny nákupu."
+
+example:
+    title: "Příklad <strong>splácení</strong>"
+    value: "Cena zboží"
+    loan_count: "Počet splátek"
+    monthly_payment: "Výše měsíční splátky"
+    monthly_interest: "Měsíční úrok"
+    interest_pay: "Na úrocích celkem zaplatíte"
+    total_pay: "Celkem zaplatíte"
+    need_to_know: "Co od vás potřebujeme vědět abychom za vás zboží na splátky koupili?"
+
+help:
+    title: "Potřebujete s něčím poradit?"
+    call_us: "Zavolejte nám a všechno rychle vyřešíme!"
+    mo_sa: "po - pá 9:00 - 18:00"
+    su: "ne <span class='transparent'>- so</span> 14:00 - 19:00"
+    cart_id: "ID košíku"
+
+just_bought:
+    title: "Právě jste u nás <strong>nakoupili</strong>"
+
+socials:
+    like: "Líbí se vám <strong>Koupito?</strong>"
+    give_like: "Dejte mu svůj like!"
+
+footer:
+    koupito: "Koupito.cz, 2015"
+    creativedock: "Službu vytvořil<br> a realizuje tým"
+    usertech: "Design a development<br>zajišťuje"
+    homecredit: "Poskytovatel služby je Home Credit a.s."
+
+currently_watching:
+    first: "Právě u nás nakupuje"
+    last: "zákazníků"
+
+error_modal:
+    title: "Vyskytl se problém s přidáním do košíku"
+    content: "Jste si jistí, že se Vaše objednávka vejde do limitu Koupito.cz?<br>Nepřesáhla Vaše objednávka počet 5 kusů?"
+
+free_modal:
+    content: "Při nákupu na splátky vyplácí poskytovatelé financování obchodům provize za zprostředkování. Protože na Koupito si berete spotřebitelský úvěr přímo od nás, nevyplácíme nikomu žádné provize a <strong>tak můžeme zlevnit splátky rovnou vám</strong>. I když z toho vlastně nic zatím nemáme, doufáme, že když s našimi službami budete spokojení, třeba si u nás někdy v budoucnu půjčíte na něco většího - třeba na auto, nebo na novou kuchyň. To je ale samozřejmě jen na vás."
+
+how_to:
+    titles:
+        title: "Jak zkopírovat adresu URL"
+        address: "1. Jak zjistím webovou adresu"
+        copy: "2. Jak zkopírovat adresu"
+    images:
+        address: "img/how-to/url.png"
+        copy_1: "img/how-to/copy.png"
+        copy_2: "img/how-to/copy-gui.png"
+    content:
+        address: "Webovou adresu najdete ve vrchní části prohlížeče v adresním řádku a vypadá nějak takto"
+        copy_1: "Poklikejte do adresního řádku a označte celou adresu. Tu pak můžete zkopírovat pomocí zkratky <strong>Ctrl + C</strong> (Cmd + C na Macu). Poté přejdete na Koupito.cz a vložíte jí pomocí zkratky <strong>Ctrl + V</strong>"
+        copy_2: "Pokud nemáte rádi zkratky, můžete adresu zkopírovat i tak, že označíte adresu v adresním řádku, kliknete pravým tlačítkem myši a zvolíte volbu <strong>Kopírovat</strong>. Na Koupito.cz pak klikněte pravým do vyhledávacího pole a zvolte možnost <strong>Vložit</strong>"
+
+what_we_need_to_know:
+    content: "Abychom vám mohli cenu <strong>zboží zdarma rozložit</strong>, potřebujeme si ověřit, že jste to opravdu vy a že budete schopni bezproblémově splácet. Proto vás po odeslání objednávky bude kontaktovat náš operátor (ve vámi vybraném čase) a rychle s vámi projde seznam několika otázek. Pro co nejhladší dokončení objednávky by bylo ideální, kdybyste mohli být v době telefonátu u počítače a měli po ruce <strong>2 doklady totožnosti a číslo vašeho účtu.</strong> Pokud jste OSVČ, tak vás poprosíme o IČO."
+
+product_search:
+    title: "Vložte odkaz na produkt sem a nakupujte"
+    button: "Přidat do košíku"
+    free_shipping: "Doprava zdarma"
+    added: "Zboží bylo přidáno do košíku"
+    add_more: "Přidat další položku"
+    price: "Cena"
+    per_month: "měsíčně"
+    cannot_find: "Zboží se nepodařilo načíst"
+    blacklisted: "Omlouváme se, z tohoto e-shopu není povoleno nakupovat, nachází se v naší databázi nespolehlivých e-shopů."
+    low_price: "Bohužel nemůžeme toto zboží koupit, protože jeho částka je nižší než 100Kč. Zkuste si prosím vybrat něco jiného v ceně nad 100Kč."
+    close: "Zavřít"
+    help: "Naše zákaznická podpora Vám ho pomůže najít.<br />Zavolejte na telefonní číslo"
+
+form:
+    error:
+        url:
+            invalid: "Zadejte adresu ve správném tvaru (např. http://eshop.com/detail-produktu/)."
+            required: "Zadejte webovou adresu produktu na eshopu."

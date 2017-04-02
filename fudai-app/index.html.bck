@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta http-equiv="refresh" content="1;url=http://www.homecreditcfc.cn/fudai/">
+    <script>
+		/*var url = window.location.href.split("?");
+		var parameters = url[1];
+		//console.log(url);
+		//console.log(parameters);
+
+		if (typeof parameters == 'undefined') {
+			//console.log('going to the site with NO parameters !!!111');
+			window.location.href = window.location.href.replace('index.html', '') + 'index.php?lang=cn';
+		} else {
+			//console.log('going to the site with parameters !!!111');
+			var newUrl = url[0].replace('index.html', '') + 'index.php?lang=cn&' + url[1];
+			window.location.href = newUrl;
+		}*/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+{snippet searchFormSmall}
+    <div class="url-here">
+   		<p>Vložte odkaz na produkt sem a nakupujte</p>
+   	</div>
+   	<div class="search-wrapper">
+   		{form smallSearchForm class=>"form-inline ajax"}
+               {input shop_url class=>"form-control", placeholder=>"http://obchudek..."}
+
+               <button n:name=send class="priceSearchButton btn btn-primary ladda-button" data-style="zoom-in">
+   				<span class="ladda-label">Přidejte do košíku další produkt</span>
+   			</button>
+   		{/form}
+   	</div>
+
+   	<div n:ifset="$showResults" class="search-result">
+   		<div n:ifset="$showErrorMessage" class="search-fail">
+            <div class="row">
+				<div class="col-xs-12">
+					<h3>Zboží se nepodařilo načíst</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="buy">
+						<h4>Naše zákaznická podpora Vám ho pomůže najít.<br />Zavolejte na telefonní číslo</h4>
+						<h4><br>
+						<span class="phone">
+							+420&nbsp;541&nbsp;598&nbsp;755
+						</span></h4>
+					</div>
+				</div>
+			</div>
+   		</div>
+
+   		<div n:ifset="$showLowPriceMessage" class="low-price">
+   			<div class="row">
+   				<div class="col-xs-12">
+   					<h3>Bohužel nemůžeme toto zboží koupit, protože jeho částka je nižší než 100Kč. Zkuste si prosím vybrat něco jiného v ceně nad 100Kč.</h3>
+   				</div>
+   			</div>
+   		</div>
+
+        <div n:ifset="$showBlacklistedURLException" class="low-price">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3>Omlouváme se, z tohoto e-shopu není povoleno nakupovat, nachází se v naší databázi nespolehlivých e-shopů.</h3>
+				</div>
+			</div>
+		</div>
+
+   		<div n:ifset="$showFullCartMessage" class="full-cart">
+   			<div class="row">
+   				<div class="col-xs-12">
+   					<div class="full-cart-message">
+   						<h3>Košík je již plný.</h3>
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+
+   		<div n:ifset="$showOverLimitException" class="full-cart">
+   			<div class="row">
+   				<div class="col-xs-12">
+   					<div class="full-cart-message">
+   						<h3>Bohužel jste vyčerpal/a limit na nákup.</h3>
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+
+   	</div>
+{/snippet}

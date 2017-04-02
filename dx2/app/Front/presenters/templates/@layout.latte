@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>捷信垫小二</title>
+
+	<link rel="shortcut icon" href="{$basePath}/public/favicon.ico">
+
+	{if $fullCss}
+	<link rel="stylesheet" href="{$basePath}css/index.css">
+	{else}
+	<link rel="stylesheet" href="{$basePath}css/critical.css">
+    <script n:syntax="off" type="text/javascript">
+    	function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],r=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&&(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(e){for(var n,o=0;o<r.length;o++)r[o].href&&r[o].href===d.href&&(n=!0);n?e():setTimeout(function(){d.onloadcssdefined(e)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
+    	loadCSS('css/index.css');
+    </script>
+	{/if}
+
+
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic&subset=latin,greek' rel='stylesheet' type='text/css'>
+      <!--[if lte IE 8]>
+       <link href='https://fonts.googleapis.com/css?family=Arimo:300&subset=latin,greek' rel='stylesheet' type='text/css'>
+          <link href='https://fonts.googleapis.com/css?family=Arimo:400&subset=latin,greek' rel='stylesheet' type='text/css'>
+          <link href='https://fonts.googleapis.com/css?family=Arimo:400italic&subset=latin,greek' rel='stylesheet' type='text/css'>
+          <link href='https://fonts.googleapis.com/css?family=Arimo:700&subset=latin,greek' rel='stylesheet' type='text/css'>
+          <link href='https://fonts.googleapis.com/css?family=Arimo:700&subset=latin,greek' rel='stylesheet' type='text/css'>
+      <![endif]-->
+
+
+	{include 'favicon.latte'}
+
+	<meta name="description" content="捷信消费金融有限公司旗下分期贷款产品。只需输入网店商品链接并提供相关信息，即可通过捷信垫小二申请分期购买商品，您就坐等收好货吧">
+	<meta name="keywords" content="{$texts->getContentByPlacementOffset('keywords', 0, $version)['content']}">
+
+	<meta property="og:title" content="Koupito.cz">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://www.koupito.cz/">
+	<meta property="og:description" content="">
+	<meta property="og:image" content=""/>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+    (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-65950413-3', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+    <script n:syntax=off>
+        (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:169308,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    
+    <script n:syntax=off>
+    var _hmt = _hmt || [];
+    (function() {
+     var hm = document.createElement("script");
+     hm.src = "//hm.baidu.com/hm.js?f457a6d34e8aaaa0d1816e5d97c99323";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target="#top-navbar">
+	<script>
+        dataLayer = [{
+            visitorHash: {$visitorHash},
+            version: {$realVersion}
+        }];
+    </script>
+
+	{snippetArea header}
+	    {include 'header.latte'}
+	{/snippetArea}
+
+	<div n:if="count($flashes)>0" id="flashmessages" class="row flashes">
+		<div class="col-xs-12">
+			<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">
+				{$flash->message}
+			</div>
+		</div>
+	</div>
+
+	{include content}
+
+	{include 'footer.latte'}
+
+	{block scripts}
+	<script src="{$basePath}/js/app.js"></script>
+	{/block}
+</body>
+</html>

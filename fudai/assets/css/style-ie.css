@@ -1,0 +1,10 @@
+/*Modal popup problem for IE 10 and less*/
+
+.modal-apply-modal {
+    width: 100%;
+}
+
+.modal-popup-body {
+    left: 0 !important;
+    top: 10% !important;
+}

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>捷信</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+	<div class="downloadPart">
+		<div class="d-main">
+			<img src="images/download_app_phone.jpg" class="pc phoneImg">
+			<div class="textP">
+				<h3>随时随地查看贷款</h3>
+				<h4>
+					下载捷信新版APP，<br>
+					让您在安全的网络环境中<br>
+					随时随地查看贷款详情。
+				</h4>
+			</div>
+			<div class="btn mobile"><a href="" class="download-btn-m"><img src="images/download_app_btn.png"></a></div>
+			<div class="phoneImg mobile"><img src="images/download_app_phone_m.jpg"></div>
+		</div>
+		<div class="d-bottom">
+			<div class="d-main pc">
+				<img src="images/download_app_bottom.png" class="bottomImg">
+				<a href="javascript:;" class="d-b-close">关闭</a>
+			</div>
+			<div class="d-main mobile">
+				<div class="bottomImg">
+					<img src="images/download_app_bottom_m1.png" class="bottomImg1">
+					<a href="" class="download-btn-m"><img src="images/download_app_bottom_m2.png" class="bottomImg2"></a>
+				</div>
+				<a href="javascript:;" class="d-b-close"></a>
+			</div>
+		</div>
+		<div class="d-right">
+			<ul>
+				<li class="r1"><a href="javascript:;"></a></li>
+				<li class="r2"><a href="javascript:;"></a><div class="rInfo"><img src="images/download_right_app.png"><!-- 这张图是首页调用的 非首页请调用 <img src="images/download_right_app_noIndex.png">--></div></li>
+				<li class="r3"><a href="javascript:;"></a><div class="rInfo"><img src="images/download_right_qr.png"></div></li>
+			</ul>
+		</div>
+		<div class="d-right-m">
+			<a href="javascript:;" class="db1"><img src="images/download_db_k.png"></a>
+			<a href="javascript:;" class="db2 download-btn-m"><img src="images/download_db_k.png"></a>
+		</div>
+	</div>
+	<div class="bigBg"></div>
+	<div class="applicationForm">
+		
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".d-b-close").click(function(event) {
+				$(".d-bottom").hide()
+				$(".d-right").animate({"width":"38px"}, 200)
+				$(".d-right-m").slideDown();
+			});
+
+			$(".d-right").hover(function(){
+				$(this).stop().animate({"width":"100px"}, 200)
+			},function(){
+				$(this).stop().animate({"width":"38px"}, 200)
+			})
+
+			$(".d-right a").hover(function(){
+				$(this).next(".rInfo").show()
+			},function(){
+				$(this).next(".rInfo").hide()
+			})
+
+			$(".d-right-m a").click(function(){
+				$(this).addClass('on').siblings().removeClass('on')
+			});
+		})
+
+		//判断android & ios
+    	var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+		if(isAndroid){
+			$(".download-btn-m").attr({"href":"http://apk.hiapk.com/appdown/com.hcc.app/20161102"});
+		}
+		if(isiOS){
+			$(".download-btn-m").attr({"href":"https://itunes.apple.com/us/app/jie-xin-jin-rong/id921626073?l=zh&ls=1&mt=8"});
+		}
+
+
+	</script>
+</body>
+</html>

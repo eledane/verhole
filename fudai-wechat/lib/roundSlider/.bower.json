@@ -1,0 +1,13 @@
+{
+  "name": "roundSlider",
+  "homepage": "https://github.com/soundar24/roundSlider",
+  "_release": "5e105a1d80",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5e105a1d807868aaa7039c57cfee03e75678e546"
+  },
+  "_source": "https://github.com/soundar24/roundSlider.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/soundar24/roundSlider.git"
+}

@@ -1,0 +1,359 @@
+brand: 捷信垫小二
+terms: Terms and conditions
+faq: FAQ
+congratulation: Congratulation
+
+header:
+    title: "<strong>Shop goods online on installment</strong>"
+    insert_link: "Insert the link of product and shop"
+
+agreement:
+    text: "I have read and agree with"
+    link: "Homecredit User Agreement"
+
+menu:
+    show_navigation: "Display navigation"
+    home: "Home"
+    benefits: "Advantages of OLF"
+    terms: "Terms and conditions"
+    faq: "FAQ"
+
+how_it_works:
+    titles:
+        title: "4 steps to get what you want"
+        search_product: "Find product you want and paste the link"
+        copy_address: "Input information to apply for a loan"
+        loan_count: "Wait for the approval and after that we will place the order"
+        done: "Wait for the goods and start repaying"
+    images:
+        search_product: "img/how-it-works/01.png"
+        copy_address: "img/how-it-works/02.png"
+        loan_count: "img/how-it-works/03.png"
+        done: "img/how-it-works/04.png"
+    content:
+        search_product: "Choose any product you want from an e-shop. <br/><a href='#' data-toggle='modal' data-target='#how-to'>How to copy address</a>"
+        copy_address: "Copy the URL (web) address of this product to our shopping basket (Ctr C + Ctrl V)."
+        loan_count: "Choose amount of the repayments (1-6 months)"
+        done: "The purchase of product and loan application will be done by simple order"
+
+benefits:
+    titles:
+        title: "The advantages of <strong>OLF</strong>"
+        anything: "Anything from jumei.com e-shop"
+        monthly_payment: "Monthly repayment as you like it"
+        saves_time: "Saves your time"
+        clear_interest: "Fair and clear interest rate 2% monthly"
+    images:
+        anything: "img/benefits/01.png"
+        monthly_payment: "img/benefits/06.png"
+        saves_time: "img/benefits/03.png"
+        clear_interest: "img/benefits/04.png"
+    content:
+        anything: "You can buy anything on installments even from e-shops, that does not offer installments themselves."
+        monthly_payment: "You can repay in 1-6 months and repay early anytime."
+        saves_time: "In one order you can buy anything in maximum price of 500RMB."
+        clear_interest: "You know exactly what your overpayment will be. It's only 2% monthly from your order monthly."
+
+example:
+    title: "Example of <strong>repaying</strong>"
+    value: "Price of goods"
+    loan_count: "Number of repayments"
+    monthly_payment: "Monthly repayment"
+    monthly_interest: "Monthly interest rate"
+    interest_pay: "You will pay total on interest"
+    total_pay: "You will pay in total"
+    need_to_know: "What do we need to know from you to give you installment?"
+    choosetenor: "Please choose the tenor"
+
+help:
+    title: "Do you need any help?"
+    call_us: "Call us and we solve everything in a blink of an eye!"
+    mo_sa: "Monday - Friday 9:00 - 18:00"
+    su: "No service on weekends"
+    cart_id: "ID of basket"
+
+just_bought:
+    title: "The customers <strong>just bought</strong>"
+
+socials:
+    like: "Do you like <strong>OLF?</strong>"
+    give_like: "Give it your like!"
+
+footer:
+    koupito: "Koupito.cz, 2015"
+    creativedock: "Službu vytvořil<br> a realizuje tým"
+    usertech: "Design a development<br>zajišťuje"
+    homecredit: "Poskytovatel služby je Home Credit a.s."
+
+currently_watching:
+    first: "Right now there is"
+    last: "customers shopping"
+
+error_modal:
+    title: "We run into a problem while adding the product in basket"
+    content: "Are you sure that your order is within the OLF limits?<br>Isn't your order for more than 5 items?"
+
+free_modal:
+    content: "If you buy something on installments, the financial providers usualy pay the shops provisions. On OLF you are taking the loan directly from CFC and we dont pay any provisions to anybody and <strong>by that we can make the repayments cheaper for you</strong>."
+
+how_to:
+    titles:
+        title: "How to copy the URL address"
+        address: "1. How do I find out the web address"
+        copy: "2. How to copy URL address"
+    images:
+        address: "img/how-to/url.png"
+        copy_1: "img/how-to/copy.png"
+        copy_2: "img/how-to/copy-gui.png"
+    content:
+        address: "The web address can be found in the top part of the browser in the address bar and looks like this"
+        copy_1: "Click on the address bar and select the whole address. You can copy it easily by using shortcut <strong>Ctrl + C</strong> (Cmd + C on Mac computers). Then go to OLF and paste it by shortcut <strong>Ctrl + V</strong> (Cmd + V on Mac computers)"
+        copy_2: "If you don't like shortcuts, you can copy the address also by selecting it and clicking the right mouser button and choose <strong>Copy</strong>. On OLF you click right button in the search field and choose <strong>Paste</strong>"
+
+what_we_need_to_know:
+    content: "In order so we can do the <strong>monthly repayments of your purchase for free</strong>, we need to verify, that you are who you claim to be and that you will have no problems to repay us. That is why you, after you send your order, need to go to HCC Gateway and fill in personal information in simple application form. We will inform you about the result of the process right away in the browser in just a few minutes"
+
+product_search:
+    title: "Insert the link of product and shop"
+    product_name: Product name
+    product_name_required: Product name is required
+    placeholder: Insert the link of product and shop
+    button: "Add to basket"
+    free_shipping: "Free delivery"
+    added: "Product added to basket"
+    add_more: "Add more items in basket"
+    price: "Price"
+    price_required: Price is required
+    price_range: "Must be in range from 200 to 500"
+    per_month: "Monthly"
+    blacklisted: "We are sorry, but you cant buy products from this e-shop."
+    low_price: "We are sorry, but you are not allowed to buy this product, because its price is lower than 100RMB. Try to pick up something, that is more expensive."
+    max_price: "We are sorry, but you are not allowed to buy this product, because its price is higher than 500RMB. Try to pick up something, that is less expensive."
+    close: "Close"
+    cannot_find: "The product you have selected is not found."
+    help: "Please contact us to help you at phone number"
+    province: Province
+    city: City
+    district: District
+    town: Town
+    area: Area
+    street: "Street/Road/Village"
+    house_nr: "House no. / Group no."
+    zip_code: "ZIP code"
+    note: Note
+    note_placeholder: Please describe the product
+    unsupported_shop_message: "This shop is currently unsupported, please leave your message."
+    unsupported_thank_you: Thanks for your message. We'll work to support the e-shop you have mentioned.
+    phoneNumber: Phone number
+    name: Your Name
+    name_required: Name is required
+    email_required: E-mail is required
+    phone_required: Phone is required
+    email: E-mail
+    email_valid: Type valid email
+
+form:
+    fill_info: Please input the Product Information below
+    personalInfo: Customer Information
+    description: "Description"
+    detailaddress: Detailed address
+    province: Province
+    city: City
+    district: District
+    name: Name
+    phone: Phone number
+    button: Go To Finance
+    edit: EDIT
+    error:
+        url:
+            invalid: "Fill URL in correct format (e.g. http://eshop.com/detail)."
+            required: "Please fill in the address of product on the e-shop."
+    request:
+        name: Name
+        name_required: "Please fill your name"
+        contact_info: "Contact information (email, phone, ..)"
+        contact_info_required: "Please fill some contact information"
+        send: Send
+
+# admin
+admin:
+    login:
+        heading: Login to admin
+    logout: Logout
+    footer: "all rights reserved"
+    signInForm:
+        username: Username
+        username.required: Fill email.
+        password: Password
+        password.required: Fill password.
+        submit: Login
+        message:
+            bad_credentails: Your username or password are incorrect.
+            logout: You have been successfully logged out.
+    menu:
+        dashboard: Dashboard
+        orders: Orders
+        carts: Carts
+        pages: Pages
+        blacklist: Blacklist
+        bad_urls: Bad URLs
+    order:
+        change_calltime: Change call time
+        add_subject: Add subject
+        client_cancel: Client cancel
+        order: Order
+        order_version: New order version
+        newest: The newest orders
+        add_order: Add order
+        no: "#"
+        image: Image
+        note: Note
+        note_cancel: Note cancelation
+        action: Action
+        name: Name
+        email: Email
+        price: Price
+        option: Option
+        instalment_count: Instlmnt. count
+        instalment_price: Instalment price
+        type: Type
+        asap: ASAP
+        cashback: Cashback
+        calltime: Call time
+        phone: Phone
+        processes: Processes
+        state: State
+        detail: Detail
+        total_price: Total price
+        order_processing: Order Processing
+        handler: Handler
+        cart_content: Cart content
+        states:
+            New: New
+            Canceled: Cancelled
+            Shipped: Shipped
+            UzavřítObjednávku: Close
+            clientCancel: Client cancel
+    cart:
+        cart: Cart
+        name: Name
+        create_order: Create order
+    actions:
+        done: Done
+        process: Process
+        change_state: Change state
+        show: Show
+        add: Add
+    grid:
+        ok: OK
+        # actions
+        add: Add
+        delete: Delete
+        edit: Edit
+        show: Show
+        deal: Deal
+        process: Process
+        change: Change
+        send: Send
+        create: Create
+        find: Find
+        price: Price
+        # grido
+        Grido.HintNumber: HintNumber
+        Grido.SelectSomeRow: SelectSomeRow
+        Grido.Invert: Invert
+        Grido.Items: Items
+        Grido.Previous: Previous
+        Grido.Next: Next
+        Grido.Actions: Actions
+        Grido.Search: Search
+        Grido.Reset: Reset
+        Grido.ItemsPerPage: ItemsPerPage
+        Grido.Selected: Selected
+        Grido.EnterPage: EnterPage
+        Grido.NoResults: NoResults
+        Grido.ExportAllItems: ExportAllItems
+        # columns - orders
+        no: "#"
+        name: Name
+        surname: Surname
+        email: Email
+        phone: Phone
+        street: Street
+        city: City
+        delivery: Delivery
+        type: Type
+        postal_code: Postal code
+        asap: ASAP
+        cashback: Cashback
+        calltime: Call time
+        amount: Amount
+        instalment_count: Instlmnt. count
+        option: Option
+        state: State
+        state_required: State is required
+        created: Created
+        handler: Handler
+        new_calltime: New call time
+        # columns - carts
+        fulfilled: Fulfilled
+        version: Version
+        cart_price: Cart price
+        note: Note
+        # columns - pages
+        domain: Domain
+        price_selector: Price selector
+        name_selector: Name selector
+        image_selector: Image selector
+        category_selector: Category selector
+        thousands_separator: Thousands sep.
+        decimal_separator: Dec. sep.
+        ordering: Order
+        crawler_class: Crawler
+        #  columns - blacklist
+        url: URL
+        # columns - broken url
+        error: Error
+        # states
+        New: New
+        Draft: Draft
+        Processing: Processing
+        Done: Done
+        Cancelled: Cancelled
+        Rejected: Rejected
+        Exhausted: Exhausted
+        Shipped: Shipped
+        "Unsupportedeshop": Unsupported eshop
+        Test: Test
+        # order modals
+        required_call_time: Call time is required
+
+        HomeCredit: Home Credit
+        NevyhovujeDoprava: Transport issue
+        VysokáSplátka: High instalment
+        NechciDalšíPůjčku: Doesnt want another loan
+        JinýDůvod: Other
+        PročKlientZrušil: Why client cancel
+        ZadejteDůvod: Fill reason
+        coupon: Sale coupon
+        img_link: Image URL
+        item_link: Product URL
+        required_name: Name is required
+        required_surname: Surname is required
+        required_price: Price is required
+        required_item_link: Product link is required
+        required_email: Email is required
+        regex_email: Email is not valid
+        required_phone: Phone is required
+        required_street: Street is required
+        required_city: City is required
+        required_postal_code: Postal code is required
+        length_postal_code: Postal code has to be 5 numbers
+        number_postal_code: Postal code has to be a number
+        required_instalment_count: Instalment count is required
+        # terms and conditions
+        tos_first: Agree with
+
+crawledprice:
+    ok: "ok"
+    reset: "reset"

@@ -1,0 +1,348 @@
+footer {
+	background-color: @bg-footer;
+
+	.footer-content {
+		color: @white;
+
+		@media (max-width: 531px) {
+			overflow: hidden;
+		}
+
+		.container {
+			padding-top: 20px;
+			padding-bottom: 40px;
+		}
+		.mobile-row {
+			@media (max-width: 531px) {
+				width: 103%;
+			}
+		}
+		h3 {
+			font-size: @font-size-medium;
+			line-height: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: @white;
+			margin-bottom: 20px;
+			margin-top: 30px;
+		}
+		h4 {
+			font-weight: bold;
+			font-size: @font-size-small;
+			color: @white;
+			text-transform: uppercase;
+			line-height: 18px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			@media (max-width: @screen-xs-max) {
+				margin-top: 50px;
+				line-height: 17px;
+				margin-bottom: 14px;
+			}
+		}
+		ul.products, ul.important-links {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			li {
+				@media (max-width: @screen-xs-max) {
+					float: left;
+					width: 50%;
+				}
+				a {
+					color: @white;
+					font-size: @font-size-small;
+					line-height: 30px;
+					text-transform: uppercase;
+				}
+				h4 {
+					a {
+						text-transform: uppercase;
+						font-size: 14px;
+						line-height: 18px;
+					}
+				}
+			}
+		}
+		ul.important-links {
+			li {
+				width: 50%;
+				float: left;
+				@media (max-width: @screen-lg) {
+				}
+			}
+		}
+		ul.products {
+			li {
+				@media (max-width: @screen-md-max) {
+					width: 50%;
+					float: left;
+				}
+				@media (max-width: @screen-xs-max) {
+					width: 100%;
+					float: none;
+				}
+				@media (max-width: @screen-xs) {
+					width: 50%;
+					float: left;
+				}
+			}
+		}
+		.footer-social {
+			img {
+				height: 130px !important;
+			}
+			@media (max-width: 420px) {
+				img {
+					height: 115px !important;
+				}
+			}
+			@media (max-width: @screen-xs) {
+				padding-right: 5px;
+				+ .footer-social {
+					padding-right: 15px;
+					padding-left: 5px;
+				}
+
+				h4 {
+					font-size: @font-size-extra-small;
+
+				}
+			}
+			@media (max-width: 380px) {
+				h4 {
+					font-size: 9px;
+					white-space: nowrap;
+				}
+			}
+			&.we-chat {
+				@media (min-width: @screen-lg-min) {
+					margin-top: 30px;
+				}
+				.we-chat-QR {
+					position: relative;
+
+					a {
+						display: none;
+						width: 140px;
+						margin-top: -200px;
+						position: absolute;
+						margin-left: 15px;
+						padding-bottom: 70px;
+						z-index: 40;
+						@media (max-width: @screen-md-max) {
+							margin-left: 33px;
+						}
+
+						p{
+							height: 130px;
+							line-height: 20px;
+							min-width: 180px;
+							padding-left: 15px;
+							padding-top: 50px;
+							position: absolute;
+							top: 0px;
+							left: 0px;
+							.translateX(-100%);
+							background: @white;
+							text-align: center;
+							color: @black;
+							@media (max-width: @screen-lg) {
+								right: 10px;
+								left: inherit;
+								.translateX(100%);
+								padding-left: 0;
+								padding-right: 15px;
+							}
+						}
+					}
+					&:hover {
+						a {
+							display: block;
+							@media (max-width: @screen-sm-max) {
+								display: none;
+							}
+						}
+					}
+				}
+				.we-chat-logo {
+					height: auto !important;
+					.transition(.3s);
+					cursor: pointer;
+					@media (max-width: @screen-md-max) {
+						margin-top: 35px;
+					}
+					&:hover {
+						text-decoration: none;
+						@media (max-width: @screen-sm-max) {
+							.scale(1.05);
+						}
+					}
+				}
+			}
+
+			&.qr-download {
+				@media (min-width: @screen-lg-min) {
+					margin-top: 30px;
+				}
+				cursor: pointer;
+				.gr-download-box {
+					position: relative;
+
+					a {
+						display: none;
+						margin-top: -200px;
+						position: absolute;
+						margin-left: 20px;
+						padding-bottom: 70px;
+						z-index: 40;
+						@media (max-width: @screen-md-max) {
+							margin-left: 36px;
+						}
+
+						p{
+							height: 130px;
+							line-height: 20px;
+							min-width: 220px;
+							padding-top: 50px;
+							padding-left: 5px;
+							position: absolute;
+							top: 0px;
+							left: 0px;
+							.translateX(-100%);
+							background: @white;
+							text-align: center;
+							color: @black;
+							@media (max-width: @screen-lg) {
+								padding-left: 0;
+								padding-right: 5px;
+								right: 0px;
+								left: inherit;
+								.translateX(100%);
+							}
+						}
+					}
+					&:hover {
+						a {
+							display: block;
+							@media (max-width: @screen-sm-max) {
+								display: none;
+							}
+						}
+					}
+				}
+				.gr-download-logo {
+					height: auto !important;
+					.transition(.3s);
+					cursor: pointer;
+					@media (max-width: @screen-md-max) {
+						margin-top: 25px;
+					}
+					&:hover {
+						text-decoration: none;
+						@media (max-width: @screen-sm-max) {
+							.scale(1.05);
+						}
+					}
+				}
+
+				a {
+					color: #ffffff;
+					.transition(.3s);
+				}
+			}
+		}
+		.logos {
+			font-size: @font-size-small;
+			text-align: center;
+			position: relative;
+			@media (max-width: @screen-lg) {
+				min-height: 75px;
+			}
+			@media (max-width: @screen-md-max) {
+				margin-top: 50px;
+				text-align: center;
+			}
+			@media (max-width: @screen-sm-max) {
+				margin-top: 30px;
+			}
+
+			&:after{
+				content: attr(data-title);
+				position: absolute;
+				color: @white;
+				font-size: 12px;
+				left: 75%;
+				bottom: 13px;
+
+				@media (max-width: @screen-sm-max){
+					left: 50%;
+					bottom: -25px;
+					.translateX(-50%);
+				}
+			}
+			a.logo {
+				margin-top: 15px;
+				color: @footer-logo-gray;
+				font-weight: 700;
+				text-align: center;
+				display: inline-block;
+				//margin-right: 10px;
+				.transition(.3s);
+				@media (max-width: @screen-sm-max){
+					margin-right: 0;
+				}
+
+				span {
+					display: block;
+					width: 100%;
+				}
+
+				&:hover {
+					text-decoration: none;
+					.scale(1.05);
+				}
+
+				.img-wrapper {
+					display: inline-block;
+					margin-bottom: 0;
+					margin-top: 20px;
+				}
+
+				img.weibo {
+					height: 40px;
+				}
+			}
+		}
+	}
+
+	.copyright {
+		border-top: 1px solid #393738;
+		p {
+			margin: 0;
+			padding: 25px 0;
+			color: @white;
+			text-align: center;
+			font-size: @font-size-small;
+			text-transform: uppercase;
+			a {
+				color: #848484;
+			}
+
+			& + p {
+				padding-bottom: 33px;
+			}
+		}
+	}
+
+	@media (max-width: @screen-xs) {
+
+		.copyright {
+
+			p {
+				padding: 26px 0;
+				font-size: 13px;
+			}
+		}
+	}
+}

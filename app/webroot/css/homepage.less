@@ -1,0 +1,39 @@
+.homepage {
+	@media(min-width: @screen-sm) {
+		padding-bottom: 0;
+	}
+}
+
+.announcements p {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    //margin: 20px;
+    display: block;
+}
+
+.announcements {
+    .carousel-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding-top: 15px;
+        .swiper-wrapper .swiper-slide {
+            height: 50px !important;
+        }
+    }
+}
+
+
+.announcements .carousel-container .swiper-wrapper {
+    background-color: white;
+}
+
+.announcements .carousel-container .swiper-prev, .announcements .carousel-container .swiper-next {
+    margin-top: -9px;
+}
+
+.announcements .carousel-container .swiper-next,
+.announcements .carousel-container .swiper-prev {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAALCAQAAAD2WzQdAAAAXUlEQVQIW2PgjeaN5WVkgADeGt7XvAEwDhtvN+8rXicYl5l3Pu8TXnMYl4t3De8JXksYl5f3Oe8FGCeX9z5vAYSZxfuLNxnCDAMyq8B28YYDVbfyskLE63j7oUwGAE8TE3xTY1cNAAAAAElFTkSuQmCC") no-repeat;
+    height: 11px;
+}

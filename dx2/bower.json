@@ -1,0 +1,34 @@
+{
+  "name": "www",
+  "version": "0.0.0",
+  "authors": [
+    "Franta Toman <franta.tomanu@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "552273": "https://gist.github.com/552273.git",
+    "bootstrap": "3.3.5",
+    "bootstrap-daterangepicker": "~2.0.11",
+    "datetimepicker": "2.4.5",
+    "grido": "~2.0.8",
+    "history.js": "~1.8.0",
+    "jquery-ui": "~1.11.4",
+    "lesshat": "~3.0.2",
+    "nette-live-form-validation": "https://github.com/redhead/nette-live-form-validation.git",
+    "nette.ajax.js": "~2.1.0",
+    "seiyria-bootstrap-slider": "~4.10.1",
+    "typeahead.js": "~0.11.1",
+    "fingerprintjs2": "~0.9.0"
+  },
+  "devDependencies": {
+    "bootstrap-slider": "*",
+    "ladda-bootstrap": "~0.1.0"
+  }
+}

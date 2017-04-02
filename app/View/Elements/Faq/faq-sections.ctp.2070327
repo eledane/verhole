@@ -1,0 +1,333 @@
+<?php
+	function mfp($a, $b) {
+		return $a["ordering"] - $b["ordering"];
+	}
+?>
+<div class="container-fluid">
+	<div class="row">
+
+			<?php
+				echo $this->Element('pageHeading',
+					array(
+						'heading' => 'FAQ - title',
+						'background' => 'faq.jpg',
+					)
+				);
+			?>
+
+			<div class="tabpanel tabs-common">
+			   <div class="container">
+				<ul class="nav nav-tabs tabs-menu-faqSecti" role="tablist">
+
+					<?php 
+						$class = 'current';
+						$addClass = false;
+						$tabWidth = count($pageData['modulesData']['faq_sections']);
+						$soucet = 100/$tabWidth;
+						$i = 0;
+						if(!empty($this->params->query)) {
+							$section = array_key_exists('section', $this->params->query) ? $this->params->query['section'] : '';
+						}
+
+					foreach($pageData['modulesData']['faq_sections'] as $faqSection) { 
+						$i++;
+						if($addClass === false && empty($section)) {
+							$class = 'active';
+							$addClass = true;
+						} elseif ($addClass === false && ($section === $faqSection['FaqSection']['title'])) {
+							$class = 'active';
+							$addClass = true;
+						} elseif ($addClass === true) {
+							$class = '';
+						}
+
+					?>
+
+					<div class="col-xs-6" style="width: <?php echo $soucet; ?>%">
+						<li role="presentation" class="<?php echo $class; ?>" data-id="<?php echo $i; ?>">
+							<a class="" href="#<?php echo $faqSection['FaqSection']['url']; ?>" aria-controls="<?php echo $faqSection['FaqSection']['url']; ?>" role="tab" data-toggle="tab">
+
+							<?php echo $faqSection['FaqSection']['title']; ?>
+							</a>
+						</li>
+					</div>
+
+					<?php };?>        <!--puvodni-->
+
+				</ul>
+				<div class="tab-content faqPage">
+
+						<?php
+
+						$addClass3 = false;
+						$i2 = 0;
+
+						foreach($pageData['modulesData']['faq_sections'] as $faqSection) {
+							$i2++;
+                            
+                            
+                            //debug($pageData);
+							if(!empty($this->params->query)) {
+								$section = array_key_exists('section', $this->params->query) ? $this->params->query['section'] : '';
+							}
+                            
+							if($addClass3 === false && empty($section)) {
+								$class3 = 'active';
+								$addClass3 = true;
+							} elseif ($addClass3 === false && ($section === $faqSection['FaqSection']['title'])) {
+								$class3 = 'active';
+								$addClass3 = true;
+							} elseif ($addClass3 === true) {
+								$class3 = '';
+							} else {
+								$class3 = '';
+							}
+						?>
+							<div role="tabpanel" class="tab-pane fade in <?php echo $class3; ?>" id="<?php echo $faqSection['FaqSection']['url']; ?>" data-id="<?php echo $i2; ?>">	
+							 <div class="col-xs-12 col-sm-4 col-md-3 faqWrapp alex">
+                                <?php
+                                    if(!empty($faqSection['FaqCategory'])) {
+                                        foreach($faqSection['FaqCategory'] as $faqCategory) {
+
+                                            if($faqCategory['hot_question_category'] === true && $faqCategory['show_in_faq_page'] === true) {
+                                                
+                                            //debug($faqCategory['faq_section_id']);
+                                                
+
+                                                echo $this->Html->link(
+                                                    '<i></i>'.
+                                                    $faqCategory['title'].'<span></span>',
+                                                    array(
+                                                        'pageurl' => $faqPage['Page']['tree_slug'] . '/' . $faqCategory['url']
+                                                    ),
+                                                    array(
+                                                        'title' => $faqCategory['title'],
+                                                        'class' => 'btn btn_white visible-xs active hot-question-link',
+                                                        'escape' => false,
+                                                    )
+                                                );
+                                                echo $this->Html->link(
+                                                    '<i></i>'.
+                                                    $faqCategory['title'].'<span></span>',
+                                                    array(
+                                                        'pageurl' => $faqPage['Page']['tree_slug'] . '/' . $faqCategory['url']
+                                                    ),
+                                                    array(
+                                                        'title' => $faqCategory['title'],
+                                                        'class' => 'btn btn_white hidden-xs desktop-faq-category active hot-question-link',
+                                                        'data-toggle-category' => $faqCategory['id'],
+                                                        'escape' => false,
+                                                    )
+                                                );
+                                            }
+                                        }
+										$sorted = $faqSection['FaqCategory'];
+										usort($sorted, "mfp");
+                                        foreach($sorted as $faqCategory) {
+                                            if($faqCategory['hot_question_category'] !== true && $faqCategory['show_in_faq_page'] === true) {
+                                                
+                                                //debug($faqCategory['faq_section_id']);
+                                                
+                                                echo $this->Html->link(
+                                                    '<i></i>'.
+                                                    $faqCategory['title'].'<span></span>',
+                                                    array(
+                                                        'pageurl' => $faqPage['Page']['tree_slug'] . '/' . $faqCategory['url']
+                                                    ),
+                                                    array(
+                                                        'title' => $faqCategory['title'],
+                                                        'class' => 'btn btn_white visible-xs ',
+                                                        'escape' => false,
+                                                    )
+                                                );
+                                                echo $this->Html->link(
+                                                    '<i></i>'.
+                                                    $faqCategory['title'].'<span></span>',
+                                                    array(
+                                                        'pageurl' => $faqPage['Page']['tree_slug'] . '/' . $faqCategory['url']
+                                                    ),
+                                                    array(
+                                                        'title' => $faqCategory['title'],
+                                                        'class' => 'btn btn_white hidden-xs desktop-faq-category ',
+                                                        'data-toggle-category' => $faqCategory['id'],
+                                                        'escape' => false,
+                                                    )
+                                                );
+                                            }
+
+                                        }
+                                    }
+                                ?> 
+							 </div> <!--faqWrapp-->
+							 
+							 
+							 
+							 
+							 
+							 <!--center box-->
+							 <div class="col-xs-6 col-sm-6 col-md-6 hidden-xs">
+								<?php
+								foreach($faqSection['FaqCategory'] as $faqCategory) {
+									if($faqCategory['hot_question_category'] === true && $faqCategory['show_in_faq_page'] === true) {
+										$questions = $this->Faq->getQuestions($faqCategory['id']);
+									?>
+										<div class="faqWrapp" data-category='<?php echo $faqCategory['id']; ?>' style="display:block;">
+									<?php
+										$questions_filtered = array();
+										foreach($questions as $question) {
+											$texts = $question[0];
+											array_push($question['Faq'], $texts);
+											array_push($questions_filtered, $question['Faq']);
+										}
+										$sorted = $questions_filtered;
+										usort($sorted, "mfp");
+										foreach($sorted as $question) {
+										 $imgId = $question['id'];
+										 $images = $this->Faq->getQuestionImages($imgId);
+										 $question = $question[0];
+										 $title = $question['Faq__i18n_title'];
+										 $answer = $question['Faq__i18n_answer'];
+									?>
+										<div class="tabWrap">
+											<div id="tabInn" class="tabInn"><?php echo h($title); ?></div>
+											<div class="tab-answer">
+												<?php
+													echo $answer;
+												?>
+											</div>
+										</div>
+									 <?php
+										}
+									?>
+									</div>
+									<?php
+									}
+								} 
+								foreach($faqSection['FaqCategory'] as $faqCategory) {
+									if($faqCategory['hot_question_category'] !== true && $faqCategory['show_in_faq_page'] === true) {
+										$questions = $this->Faq->getQuestions($faqCategory['id']);
+									?>
+										<div class="faqWrapp" data-category='<?php echo $faqCategory['id']; ?>' style="display:none;">
+									<?php
+										$questions_filtered = array();
+										foreach($questions as $question) {
+											$texts = $question[0];
+											array_push($question['Faq'], $texts);
+											array_push($questions_filtered, $question['Faq']);
+										}
+
+										$sorted = $questions_filtered;
+										usort($sorted, "mfp");
+										foreach($sorted as $question) {
+										 $imgId = $question['id'];
+										 $images = $this->Faq->getQuestionImages($imgId);
+										 $question = $question[0];
+										 $title = $question['Faq__i18n_title'];
+										 $answer = $question['Faq__i18n_answer'];
+									?>
+										<div class="tabWrap">
+											<div id="tabInn" class="tabInn"><?php echo h($title); ?></div>
+											<div class="tab-answer">
+											<?php
+												echo $answer;
+											?>
+											</div>
+										</div>
+									 <?php
+										}
+									?>
+									</div>
+									<?php
+									}
+								} 
+							?>
+							
+
+							
+							
+							 </div>
+
+
+							 <!--pravy box na image-->
+							 
+							 
+							 
+							 
+							 <div class="faqWrapp forImage col-xs-12 col-sm-2 col-md-3">
+								 <?php
+								 	foreach($faqSection['FaqCategory'] as $faqCategory) {
+								 		if($faqCategory['hot_question_category'] === true && $faqCategory['show_in_faq_page'] === true) {
+											$language = array_search(Configure::read('Config.language'), Configure::read('Config.availableLanguages'));
+											if ($language !== 'en') {
+												$img = $this->Media->getImagePathByName($faqCategory['moduleMedia'], 'category-image-zh');
+											} else {
+												$img = $this->Media->getImagePathByName($faqCategory['moduleMedia'], 'category-image-en');
+											}
+											if(!empty($img)) {
+											?>
+												<img src="/<?php echo h($img);?>" alt="<?php h($faqCategory['title']); ?>" class="img-responsive" data-category-image='<?php echo $faqCategory['id']; ?>' style="display:block;">
+											<?php
+											}
+										}
+								 	}
+								 	foreach($faqSection['FaqCategory'] as $faqCategory) {
+								 		if($faqCategory['hot_question_category'] !== true && $faqCategory['show_in_faq_page'] === true) {
+											$language = array_search(Configure::read('Config.language'), Configure::read('Config.availableLanguages'));
+											if ($language !== 'en') {
+												$img = $this->Media->getImagePathByName($faqCategory['moduleMedia'], 'category-image-zh');
+											} else {
+												$img = $this->Media->getImagePathByName($faqCategory['moduleMedia'], 'category-image-en');
+											}
+											if(!empty($img)) {
+											?>
+												<img src="/<?php echo h($img);?>" alt="<?php h($faqCategory['title']); ?>" class="img-responsive" data-category-image='<?php echo $faqCategory['id']; ?>' style="display:none;">
+											<?php
+											}
+										}
+								 	}
+								 ?>
+							 </div>
+							 
+							 
+							 
+							 <!--pravy box na image-->
+							 
+							 
+							 
+							 
+							 
+							 <!--center box-->
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+							 
+							 <div class="clearfix"></div> 
+							</div>  
+						<?php
+						}
+						?>
+				</div>
+				</div>
+				<div class="col-sm-6 col-sm-offset-3 faq-hlp">
+					<div class="contact-faq">
+						<h3><?php echo $this->staticText->getStripped('FAQ detail - havent found'); ?></h3>
+						<?php
+						echo $this->Html->link(
+							$this->StaticText->getStripped('Button - Contact us'),
+							array(
+								'pageurl' => $contactPage['Page']['tree_slug']
+							),
+							array(
+								'class' => 'btn btn-success'
+							)
+						);
+						?>
+					</div>
+				</div>
+			</div> <!--tabpanels-->
+	</div>
+</div>

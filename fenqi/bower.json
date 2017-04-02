@@ -1,0 +1,23 @@
+{
+  "name": "www",
+  "version": "0.0.0",
+  "authors": [
+    "Franta Toman <franta.tomanu@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ladda-bootstrap": "https://github.com/msurguy/ladda-bootstrap.git#~0.1.0",
+    "lesshat": "~3.0.2",
+    "seiyria-bootstrap-slider": "~4.10.1"
+  },
+  "devDependencies": {
+    "bootstrap-slider": "*"
+  }
+}

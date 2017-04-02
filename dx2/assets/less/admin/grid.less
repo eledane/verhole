@@ -1,0 +1,38 @@
+.grido {
+	.table {
+		thead, tbody {
+			font-size: 14px;
+			background: #fff;
+		}
+	}
+
+	color: #000;
+
+	a {
+		color: #000000;
+	}
+
+	tr {
+		&:hover {
+			background-color: #bbb !important;
+		}
+
+		&.done, &.bad-url {
+			td {
+				background-color: rgba(0, 255, 0, .5);
+			}
+		}
+
+		&.open {
+			td {
+				background-color: rgba(0, 0, 255, .5);
+			}
+		}
+
+		&.new, &.hardcore {
+			td {
+				background-color: rgba(255, 0, 0, .5);
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+tmp/
+#webroot/promotions/op/img/
+#webroot/img/
+#webroot/html/images/
+mdm
+Config/database.php
+.htaccess

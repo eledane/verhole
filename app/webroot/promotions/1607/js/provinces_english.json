@@ -1,0 +1,101 @@
+[
+	{
+		"province":"AnHui",
+		"cities": ["AnQing","BangBu","ChaoHu","ChiZhou","ChuZhou","FuYang","HeFei","HuaiBei","HuaiNan","HuangShan","LiuAn","MaAnShan","SuZhou","TongLing","XuanCheng","WuHu","ZuoZhou"]
+	},
+	{
+		"province":"BeiJing",
+		"cities": [
+			"BeiJing"
+		]
+	},
+	{
+		"province":"ChongQing",
+		"cities": ["ZhongQing"]
+	},
+	{
+		"province":"FuJian",
+		"cities": ["Amoy","Foochow","LongYan","NanPing","NingDe","PuTian","QuanZhou","SanMing","ZhangZhou"]
+	},
+	{
+		"province":"GuangDong",
+		"cities": ["ChaoZhou","DongZuo","FoShan","GuangZhou","HeYuan","HuiZhou","JiangMen","JieYang","MaoMing","MeiZhou","QingYuan","ShanTou","ShanWei","ShaoGuan","ShenZhen","YangJiang","YunFu","ZhanJiang","ZhaoQing","ZhuHai","ZhongShan"]
+	},
+	{
+		"province":"GuangXi",
+		"cities": ["BaiSe","BeiHai","ChongZuo","FangChengGang","GuiGang","GuiLin","HeChi","HeZhou","LaiBin","LiuZhou","NanNing","QinZhou","WuZhou","YuLin"]
+	},
+	{
+		"province":"GuiZhou",
+		"cities": ["AnShun","BiJie","GuiYang","LiuPanShui","QianDongNanMiaoZuDongZu","QianNanBuYiZuMiaoZu","TongRen","XingYi","ZunYi"]
+	},
+	{	
+	"province":"HeBei",
+	"cities": ["BaoDing","CangZhou","ChengDe","HanDan","HengShui","LangFang","QinHuangDao","ShiJiaZhuang","TangShan","XingTai","ZhangJiaKou"]
+	},
+	{	
+	"province":"HeiLongJiang",
+	"cities": ["DaQing","DaXingAnLing","Harbin","HeGang","HeiHe","JiaMuSi","JiXi","MuDanJiang","QiQiHaEr","QiTaiHe","ShuangYaShan","SuiHua","YiChun"]
+	},
+	{	
+	"province":"HeNan",
+	"cities": ["AnYang","HeBi","JiaoZuo","KaiFeng","LuoYang","NanYang","PingDingShan","SanMenXia","ShangQiu","XinXiang","XinYang","XuChang","ZhengZhou","ZhouKou","ZhuMaDian","ZuoHe","ZuoYang"]
+	},
+	{	
+	"province":"HuBei",
+	"cities": ["EnShiTuJiaZuMiaoZu","EZhou","HuangGang","HuangShi","JingMen","JingZhou","ShiYan","SuiZhou","WuHan","XiangYang","XianNing","XianTao","XiaoGan","YiChang"]
+	},
+	{	
+	"province":"HuNan",
+	"cities": ["ChangDe","ChangSha","ChenZhou","HengYang","HuaiHua","LouDi","ShaoYang","XiangTan","XiangXiTuJiaZuMiaoZu","YiYang","YongZhou","YueYang","ZhangJiaJie","ZhuZhou"]
+	},
+	{	
+	"province":"JiangSu",
+	"cities": ["ChangZhou","HuaiAn","LianYunGang","NanJing","NanTong","SuQian","SuZhou","TaiZhou","WuXi","XuZhou","YanCheng","YangZhou","ZhenJiang"]
+	},
+	{	
+	"province":"JiangXi",
+	"cities": ["FuZhou","GanZhou","JiAn","JingDeZhen","JiuJiang","NanChang","PingXiang","ShangRao","XinYu","YiChun","YingTan"]
+	},
+	{	
+	"province":"JiLin",
+	"cities": ["BaiCheng","BaiShan","ChangChun","JiLin","LiaoYuan","SiPing","SongYuan","TongHua","YanBianChaoXianZu"]
+	},
+	{	
+	"province":"LiaoNing",
+	"cities": ["AnShan","BenXi","ChaoYang","DaLian","DanDong","FuShun","FuXin","HuLuDao","JinZhou","LiaoYang","PanJin","ShenYang","TieLing","YingKou"]
+	},
+	{	
+	"province":"ShanDong",
+	"cities": ["BinZhou","DeZhou","DongYing","JiNan","JiNing","LaiWu","LiaoCheng","LinYi","MuDan","QingDao","RiZhao","TaiAn","WeiFang","WeiHai","YanTai","ZaoZhuang","ZiBo"]
+	},
+	{	
+	"province":"ShangHai",
+	"cities": ["ShangHai"]
+	},
+	{	
+	"province":"ShaanXi",
+	"cities": ["AnKang","BaoJi","HanZhong","ShangLuo","TongChuan","WeiNan","XiAn","XianYang","YanAn","Yulin"]
+	},
+	{
+	"province":"ShanXi",
+	"cities": ["ChangZhi","DaTong","JinCheng","JinZhong","LinFen","LvLiang","ShuoZhou","TaiYuan","XinZhou","YangQuan","YunCheng"]
+	},
+	{	
+	"province":"SiChuan",
+	"cities": ["ABaCangZuQiangZu","BaZhong","ChengDu","DaZhou","DeYang","GanZiCangZu","GuangAn","GuangYuan","LeShan","LiangShanYiZu","MeiShan","MianYang","NanChong","NeiJiang","PanZhiHua","SuiNing","YaAn","YiBin","ZiYang","ZiGong","ZuoZhou"]
+	},
+	{	
+	"province":"TianJin",
+	"cities": ["TianJin"]
+	},
+	{	
+	"province":"YunNan",
+	"cities": ["BaoShan","ChuXiongYiZu","DaLiBaiZu","DeHongDaiZuJingPoZu","DiQingCangZu","HongHeHaNiZuYiZu","KunMing","LiJiang","LinCang","MoJiangHaNiZu","NuJiangLiSuZu","QuJing","WenShanZhuangZuMiaoZu","XiShuangBanNaDaiZu","YuXi","ZhaoTong"]
+	},
+	{	
+	"province":"ZheJiang",
+	"cities": ["HangZhou","HuZhou","JiaXing","JinHua","LiShui","NingBo","ShaoXing","TaiZhou","WenZhou","ZuoZhou","ZhouShan"]
+	}
+	
+]

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>__pageTitleHomepage__</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <meta name="description" content="__pageDescription__">
+        <link rel='stylesheet' href='./assets/css/min/all.css?version=1.1' type='text/css' media='all' />
+        <!--[if lt IE 10]>
+            <link rel="stylesheet" type="text/css" href="./assets/css/style-ie.css" />
+        <![endif]-->
+        <link rel='stylesheet' href='./lib/jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.min.css' type='text/css' media='all' />
+        __engStyleSheet__
+        __custom_css__
+
+        <script type="text/javascript">
+            var docref = document.referrer;
+            var n = docref.indexOf(window.location.origin);
+
+            function setCookie(cname, cvalue, exdays) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays*24*60*60*1000));
+                var expires = "expires="+d.toUTCString();
+                document.cookie = cname + "=" + cvalue + "; " + expires;
+            }
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for(var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            if (!~n) {
+                setCookie("incoming",docref);
+                setCookie('oqs', window.location.search.substr(1));
+            }else{
+                var origin_incoming = getCookie('incoming');
+                if(origin_incoming && !getCookie('oqs')) {
+                    setCookie('oqs', window.location.search.substr(1));
+                }
+                if(!origin_incoming)
+                    setCookie("incoming","direct");
+            }
+            
+        </script>
+
+        <!--<script type="text/javascript">//var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256287498'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D1256287498%26l%3D3' type='text/javascript'%3E%3C/script%3E"));</script>-->
+
+        <style>
+            #slider1 a{
+                height: 40px;
+                width: 40px;
+                border-radius: 50px;
+                top:-0.8em;
+            }
+
+            .actualValue{
+                margin-top: -20px;
+            }
+
+            #slider2 a{
+                height: 40px;
+                width: 40px;
+                border-radius: 50px;
+                top:-0.8em;
+            }
+
+            .loanBtn {
+                  margin: 0px auto 0;*
+            }
+
+            
+
+            .calcFooter {
+               margin-top: 0; 
+               margin-bottom: 0; 
+            }
+
+            #slider1 .actualValue {
+                  
+                  left:7px;
+            }
+
+
+            @media (min-width : 1024px)
+
+            {
+
+                 .strip2{
+                    margin-top: 0;
+                }
+
+                .loan{
+                    margin-top: 0;
+                }
+
+                #slider2 .actualValue {
+                  width: 110px;
+                  left:-10px;
+                }
+
+                #slider1 .actualValue {
+                  
+                  left:0;
+                }
+
+            }
+        </style>
+    </head>
+    <body ontouchstart="">
+
+        <!-- Loader -->
+        <div class="header-loading">
+            <div class="header-loader"></div>
+        </div>
+       <!-- End Loader -->
+
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar last"></span>
+                </button>
+                <div class="nav-wrapper">
+                    <div class="navbar-header">
+                        <a href="index.php?__langCode__" class="navbar-brand">
+                            <img alt="HCC" src="./assets/img/logo.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="call-us">
+                    <a href="tel:400 027 1265" id="callUs"><span class="callText">__callUs__ 400 027 1265</span><span class="phone"><img src="./assets/img/phone.png" /></span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="menuLi menuLiFirst"><a id="firstMenu" data-event="time_click_how_to_use" href="#process">__menuProcesses__</a></li>
+                        <li class="menuLi"><a id="secondMenu" data-event="time_click_frq_qst" href="index.php?page=faq&__langCode__">__menuFAQ__</a></li>
+                        <li class="menuLi"><a id="thirdMenu" data-event="time_click_about_HCC" href="http://www.homecreditcfc.cn/" target="_blank">__menuHomecredit__</a></li>
+                        <li class="menuLi"><div class="buttonDiv"><a id="fourthMenu" data-event="time_click_how_to_use" href="#calculator" class="button">__menuCalculator__</a></div></li>
+                    </ul>
+                    <div class="languages">
+                        <a href="index.php?lang=cn" class="cn first">中文</a>
+                        <a href="index.php?lang=en" class="en">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- After winning loan -->
+        <div class="header-after" style="display:none">
+        <div class="headerTextHidden">
+            <div class="graphicBar"> __graphicalBar__ </div>
+        </div>
+            __winImg__
+        </div>
+        <!-- End: After winning loan -->
+
+        <div class="container-fluid header header-before">
+            <div class="bag">
+                <div class="textTopF">
+                    __textTop__
+                </div>
+                <div class="textBottomHolderf">
+                    <div class="textBottom">
+                        __textBottom__
+                    </div>
+                </div>
+                <div class="coins-holder">
+                    <div class="headerCoinsf"></div>
+                    <div class="lightf"></div>
+                    <img class="star star-one" src="./assets/img/star.png" />
+                    <img class="star star-two" src="./assets/img/star.png" />
+                    <img class="star star-three" src="./assets/img/star.png" />
+                    <img class="star star-four" src="./assets/img/star.png" />
+                    <img class="star star-five" src="./assets/img/star.png" />
+			<a id="js-coins" class="headerCoinsFake"></a>                  	
+                </div>
+            </div>
+			<div class="headerTextHidden">
+                <div class="textBar">__barText__</div>
+                <div class="graphicBar"> __graphicalBar__ </div>
+            </div>
+
+            <img id="headerImg" src="./assets/img/header-bg.png" />
+            <img id="headerSmallImg" src="./assets/img/header-bg-small.png" />
+
+
+        </div>
+        <!-- Modal Apply -->
+        <div class="modal modal-apply-modal fade custom-modal" id="myModalApply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="popup-body appear modal-popup-body" role="document">
+                <div class="popup-content modal-popup-content">
+                    <div class="popup-view-1 popup-view modal-popup-view">
+                        <div class="modal-apply modal-apply-yes">
+                            <h1 class="modal-title-big modal-title-big-yes">__modalApplyTitleUp__</h1>
+                            <h2 class="modal-title-small modal-title-small-yes">__modalApplyTitleOne__<span class="modal-title-small-two">__modalApplyTitleTwo__</span></h2>
+                            <div class="modal-apply-btn modal-apply-btn-yes"><a id="applyButton"><span>__applyButton__</span></a></div>
+                            <div class="bottomSerWinLoan" id="bottomSerWinLoan">__customService2.2__</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Apply End-->
+
+        <!-- Modal Apply Not-->
+        <div class="modal modal-apply-modal fade" id="myModalApplyNot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="popup-body appear modal-popup-body modal-popup-body-not" role="document">
+                <div class="popup-content modal-popup-content modal-popup-content-not">
+                    <div class="popup-view-1 popup-view modal-popup-view modal-popup-view-not">
+                        <div class="modal-apply modal-apply-not">
+                            <img class="modal-crying-boy" src="./assets/img/modal-crying-boy.png" />
+                            <h1 class="modal-title-big modal-title-big-no">__modalApplyNotTitleUp__</h1>
+                            <h2 class="modal-title-small modal-title-small-no">__modalApplyNotTitleOne__<br><span class="modal-title-small-no-two">__modalApplyNotTitleTwo__</span></h2>
+                            <div class="close modal-apply-btn modal-apply-btn-no" data-dismiss="modal"><a id="applyButtonNot"><span>__applyNotButton__</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Apply Not End-->
+
+        <div class="container-fluid calculator" id="calculator">
+            <div class="wrapper">
+                <div class="calc">
+                    <div class="calcHeader">
+                        <h1>__calculatorTitle__</h1>
+                        <p>__calculatorDesc__</p>
+                    </div>
+                    <div class="strip1">
+                        <p>1.__stripOne__ :</p>
+                        <div id="slider1">
+                            <input type="text" id="slider1-value" class="hidden">
+                        </div>
+                        <div class="legend">
+                            <div class="min">¥ 100</div>
+                            <div class="max">¥ 500</div>
+                        </div>
+                    </div>
+                    <div class="strip2">
+                        <p>2.__stripTwo__ :</p>
+                        <div id="slider2">
+                            <input type="text" id="slider2-value" class="hidden">
+                        </div>
+                        <div class="legend">
+                            <div class="min">1 (__month__)</div>
+                            <div class="max">6 (__months__)</div>
+                        </div>
+                    </div>
+                    <div class="loan">
+                        <img src="./assets/img/loan.png" /> __monthPayment__ : <div class="calcLoanWrapper">¥ <span class="calcLoan">90</span></div>
+
+                        <div class="calcFooter">
+                            <p>__customerService__ <a  type="button" id="termsButton" data-event="time_click_MCL_term_use_1stpage" data-toggle="modal" data-target="#myModal" data-keyboard="false">__clickHere__</a><!-- __customerService2__--></p>
+                        </div>
+
+                        <div class="Btnloading Btnloading-wrapper">
+                        <div class="loanBtn"><a id="loanButton" data-event="whether_click_borrow_button_calculator"><span>__loanButton__</span><img src="assets/img/rolling.gif"></a></div></div>
+                        __pausedText__
+                        
+                       
+                        <!-- Button trigger modal 
+                        <div class="loanBtn"><a data-toggle="modal" data-target="#myModal2">
+                        __loanButton__</a></div>
+                         -->
+                       
+
+                        <!-- Modal -->
+
+                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="popup-body appear" role="document">
+                                <div class="popup-content">
+                                    <div class="popup-view-1 popup-view">
+                                        <div class="popup-loan">
+                                            <img src="./assets/img/loan.png" /> __monthPayment__ : <div class="calcLoanWrapper">¥ <span class="calcLoan">90</span>
+                                            </div>
+                                        </div>
+                                        <form action="/" id="idHashForm">
+                                            <label for="idCardNumber">__popupInputLabel__</label>
+                                            <input id="yesButton" type="submit" value="__popupSubmitButtonYes__">
+                                            <input id="noButton" type="submit" value="__popupSubmitButtonNo__">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="myModalError" tabindex="-1" role="dialog" aria-labelledby="myModalError">
+                            <div class="popup-body appear" role="document">
+                                <div class="popup-content">
+                                    <div class="popup-view-1 popup-view"> 
+                                        <p>Sorry, a connection error has ocurred. Please try again.</p>
+                                        <button type="button" class="btn-back" data-dismiss="modal">OK</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="calcFooter">
+                        <!--<p>__customerService__ <a  type="button" id="termsButton" data-event="time_click_MCL_term_use_1stpage" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">__clickHere__</a> __customerService2__</p>-->
+
+                        <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                        
+                                    <div class="container-fluid calculator">
+                                        <div class="wrapper terms">
+                                            <button type="button" id="modalClose" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h2>__termsHeader__</h2>
+                                            <p>__termsP1__</p>
+
+                                            <p>__termsP2__</p>
+
+                                            <h3>__termsH1__</h3>
+
+                                            <h4><u>__termP3__</u></h4>
+
+                                            <h4><u>__termP4__</u></h4>
+
+                                            <p>__termP5__</p>
+
+                                            <h3>__termsH2__</h3>
+
+                                            <p>__termP6__</p>
+
+                                            <h4><u>__termP7__</u></h4>
+
+                                            <h4><u>__termP8__</u></h4>
+
+                                            <h4><u>__termP9__</u></h4>
+
+                                            <h4><u>__termP10__</u></h4>
+
+                                            <h4><u>__termP11__</u></h4>
+
+                                            <h4><u>__termP12__</u></h4>
+
+                                            <h4><u>__termP13__</u></h4>
+
+                                            <h3>__termsH3__</h3>
+
+                                            <h4><u>__termP14__</u></h4>
+
+                                            <h4 style="text-indent:0px"><u>__termP15__</u></h4>
+
+                                            <h4><u>__termP16__</u></h4>
+
+                                            <h4><u>__termP17__</u></h4>
+
+                                            <h4><u>__termP18__</u></h4>
+
+                                            <h3>__termsH4__</h3>
+
+                                            <p>__termP19__</p>
+
+                                            <h3>__termsH5__</h3>
+
+                                            <p>__termP20a__<a href="http://www.homecreditcfc.cn/__termP20Lang__">http://www.homecreditcfc.cn/__termP20Lang__</a>__termP20b__</p>
+
+                                            <p>__termP21__</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div id="iphone6Promotion" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="container-fluid calculator">
+                                        <div class="wrapper terms">
+                                            <button type="button" id="modalClose" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="clearfix"></h4>
+                                            __iphonePromo__
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="bottomSer">__customService2.1__</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid dots">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="dot1">
+                        <img id="defaultLabelsImage" src="./assets/img/dot1.png" />
+                        <img id="freeLabelsImage" class="hidden" src="./assets/img/dot1A.png" />
+                        <div id="defaultLabels">
+                            <div class="dotTitle">__dot1Title__</div>
+                            <div class="dotDesc">__dot1Desc__</div>
+                        </div>
+                        <div id="freeLabels" class="hidden">
+                            <div class="dotTitle">__dot1TitleFree__</div>
+                            <div class="dotDesc">__dot1DescFree__</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="dot2">
+                        <img src="./assets/img/dot2.png"/>
+                        <div class="dotTitle">__dot2Title__</div>
+                        <div class="dotDesc">__dot2Desc__</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 dot3Wrap">
+                    <div class="dot3">
+                        <img src="./assets/img/dot3.png" />
+                        <div class="dotTitle">__dot3Title__</div>
+                        <div class="dotDesc">__dot3Desc__ </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid proccess" id="process">
+            <div class="proccessHeader">
+                <h1>__processHeader__</h1>
+                <p>__processDesc__</p>
+            </div>
+            <div class="row">
+                <div class="stepWrapper step1 active">
+                    <div class="step">
+                        <div class="wrap">
+                        <img src="./assets/img/step1.png"/>
+                            <div class="stepHeader">__process1Header1__<br />__process1Header2__ </div>
+                            <p>__process1Desc__</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows arrow1 active" id="arrow1">
+                    <img class="arrowsNoIE"  src="./assets/img/arrows.png" />
+                    <img class="arrowsIE" src="./assets/img/arrowsIE.png" />
+                </div>
+                <div class="stepWrapper step2">
+                    <div class="step">
+                        <div class="wrap">
+                        <img src="./assets/img/step2.png"/>
+                            <div class="stepHeader">__process2Header1__<br>__process2Header2__</div>
+                            <p>__process2Desc__</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows arrow2" id="arrow2">
+                    <img class="arrowsNoIE" src="./assets/img/arrows.png" />
+                    <img class="arrowsIE" src="./assets/img/arrowsIE.png" />
+                </div>
+                <div class="stepWrapper step3">
+                    <div class="step">
+                        <div class="wrap">
+                        <img src="./assets/img/step3.png"/>
+                            <div class="stepHeader">__process3Header1__<br>__process3Header2__</div>
+                            <p>__process3Desc__</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows arrow3" id="arrow3">
+                    <img class="arrowsNoIE"  src="./assets/img/arrows.png" />
+                    <img class="arrowsIE"  src="./assets/img/arrowsIE.png" />
+                </div>
+                <div class="stepWrapper step4">
+                    <div class="step">
+                        <div class="wrap">
+                        <img src="./assets/img/step4.png"/>
+                            <div class="stepHeader">__process4Header1__<br>__process4Header2__</div>
+                            <p>__process4Desc__</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stepButtonDiv"><div class="stepButtonInnerDiv"><a id="processButton" href="#calculator" class="stepButton" data-event="whether_click_borrow_button_steps">__processButton__</a></div></div>
+        </div>
+        <div class="container-fluid prop">
+            <div class="propHeader">
+                <h1>__propHeader__</h1>
+                <p>__propDesc__</p>
+            </div>
+            <div class="propWrapper">
+                <div class="propDetail">
+                    <img src="./assets/img/prop1.png" />
+                    <p>__prop1__</p>
+                </div>
+                <div class="propDetail">
+                    <img src="./assets/img/prop2.png" />
+                    <p>__prop2__</p>
+                </div>
+                <div class="propDetail">
+                    <img src="./assets/img/prop3.png" />
+                    <p>__prop3__</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer">
+            <p>© 2016捷信版权所有, ICP: 津ICP备12001060号<br> v2.01</p>
+        </div>
+
+        <script type="text/javascript" src="./assets/js/min/all.js?version=1.1"></script>
+        <script type="text/javascript" src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery(".loanButton").corner("round 30px");
+            jQuery(".buttonDiv").corner("round 20px");
+            jQuery(".step .wrap").corner("round 10px");
+            jQuery(".faqButtonDiv").corner("round 30px");
+            jQuery(".stepButtonInnerDiv").corner("round 28px").parent().css('padding', '2px').corner("round 36px");
+        });
+        </script>
+
+        <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="./assets/css/min/styleIE.css" />
+        <script type="text/javascript" src="./lib/jquery.corner.js"></script>
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery(".first_span").next().addClass("hidden_a");
+        });
+        </script>
+
+        <![endif]-->
+
+         <script type="text/javascript">
+            $(function() {
+                FastClick.attach(document.body);
+            });
+
+            (function( $, undefined ) {
+
+                $.extend($.ui.slider.prototype.options, {
+                    dragAnimate: true
+                });
+
+                var _mouseCapture = $.ui.slider.prototype._mouseCapture;
+                $.widget("ui.slider", $.extend({}, $.ui.slider.prototype, {
+                    _mouseCapture: function(event) {
+                        _mouseCapture.apply(this, arguments);
+                        this.options.dragAnimate ? this._animateOff = false : this._animateOff = true;
+                        return true;
+                    }
+                }));
+
+            }(jQuery));
+        </script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','assets/js/analytics.js','ga');
+          
+          var clientAgent = navigator.userAgent;
+          
+          
+          window.getPlatformName = function(userAgent){
+            var platform_name = "Others"
+            if(!userAgent){
+                return platform_name;
+            }
+            if(userAgent.indexOf('MicroMessenger') >= 0){
+                platform_name = 'WeChat';
+            }else if(userAgent.indexOf('QQBrowser') >= 0){
+                platform_name = 'QQ';
+            }
+            return platform_name; 
+          }
+
+          if(clientAgent){
+            ga('set', 'dimension1', getPlatformName(clientAgent));
+            ga('set', 'dimension2', clientAgent);
+          }
+          var clientId;
+          setTimeout(function() {
+            //console.log('timeout fired');
+            if (ga) {
+                ga('create', 'UA-65950413-6', 'auto');
+                ga('send', 'pageview');
+                ga(function(tracker) {
+                    clientId = tracker.get('clientId');
+                });
+                //console.log('sending ga data');
+            }
+          }, 1600);
+
+        </script>
+
+        
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?8f9073478e972aeaaf00971862b9490a";
+        var s = document.getElementsByTagName("script")[0]; 
+        setTimeout(function(){
+            s.parentNode.insertBefore(hm, s);
+        }, 1700);
+        })();
+        </script>
+
+        <!-- complex tracking code -->
+        <script>
+            var domscript = document.createElement('script');
+                domscript.type = 'text/javascript'; domscript.async = true;
+            if (window.location.href.indexOf('fudai-uat.homecredit.cn') >= 0 || window.location.href.indexOf('hc-cn-mcl.utdigit.com/') >= 0) {
+                domscript.src = 'https://api-uat.homecredit.cn/trackingweb/js/complex-tracking-min.js';
+                domscript.trackingHost = 'https://api-uat.homecredit.cn/trackingweb';
+            } else {
+                domscript.src = 'https://app.homecredit.cn/trackingweb/js/complex-tracking-min.js';
+                domscript.trackingHost = 'https://app.homecredit.cn/trackingweb';
+            }
+            var s = document.getElementsByTagName('script')[0];
+            setTimeout(function(){
+                s.parentNode.insertBefore(domscript, s);
+            }, 1800);
+        </script>
+
+
+        <script type="text/javascript">
+
+            var app;
+            $(document).on('ready', function () {
+                app = App.init();
+                app.configure();
+
+                $(".Btnloading-wrapper").removeClass('Btnloading');
+            });
+        </script>
+        <!-- start Mixpanel -->
+        <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+
+    mixpanel.init('391595294aecb7f2fe9ef5790b1f00a7', {
+      loaded: function(mixpanel) {
+        window.distinct_id = mixpanel.get_distinct_id();
+        //console.log('id is ' + window.distinct_id);
+      }
+    });
+    mixpanel.track("Page View",{
+        "Page Name": "Fudai Landing Page"
+    });
+    </script><!-- end Mixpanel -->
+        
+    </body>
+	</html>

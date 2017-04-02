@@ -1,0 +1,32 @@
+{
+  "name": "SeedCore",
+  "version": "0.0.34",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.1",
+    "jquery-ui": "https://github.com/VojtechKlos/jquery-ui-custom.git",
+    "bootstrap": "2.3.2",
+    "bootstrap-3": "https://github.com/twbs/bootstrap.git#3.3.1",
+    "jquery-waypoints": "v2.0.5",
+    "jquery-validation": "latest",
+    "less": "latest",
+    "modernizr": "latest",
+    "fastclick": "latest",
+    "jquery-treetable": "3.1.0",
+    "jqueryui-timepicker-addon": "latest",
+    "ckeditor": "#4.3.1/full",
+    "speakingurl": "latest",
+    "lesshat": "~3.0.2",
+    "respond": "~1.4.2",
+    "easytabs": "~3.2.0",
+    "numeral": "~1.5.3",
+    "jquery.ui.touch-punch.dk": "~0.3.3",
+    "idangerous-swiper": "2.7.5",
+    "watch": "darcyclarke/watch.js#~2.0.4",
+    "autoNumeric": "~1.9.26",
+    "swiper-smooth-progress": "~1.1.0",
+    "font-awesome-less": "~0.1.0",
+    "headroom.js": "~0.7.0",
+    "slick-carousel": "https://github.com/kenwheeler/slick.git"
+  }
+}

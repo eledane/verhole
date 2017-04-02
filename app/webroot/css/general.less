@@ -1,0 +1,245 @@
+a[href^="http://tongji.baidu"] {
+	display: none;
+}
+a[href^="tel:"], a.text-phone {
+	cursor: default;
+	color: @bg-btn-black;
+	text-decoration: none;
+	&:hover {
+		color: @bg-btn-black;
+		text-decoration: none;
+	}
+	@media (max-width: @screen-xs-max){
+		cursor: pointer;
+		&:hover {
+			color: @text-green !important;
+			text-decoration: none;
+		}
+	}
+}
+iframe[name="google_conversion_frame"] {
+	display: none;
+}
+
+
+input {
+	.appearance(none);
+}
+
+a {
+	color: @china-red;
+	&:hover, &:active, &:focus {
+		color: @china-red;
+	}
+}
+h1, .small, .smaller, .big {
+
+	.sectionH1;
+
+	&.smaller {
+		//font-size: 23px;
+	}
+	&.small {
+		//font-size: 20px;
+		//font-weight: normal;
+	}
+	&.normal {
+		font-weight: normal;
+	}
+	&.bold {
+		font-weight: bold;
+	}
+}
+
+h1 {
+	font-size: @font-size-extra-big!important;
+}
+
+h2 {
+	font-size: @font-size-big!important;
+}
+
+p, li {
+	font-size: @font-size-extra-small;
+}
+
+.subHeadline{
+	font-size: 18px;
+}
+
+.fb-login {
+	color: #878787;
+	font-size: 16px;
+	line-height: 20px;
+}
+.heading-image {
+	margin-right: 15px;
+}
+.big {
+	line-height: .75;
+	font-size: 66px;
+	font-weight: bold;
+}
+.littleHeader {
+	font-size: 22px;
+	font-weight: bold;
+	&.normal {
+		font-weight: normal;
+	}
+}
+
+
+.text-line {
+	text-align: center;
+	display: block;
+	width: 100%;
+	//background: transparent url("../img/text-line.png") no-repeat 50% 50%;
+	color: #969696;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+
+a, .btn {
+	outline: none;
+	&:active {
+		outline: none;
+	}
+	&:hover {
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:focus:not(:hover) {
+		outline-width: 1px;
+		outline-offset: 1px;
+		outline-style: dotted;
+	}
+}
+
+
+.section-splitter{
+	text-align: center;
+	width: 100%;
+	height: 78px;
+	position: relative;
+	padding-top: 25px;
+
+	h3{
+		color: #fff;
+		font-size: 28px;
+		font-weight: lighter;
+		margin: 0;
+	}
+	&:after{
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 11px 11px 0 11px;
+		border-color: @bg-red transparent transparent transparent;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		bottom: -11px;
+		z-index: 50;
+	}
+	&.red{
+		background: @bg-red;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto !important;
+}
+
+ul.text-list {
+	padding: 20px 0;
+	li {
+		font-size: 18px;
+		display: block;
+		float: left;
+		width: 50%;
+		padding-left: 20px;
+		background: transparent url("../img/li-dot.png") no-repeat 7px 50%;
+	}
+}
+body > section {
+	padding-top: 0px;
+	padding-bottom: 50px;
+
+	@media ( max-width: @screen-phone ) {
+		padding-bottom: 25px;
+	}
+}
+body {
+	overflow-x: hidden;
+	font-size: 18px;
+	padding-left: 0;
+	padding-right: 0;
+}
+select{
+	.appearance(none);
+	position: relative;
+	background: #fff url(../img/arrow-select.png) 98% center no-repeat !important;
+}
+
+@media (max-width: @screen-xs) {
+	.section-splitter{
+		padding-top: 26px;
+		h3{
+			font-size: 22px;
+		}
+	}
+}
+.clearfix{
+	clear: both;
+}
+.biggerInForm {
+	@media (min-width: 1024px) {
+		padding-top: 10px;
+		font-size: 26px;
+	}
+}
+
+.call-to-action-box {
+	padding: 50px 0;
+	background: @red;
+	color: @white;
+	text-align: center;
+	position: relative;
+	font-weight: bold;
+	font-size: 30px;
+	@media (max-width: @screen-xs-max) {
+		font-size: 26px;
+		padding: 30px 0;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 100%;
+		width: 0;
+		height: 0;
+		z-index: 41;
+		border-style: solid;
+		border-width: 15px 15px 0 15px;
+		border-color: @red transparent transparent transparent;
+		.translateX(-50%);
+		//-webkit-transform:rotate(360deg);
+		//border-style: inset;
+	}
+}
+
+a.with-arrow {
+	text-decoration: underline;
+	&:after {
+		content: '\00A0\203A';
+		color: @china-red;
+	}
+}

@@ -1,0 +1,95 @@
+.slider {
+    width: 100% !important;
+
+    .slider-selection {
+        background-color: @brand-primary;
+        background-image: none;
+        .box-shadow(inset 0 0 3px darken(@brand-primary, 10%));
+    }
+
+    .slider-track-high {
+        background-image: none;
+        background-color: #fcfcfc;
+        .box-shadow(inset 0 0 3px #dfdfdf);
+    }
+
+    .slider-tick {
+        display: none;
+    }
+
+    .slider-tick-label-container {
+        overflow: hidden;
+        margin-left: 0 !important;
+
+        .slider-tick-label {
+            width: 50% !important;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgba(30, 63, 78, 0.3);
+            .font-semibold();
+
+            &:first-child {
+                text-align: left;
+            }
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+
+    .tooltip {
+        z-index: 1;
+    }
+
+    .tooltip.bottom {
+        margin-top: 30px !important;
+
+        .tooltip-arrow {
+            margin-left: -5px;
+            width: 10px;
+            height: 5px;
+
+            border: none;
+
+            background-image: url("../img/icons/icon-tooltip-arrow.png");
+            background-repeat: no-repeat;
+            background-position: bottom center;
+        }
+
+        .tooltip-inner {
+            background: none transparent;
+            background-color: white;
+            .box-shadow(0px 0px 3px #ccc);
+
+            color: @brand-dark;
+            font-weight: bold;
+        }
+    }
+
+    .slider-handle.custom {
+        margin-top: -10px;
+        margin-left: -35px;
+
+        &::before {
+            display: block;
+            width: 74px;
+            height: 33px;
+
+            content: "";
+
+            background: transparent none;
+            background-image: url("../img/slider-handle.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+    &.slider-horizontal {
+        height: 30px;
+    }
+}
+
+.slider-width-fixer {
+    padding: 0px 38px;
+}

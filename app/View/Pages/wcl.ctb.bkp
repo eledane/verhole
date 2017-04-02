@@ -1,0 +1,103 @@
+<?php
+//debug($pageData);die;
+$csv = '';
+if(isset($pageData['modulesData']['WalkInCashLoan']['CsvFile'])){
+	$csv = $pageData['modulesData']['WalkInCashLoan']['CsvFile'];
+}
+?>
+<section class="wcl">
+	<div class="heading">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 headline">
+					<h1><?php echo h($pageData['title']); ?></h1>
+				</div>
+				<div class="col-xs-5 col-md-4">
+					<?php
+					echo $this->Html->image(
+						$this->Doodle->renderPath('wow-right.png'),
+						array(
+							'class' => 'doodle wow'
+						)
+					);
+					?>
+					
+					<?php
+					echo $this->Html->image(
+						'people/woman-money.png',
+						array(
+							'class' => 'section-img'
+						)
+					);
+					?>
+				</div>
+				<div class="col-xs-7 col-md-8 headline">
+					<h2><?php echo $this->staticText->getStripped('Walk in cash loan - Promo headline'); ?></h2>
+					<p class="mainCarouselP"><?php echo $this->staticText->getStripped('Walk in cash loan - Description'); ?></p>
+                    
+                    
+                    <?php
+                    echo $this->element('wclFeatures', array('class' => 'desktop'));
+                    ?>
+
+                </div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="wcl-would">
+					<div class="col-xs-12"><h3><?php echo $this->staticText->getStripped('Walk in cash loan - Would'); ?></h3></div>
+                    <?php
+                    echo $this->element('wclFeatures', array('class' => 'mobile'));
+                    ?>
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<?php echo $this->Element('calculator-wcl'); ?>
+	</div>
+	<?php 
+	    echo $this->element('vas');
+	?>
+    <div class="hidden-md hidden-lg">
+	    <?php echo $this->Element('loanProcessWCL'); ?>
+    </div>
+    <div class="hidden-sm visible-md-block visible-lg-block">
+	    <?php echo $this->Element('loanProcessWCLDesktop'); ?>
+    </div>
+	<div class="find-more">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 mt30 mb30 text-center">
+                    <?php
+
+                    echo $this->Html->link(
+                        $this->staticText->getStripped('Walk in cash loan - Find out more'),
+                        array( 'pageurl' => $faqPage['Page']['tree_slug'] . '/walk-in-cash-loan' ),
+                        array(
+                            'class' => 'underline bold link-with-arrow'
+                        )
+                    );
+                    ?>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<?php echo $this->Element('box-wcl', array('class' => 'centered-box')); ?>
+	<div class="ajaxLeaveForm">
+		<?php echo $this->element('ContactForms/contact-form',array('class' => 'homepage-leaveForm')); ?>
+	</div>
+
+	<?php echo $this->Element('map',array('type' => 'wcl')); ?>
+
+</section>
+<script type="text/javascript">
+	var calcData = <?php echo $csvWCL; ?>;
+	//var monthSliderInitialStep = 3;
+	//var amountSliderInitialStep = 3;
+</script>

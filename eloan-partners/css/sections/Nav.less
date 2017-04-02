@@ -1,0 +1,44 @@
+.navbar-fixed-top {
+    background-color: #4c4c4c;
+
+    .navbar-brand {
+		height: auto;
+
+        a { 
+            display: inline-block;
+            width: 120px;
+        }
+
+		@media screen and (min-width: @screen-md) {
+			padding: 20px 145px;
+		}
+	}
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+    #nav-items {
+        float: left;
+    }
+}
+
+.select-language {
+    padding: 10px;
+}
+
+.navbar-nav li a {
+	color: white;
+	padding: 45px 20px;
+	font-size: 20px;
+
+	@media screen and (max-width: @screen-xs-max) {
+		padding: 25px 20px;
+	}
+
+	&:hover {
+		background-color: #555;
+	}
+}

@@ -1,0 +1,21 @@
+{layout ../@admin.latte}
+
+{block #content}
+
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            {form addBlacklistForm class => 'form'}
+
+                <div class="form-group">
+                    {label url /}
+                    {input url class => 'form-control', placeholder => 'http://url...'}
+                </div>
+
+                <div class="form-group text-right">
+                    {input send class => 'btn btn-primary'}
+                </div>
+            {/form}
+        </div>
+    </div>
+
+{/block}

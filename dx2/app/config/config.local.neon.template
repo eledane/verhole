@@ -1,0 +1,8 @@
+parameters:
+	gatewayUrl: 'https://app.homecredit.cn/hccgateway
+database:
+	dsn: 'mysql:host=127.0.0.1;port=8889;dbname=ut_hc_zerocoin-coin'
+	user: root
+	password: root
+	options:
+		lazy: yes

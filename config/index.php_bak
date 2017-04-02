@@ -1,0 +1,127 @@
+<?php
+
+    $fs = dirname(__FILE__) . '/settings.conf';
+
+    if (!file_exists($fs)) {
+        die('Configuration file not found');
+    }
+
+    $config = unserialize(file_get_contents('settings.conf'));
+
+    if (!empty($_POST)) {
+
+        if (isset($_POST['bar-text-form'])) {
+            $keys = ['cnBarText', 'enBarText', 'barEnabled'];
+        } else {
+            $keys = ['cnButton', 'enButton', 'cnText', 'enText', 'pause'];
+        }
+
+        foreach ($keys as $key) {
+            if (empty($_POST[$key])) {
+                $config[$key] = '';
+            } else {
+                $config[$key] = $_POST[$key];
+            }
+        }
+        file_put_contents($fs, serialize($config));
+    }
+?>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.min.js">
+</head>
+<body>
+<?php
+    if ($config['pause']) {
+        $class = 'success';
+        $label = 'UNPAUSE';
+        $pause = 0;
+    } else {
+        $class = 'danger';
+        $label = 'PAUSE';
+        $pause = 1;
+    }
+?>
+<h3 class="text-center" style="font-weight:bold">Fudai page control panel</h3>
+<div class="container">
+    <div class="col-md-offset-2 col-md-8">
+    <form method="post">
+        <div class="form-group">
+            <label for="cnButton">CN button text</label>
+            <input type="text" name="cnButton" class="form-control" id="cnButton" placeholder="CN button text" value="<?php echo rawurldecode($config['cnButton']);?>">
+        </div>
+        <div class="form-group">
+            <label for="cnText">CN Text</label>
+            <textarea name="cnText" class="form-control" id="cnText" placeholder="CN Text"><?php echo rawurldecode($config['cnText']);?></textarea>
+        </div>
+        <hr>
+        <div class="form-group">
+            <label for="cnButton">EN button text</label>
+            <input type="text" name="enButton" class="form-control" id="enButton" placeholder="EN button text" value="<?php echo rawurldecode($config['enButton']);?>">
+        </div>
+        <div class="form-group">
+            <label for="cnText">EN Text</label>
+            <textarea name="enText" class="form-control" id="enText" placeholder="EN Text"><?php echo rawurldecode($config['enText']);?></textarea>
+        </div>
+        <div class="text-center">
+            <input type="hidden" name="pause" value="<?php echo $pause;?>">
+            <button type="submit" class="btn btn-lg btn-<?php echo $class;?>"><?php echo $label;?></button>
+        </div>
+    </form>
+    </div>
+
+    <div class="col-md-offset-2 col-md-8">
+        <form method="post">
+            <input type="hidden" name="bar-text-form" value="1">
+            <div class="form-group">
+                <div class="col-md-6">
+                    <label for="cnBarText">CN BAR text</label>
+                    <input type="text" name="cnBarText" class="form-control" id="cnBarText" placeholder="CN BAR text" value="<?php echo rawurldecode($config['cnBarText']);?>">
+                </div>
+                <div class="col-md-6">
+                    <label for="enBarText">EN BAR text</label>
+                    <input type="text" name="enBarText" class="form-control" id="enBarText" placeholder="EN BAR text" value="<?php echo rawurldecode($config['enBarText']);?>">
+                </div>
+                <div class="col-md-12 text-center">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="barEnabled" <?php if ($config['barEnabled']):?>checked<?php endif;?>> Is bar text enabled?
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-lg btn-primary">Save bar text</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--    <form method="post">-->
+<!--        <button type="button" id="pausebutton" class="pausebutton --><?php //echo $class;?><!--" onclick="this.form.submit()">--><?php //echo $label;?><!--</button>-->
+<!--        <div id="error"></div>-->
+<!--        <label for="barEnabled">Bar text enabled <input type="checkbox" name="barEnabled" id="barEnabled" value="--><?php //echo (int)$config['barEnabled'];?><!--"></label><br><br>-->
+<!--        <input type="hidden" name="pause" value="--><?php //echo $pause;?><!--">-->
+<!--        <label>Button text CN <input type="text" name="cnButton" placeholder="Button Text cn" value="--><?php //echo rawurldecode($config['cnButton']);?><!--"></label>-->
+<!--            <br/><br/>-->
+<!--        <label>Bar text CN <input type="text" name="cnBarText" placeholder="Bar Text cn"  value="--><?php //echo rawurldecode($config['cnBarText']);?><!--"></label>-->
+<!--            <br/><br/>-->
+<!--        <label>Text CN <textarea cols="50" rows="10" placeholder="在这里留言..." name="cnText" maxlength="300">--><?php //echo rawurldecode($config['cnText']);?><!--</textarea></label>-->
+<!--            <br/><br/>-->
+<!--        <input type="text" name="enButton" placeholder="Button Text en"  value="--><?php //echo rawurldecode($config['enButtonText']);?><!--">-->
+<!--            <br/><br/>-->
+<!--        <input type="text" name="enBarText" placeholder="Bar Text en"  value="--><?php //echo rawurldecode($config['enBarText']);?><!--">-->
+<!--            <br/><br/>-->
+<!--        <textarea cols="50" rows="10" placeholder="Message here..." name='enText' maxlength="300">--><?php //echo rawurldecode($config['enText']);?><!--</textarea>-->
+<!--    </form>-->
+</body>
+</html>
+

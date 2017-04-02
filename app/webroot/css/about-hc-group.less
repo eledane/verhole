@@ -1,0 +1,93 @@
+.about-hc {
+	
+	.doodle {
+		position: absolute;
+		
+		&.chinese-kid {
+			margin-top: 2%;
+			right: 0;
+			width: 18%;
+			max-width: 120px;
+			
+			@media(min-width: 768px) {
+				width: 30%;
+				max-width: 161px;
+			}
+		}
+	}
+
+	p {
+		font-size: @font-size-small;
+	}
+	h2{
+		color: #fff;
+		margin: 0 0 55px;
+		
+		&.first {
+			color: @text-red;
+			margin: 33px 0 30px;
+		}
+	}
+	.hc-in-numbers{
+
+		.hc-in-china, .hc-globally{
+			padding: 34px 0 45px;
+		}
+		.hc-in-china{
+			background: url("../img/about-us/china-bg.jpg") no-repeat center;
+			background-size: cover;
+
+			.doodle{
+				position: absolute;
+				top: -70px;
+				width: 80px;
+				right: 50%;
+				transform: translateX(160%);
+
+			}
+		}
+		.hc-globally{
+			padding-bottom: 0;
+			text-align: center;
+
+			h2{
+				color: @red;
+				font-weight: bold;
+			}
+			.numbers{
+
+				span{
+
+					&.small{
+						color: @red;
+					}
+				}
+				p{
+					color: #999999;
+					margin-top: 0;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	.numbers {
+		text-align: center;
+		color: #fff;
+		span {
+			font-size: 55px;
+			font-weight: bold;
+			line-height: 47px;
+
+			&.small {
+				font-size: 26px;
+			}
+			span {
+				font-size: 20px;
+			}
+		}
+		p {
+			color: #fff;
+			margin: 5px 0 0;
+		}
+	}
+}

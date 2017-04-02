@@ -1,0 +1,52 @@
+body {
+	> .error-404 {
+		padding: 0 0 20px;
+		background: url('/img/error-background.jpg') no-repeat scroll left top #d0c292;
+		@media(max-width: @screen-xs-max) {
+			background-position: -130px 0;
+		}
+		@media(max-width: @screen-xs) {
+			background-position: -185px 0;
+		}
+	}
+}
+.error-404-content {
+	display: table;
+	width: 100%;
+	padding-left: 400px;
+	text-align: center;
+	min-height: 400px;
+	@media(min-width: @screen-sm) {
+		padding-left: 400px;
+	}
+	@media(max-width: @screen-xs-max) {
+		padding-left: 190px;
+	}
+	@media(max-width: @screen-xs) {
+		padding-left: 130px;
+	}
+	&.content-xs {
+		padding: 30px 15px;
+		min-height: inherit;
+	}
+	.error-404-column {
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		h1 {
+			@media (max-width: @screen-md) {
+				font-size: 32px;
+				margin-bottom: 40px;
+				margin-top: 0;
+			}
+		}
+		.link-404 {
+			text-transform: uppercase;
+			text-decoration: underline;
+			color: @text-red;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

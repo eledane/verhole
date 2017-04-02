@@ -1,0 +1,71 @@
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# http://nette.org/security-warning
+
+php:
+	date.timezone: Asia/Shanghai
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 0
+	autoStart: true
+
+nette:
+	latte:
+		macros:
+			- \AnalyticsMacros::install
+
+services:
+	# factories
+	- App\Forms\SignFormFactory
+	- App\Forms\RegisterFormFactory
+	- App\Forms\OrderFactory
+
+	# models
+	users: App\Model\UserManager
+	contacts: App\Model\ContactsModel
+	ratings: App\Model\RatingModel
+	urlRequest: App\Model\UrlRequestModel
+	userids: App\Model\UserIDSModel
+	orders: App\Model\OrdersModel
+	carts: App\Model\CartModel
+	cartItems: App\Model\CartItemModel
+	sites: App\Model\SiteModel
+	cartIDs: App\Model\CartIDModel
+	texts: App\Model\TextModel
+	call: App\Model\CallMeModel
+	- App\Model\PoolModel
+	router: App\RouterFactory::createRouter
+	fingerprints: App\Model\FingerprintModel
+	coupons: App\Model\CouponModel
+	versions: App\Model\VersionService
+	blacklist: App\Model\BlacklistUrlModel
+	brokenUrl: App\Model\BrokenUrlModel
+	cities: App\Model\CityModel
+	provinces: App\Model\ProvinceModel
+
+	product_search:
+		class: ProductPriceSearch
+		arguments: [@versions, @translation.default, %gatewayUrl%]
+
+	gateway:
+		class: Gateway
+		arguments: [%gatewayUrl%]
+
+extensions:
+	translation: Kdyby\Translation\DI\TranslationExtension
+
+translation:
+	default: cn
+	whitelist: [cn, en]
+	resolvers:
+			request: off
+			header: off
+
+tracy:
+	email: vlcek@usertechnologies.com

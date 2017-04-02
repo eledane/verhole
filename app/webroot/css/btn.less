@@ -1,0 +1,142 @@
+.btn {
+	color: #fff;
+	.transition(0.3s all);
+	white-space: normal;
+	text-transform: uppercase;
+	font-size: @font-size-medium !important;
+	line-height: 22px !important;
+	.border-radius(5px);
+	width: 100%;
+	height: 47px;
+	max-width: 380px;
+	font-weight: bold;
+	border: none;
+	.background-clip(padding-box);
+	margin: 0 auto;
+	@media(max-width: @screen-xs-max) {
+		width: 90%;
+	}
+
+	&.btn-success{
+		background: @bg-green;
+		border-bottom: #439c3b 1px solid;
+
+		&:hover {
+			background: darken(@bg-green, 5%);
+		}
+		&:active {
+			background: darken(@bg-green, 10%);
+		}
+	}
+	&.btn-danger{
+		background: @bg-red;
+		border-bottom: #8d0f13 1px solid;
+
+		&:hover {
+			background: darken(@bg-red, 5%);
+		}
+		&:active {
+			background: darken(@bg-red, 10%);
+		}
+	}
+	&.btn-dark{
+		background: @btn-black;
+		border-bottom: @btn-black-sub 1px solid;
+
+		&:hover {
+			background: darken(@btn-black, 5%);
+		}
+		&:active {
+			background: darken(@btn-black, 10%);
+		}
+	}
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	&:hover, &:focus{
+		color: @white;
+	}
+	&.btn_white {
+		background: @white;
+		border-bottom: solid 1px #dddddd;
+		color: @red;
+		background: url() no-repeat 30px center;
+		height: auto;
+		min-height: 62px;
+		border-radius: 0px;
+		font-size: 0.75em!important;
+		text-align: left;
+		position: relative;
+		padding: 25px 30px 25px 53px;
+		width: 100%; 
+		max-width: 100%;
+		i {
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 20px;
+				top: ~"calc(50% - 10px)";
+				width: 20px;
+				height: 20px;
+				background: url("../img/otaznikFaq.png") center center transparent no-repeat;
+				background-size: 100%;
+			}
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				right: 21px;
+				top: ~"calc(54% - 8px)";
+				width: 7px;
+				height: 11px;
+				background: url("../img/rightArrowBtnRed.png") center center transparent no-repeat;
+				background-size: 100%;
+			}
+		}
+		&.hot-question-link {
+			span {
+				background: url("../img/icons/flame.png") right 50% transparent no-repeat;
+				width: 10px;
+				height: 15px;
+				margin-left: 15px;
+				margin-bottom: 3px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			&:hover, &.active {
+				span {
+					background-image: url("../img/icons/flame-white.png");				
+				}
+			}
+		}
+		&.active,
+		&:hover {
+			background: @red;
+			color: @white;
+				i {
+				   &:before {
+						background: url("../img/otaznikFaqHover.png") center center transparent no-repeat;
+						background-size: 100%;
+					}
+					&:after {
+						background: url("../img/rightArrowBtnWhite.png") center center transparent no-repeat;
+						background-size: 100%;
+					} 
+				}
+		}
+		@media (max-width: @screen-md) {
+			font-size: @font-size-extra-small!important;
+		}
+		@media (max-width: @screen-sm) {
+			font-size: @font-size-small!important;
+		}
+	}
+}
+
+
+
+

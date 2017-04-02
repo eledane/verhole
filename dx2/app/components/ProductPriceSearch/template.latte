@@ -1,0 +1,262 @@
+{snippet searchForm}
+	<div class="url-here">
+		<p>{_messages.product_search.title}</p>
+	</div>
+	<div class="search-wrapper">
+		{form searchForm class=>"form-inline ajax"}
+			{input shop_url class=>"form-control"}
+
+			<button onclick="ga('send', 'event', 'add', 'click', 'addbutton');"n:name=send class="priceSearchButton btn btn-primary ladda-button" data-style="zoom-in">
+				<span class="ladda-label">{_messages.product_search.button}</span>
+			</button>
+		{/form}
+	</div>
+	{if $realVersion == 1}
+		<span class="how"><img src="{$basePath}/img/free-delivery.png" alt="Doprava zdarma">&nbsp;{_messages.product_search.free_shipping}</span>
+	{/if}
+
+	<div n:ifset="$showResults" class="search-result">
+
+		<a href="#" class="close-popup"></a>
+		<div n:ifset="$showSearchResult" n:if="!isset($showOverLimitException)" class="search-success">
+			<div class="row">
+				<div class="col-xs-12">
+				</div>
+			</div>
+			{form inputForm class => 'form'}
+				{* supported eshop block (classic) *}
+				<div class="row" n:if="!isset($unsupportedEshop)">
+					<div class="col-xs-12">
+						<div class="search-content-wrapper-wrapper">
+							<div class="search-content-wrapper">
+								<div class="search-image">
+									<img src="{$item['image']}" alt="{$item['name']}" class="img-responsive">
+								</div>
+								<div class="search-content">
+									<ul>
+										<li id='crawled-name'>{$item['name']}</li>
+										<li>{$item['category']}</li>
+										<li class="price">{_messages.product_search.price}: ¥
+											<input type="number" id="crawled-price" value="{$item['price']}" min="{$item['price']}" readonly>
+											<label for="crawled-price" class="btn btn-secondary btns-for-price-start">{_messages.form.edit}</label>
+											<span class="btns-for-price">
+												<a href="#" class="btn btn-secondary" id="crawled-price-ok">{_messages.crawledprice.ok}</a>
+												<a href="#" class="btn btn-secondary" id="crawled-price-reset" data-val="{$item['price']}">{_messages.crawledprice.reset}</a>
+											</span>
+										</li>
+									</ul>
+									{input name id => 'crawled-name-input', type => 'hidden'}
+									{input price id => 'crawled-price-input', type => 'hidden'}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{* unsupported eshop block *}
+				<div class="row" n:if="isset($unsupportedEshop)">
+					<div class="row">
+                        <div class="col-xs-12">
+                            <div class="search-title-slider">
+                                <h2>{_messages.form.fill_info}</h2>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="search-content-wrapper">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        {label name}{/label}
+                                        {input name, 'class' => 'form-control'}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        {label price}{/label}
+                                        {input price, 'id' => "crawled-price-input", 'class' => 'custom-price form-control'}
+                                        <input type="hidden" id="crawled-price" value="100" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="search-title-slider">
+								<h2>{_messages.form.description}</h2>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="search-form-group form-group">
+								{input note}
+							</div>
+						</div>
+					</div>
+					<div class="row">
+
+						<div class="col-xs-12">
+							<div class="search-title-slider">
+								<h2>{_messages.form.personalInfo}</h2>
+							</div>
+						</div>
+
+						<div class="col-xs-12">
+							<div calss="row">
+								<div class="col-sm-6">
+									<div class="search-form-group form-group">
+										{label personeName}{/label}
+										{input personeName, 'class' => 'form-control'}
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="search-form-group form-group">
+										{label email}{/label}
+										{input email, 'class' => 'form-control'}
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-sm-6">
+									<div class="search-form-group form-group">
+										{label phoneNumber}{/label}
+										{input phoneNumber, 'class' => 'form-control'}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="form-group">
+								<div class="col-xs-12">
+									<div class="search-title-slider">
+									  <h2>{_messages.example.loan_count}</h2>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									 <div class="slider-width-fixer">
+										{input tenor class => 'slider', data-slider-value => '6', data-slider-min => "1", data-slider-max => "6", data-slider-ticks => '[1, 6]', data-slider-ticks-labels => "['1', '6']", data-slider-tooltip-position => 'bot', data-slider-tooltip => 'always', data-slider-handle => 'custom'}
+									</div>
+								</div>
+								<div class="col-xs-12 text-left">
+									<label><br>{_messages.example.choosetenor}</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 example-numbers">
+							<div class="inner-box">
+								<div class="box-item">
+									<div class="box-left">{_messages.example.monthly_payment}</div>
+									<div id="search-monthly-payment" class="box-right"><strong>0&nbsp;EMB</strong></div>
+								</div>
+								<div class="box-item">
+									<div class="box-left">{_messages.example.monthly_interest}</div>
+									<div class="box-right"><strong>{$version}&nbsp;%</strong></div>
+								</div>
+								<div class="box-item">
+									<div class="box-left">{_messages.example.interest_pay}</div>
+									<div id="search-full-interest" class="box-right"><strong>0&nbsp;RMB</strong></div>
+								</div>
+								<div class="box-item full-price">
+									<div class="box-left">{_messages.example.total_pay}</div>
+									<div id="search-price" class="box-right"><strong>20 000&nbsp;RMB</strong></div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+
+						<div class="col-sm-6 col-sm-offset-3">
+							<input onclick="ga('send', 'event', 'finance', 'click', 'addfinance');" type="submit" name="done" value="{_messages.form.button}" class="btn btn-lg btn-secondary" data-lfv-initialized="true" data-lfv-message-id="_message_3" id="submit-btn">
+						</div>
+
+						<div class="clearfix"></div>
+						<div class="col-xs-12">
+							<div class="terms-link center-block">
+							<div class="checkbox">
+							    <p>
+							      {_messages.agreement.text} <a href="terms-and-conditions" target="_blank">{_messages.agreement.link}</a>
+							    </p>
+							  </div>
+
+							 </div>
+						</div>
+					</div>
+				</div>
+				{input url}
+			{/form}
+		</div>
+
+		<div n:ifset="$showErrorMessage" class="search-fail">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3>{_messages.product_search.cannot_find}</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="buy">
+						<h4>{!_messages.product_search.help}</h4>
+						<h4><br>
+						<span class="phone">
+							400-027-1265
+						</span></h4>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<a n:gevent="gaTriggerEvent, Engagement, Click, 'Search - Zavřít'" href="#" id="continue-shopping" class="btn btn-secondary-inverted gevent">{_messages.product_search.close}</a>
+				</div>
+			</div>
+		</div>
+
+		<div n:ifset="$showLowPriceMessage" class="low-price">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3>{_messages.product_search.low_price}</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<a n:gevent="gaTriggerEvent, Engagement, Click, 'Search - Zavřít'" href="#" id="continue-shopping" class="btn btn-secondary-inverted gevent">{_messages.product_search.close}</a>
+				</div>
+			</div>
+		</div>
+
+		<div n:ifset="$showMaxPriceMessage" class="low-price">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3>{_messages.product_search.max_price}</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<a n:gevent="gaTriggerEvent, Engagement, Click, 'Search - Zavřít'" href="#" id="continue-shopping" class="btn btn-secondary-inverted gevent">{_messages.product_search.close}</a>
+				</div>
+			</div>
+		</div>
+
+		<div n:ifset="$showBlacklistedURLException" class="low-price">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3>{_messages.product_search.blacklisted}</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<a n:gevent="gaTriggerEvent, Engagement, Click, 'Search - Zavřít'" href="#" id="continue-shopping" class="btn btn-secondary-inverted gevent">{_messages.product_search.close}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div n:ifset="$complete" class="search-result">
+		<a href="#" class="close-popup"></a>
+		<div class="row">
+			<div class="col-xs-12">
+				<h3>{_messages.product_search.unsupported_thank_you}</h3>
+				<hr />
+			</div>
+		</div>
+	</div>
+{/snippet}

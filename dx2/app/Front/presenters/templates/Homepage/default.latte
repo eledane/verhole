@@ -1,0 +1,241 @@
+{block #content}
+
+    {include '../Modals/how-to.latte'}
+    {include '../Modals/what-we-need-to-know.latte'}
+    {include '../Modals/currently-watching.latte'}
+    {include '../Modals/error-modal.latte'}
+
+    {if $version == 0}
+        {include '../Modals/free-benefits.latte'}
+    {/if}
+
+    <!-- Header -->
+    <header id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>{!_messages.header.title}</h1>
+
+                    {control priceSearchHeader}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>{_messages.how_it_works.titles.title}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 benefit">
+                    <div class="benefit-image">
+                        <img class="img-responsive" src="{_messages.how_it_works.images.search_product}" alt="">
+                        <div class="next-step-arrow">
+                        </div>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>{_messages.how_it_works.titles.search_product}</h3>
+                    </div>
+                    <div class="benefit-description">
+                        <p>{!_messages.how_it_works.content.search_product}</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 benefit">
+                    <div class="benefit-image">
+                        <img class="img-responsive" src="{_messages.how_it_works.images.copy_address}" alt="">
+                        <div class="next-step-arrow">
+                        </div>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>{_messages.how_it_works.titles.copy_address}</h3>
+                    </div>
+                    <div class="benefit-description">
+                        <p>{!_messages.how_it_works.content.copy_address}</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 benefit">
+                    <div class="benefit-image">
+                        <img class="img-responsive" src="{_messages.how_it_works.images.loan_count}" alt="">
+                        <div class="next-step-arrow">
+                        </div>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>{_messages.how_it_works.titles.loan_count}</h3>
+                    </div>
+                    <div class="benefit-description">
+                        <p>{_messages.how_it_works.content.loan_count}</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 benefit">
+                    <div class="benefit-image">
+                        <img class="img-responsive" src="{_messages.how_it_works.images.done}" alt="">
+                        <div class="next-step-arrow">
+                        </div>
+                    </div>
+                    <div class="benefit-title">
+                        <h3>{_messages.how_it_works.titles.done}</h3>
+                    </div>
+                    <div class="benefit-description">
+                        <p>{_messages.how_it_works.content.done}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>{!_messages.benefits.titles.title}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-sm-6 col-md-3 how-item">
+                    <div class="how-image">
+                        <div class="image-wrapper">
+                            <img src="{_messages.benefits.images.anything}" alt="Výhody Koupito">
+                        </div>
+                    </div>
+                    <h3>{!_messages.benefits.titles.anything}</h3>
+                    <p class="how-description">
+                        {!_messages.benefits.content.anything}
+                    </p>
+                </div>
+                <div class="col-sm-12 col-sm-6 col-md-3 how-item">
+                    <div class="how-image">
+                        <div class="image-wrapper">
+                            <img src="{_messages.benefits.images.monthly_payment}" alt="Výhody Koupito">
+                        </div>
+                    </div>
+                    <h3>{!_messages.benefits.titles.monthly_payment}</h3>
+                    <p class="how-description">
+                        {!_messages.benefits.content.monthly_payment}
+                    </p>
+                </div>
+                <div class="col-sm-12 col-sm-6 col-md-3 how-item">
+                    <div class="how-image">
+                        <div class="image-wrapper">
+                            <img src="{_messages.benefits.images.saves_time}" alt="Výhody Koupito">
+                        </div>
+                    </div>
+                    <h3>{!_messages.benefits.titles.saves_time}</h3>
+                    <p class="how-description">
+                        {!_messages.benefits.content.saves_time}
+                    </p>
+                </div>
+                <div class="col-sm-12 col-sm-6 col-md-3 how-item">
+                    <div class="how-image">
+                        <div class="image-wrapper">
+                            <img src="{_messages.benefits.images.clear_interest}" alt="Výhody Koupito">
+                        </div>
+                    </div>
+                    <h3>{!_messages.benefits.titles.clear_interest}</h3>
+                    <p class="how-description">
+                        {!_messages.benefits.content.clear_interest}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="example" data-example-version="{$version}">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>{!_messages.example.title}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="row product-price">
+                        <div class="col-xs-12">
+                            <h3>{_messages.example.value}</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="text" class="slider" name="product-price" id="product-price"
+                            data-slider-value="300"
+                            data-slider-min="100"
+                            data-slider-max="500"
+                            data-slider-ticks="[100, 500]"
+                            data-slider-ticks-labels='["100", "500"]'
+                            data-slider-tooltip-position="bot"
+                            data-slider-tooltip="always"
+                            data-slider-step="10"
+                            data-slider-handle="custom">
+                        </div>
+                    </div>
+                    <div class="row loan-count">
+                        <div class="col-xs-12">
+                            <h3>{_messages.example.loan_count}</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="text" class="slider" name="loan-count" id="loan-count"
+                            data-slider-value="6"
+                            data-slider-min="1"
+                            data-slider-max="6"
+                            data-slider-ticks="[1, 6]"
+                            data-slider-ticks-labels='["1", "6"]'
+                            data-slider-tooltip-position="bot"
+                            data-slider-tooltip="always" 
+                            data-slider-handle="custom">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 example-numbers">
+                    <div class="inner-box">
+                        <div class="box-item">
+                            <div class="box-left">{_messages.example.monthly_payment}</div>
+                            <div id="monthly-payment" class="box-right"><strong>0&nbsp;EMB</strong></div>
+                        </div>
+                        <div class="box-item">
+                            <div class="box-left">{_messages.example.monthly_interest}</div>
+                            <div class="box-right"><strong>{$version}&nbsp;%</strong></div>
+                        </div>
+                        <div class="box-item">
+                            <div class="box-left">{_messages.example.interest_pay}</div>
+                            <div id="full-interest" class="box-right"><strong>0&nbsp;RMB</strong></div>
+                        </div>
+                        <div class="box-item full-price">
+                            <div class="box-left">{_messages.example.total_pay}</div>
+                            <div id="price" class="box-right"><strong>20 000&nbsp;RMB</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-6">
+                    <a class="what-we-need-to-know" href="#" data-toggle="modal" data-target="#what-we-need-to-know">{_messages.example.need_to_know}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="need-help">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                    <div class="row title">
+                        <div class="col-xs-12">
+                            <h2>{_messages.help.title}</h2>
+                        </div>
+                        <div class="col-xs-12">
+                            <span>{_messages.help.call_us}</span><br/>
+                            <span class="call-time">{_messages.help.mo_sa}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="row contact text-right">
+                        <div class="col-xs-12">
+                            <a href="tel:+4000271265" class="visible-xs phone-number">400-027-1265</a>
+                            <span class="hidden-xs phone-number">400-027-1265</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{/block}

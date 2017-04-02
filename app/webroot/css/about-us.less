@@ -1,0 +1,279 @@
+.about-us {
+	padding-top: 0;
+	padding-bottom: 0;
+
+	.cash-loan{
+		position: relative;
+	}
+	@media (max-width: 290px) {
+		.col-xs-6 {
+			width: 100%;
+		}
+	}
+
+	.about-us-item {
+		text-align: center;
+		position: relative;
+		&:first-child {
+			background: url('../img/about-us/about-us-heading.jpg') 60% 0% no-repeat !important;
+			background-size: cover !important;
+		}
+		.about-us-heading {
+			padding-bottom: 18px;
+			
+			h1, p, a, a:hover, a:active, a::after {
+				color: @white !important;
+			}
+			h2 {
+				margin-top: 50px !important;
+			}
+			p {
+				width: 70%;
+				margin: auto;
+				display: block;
+			}
+
+		}
+		&.odd {
+			background: @light-blue;
+		}
+		&.even {
+			background: @white;
+		}
+		&.about-us-item {
+			padding: 40px 0;
+
+			h2 {
+				color: @china-red;
+				font-size: @font-size-big;
+				font-weight: bold;
+				margin-top: 40px;
+				margin-bottom: 40px;
+				@media (max-width: 600px) {
+					font-size: 30px;
+				}
+				@media (max-width: 530px) {
+					font-size: 26px;
+				}
+				@media (max-width: 476px) {
+					font-size: 22px;
+					margin-bottom: 20px;
+				}
+			}
+
+			a, a:visited {
+				color: @china-red;
+				text-transform: uppercase;
+				text-decoration: underline;
+				font-size: @font-size-small;
+				font-weight: 700;
+				&:after {
+					content: '\00A0\203A';
+					color: @china-red;
+				}
+				&:hover, &:active {
+					text-decoration: none;
+					color: @china-red;
+				}
+			}
+			p {
+				color: @dark-text;
+				margin-top: 40px;
+				margin-bottom: 40px;
+				font-size: 16px;
+				@media (max-width: 476px) {
+					margin-bottom: 20px;
+				}
+			}
+			.section-img {
+				margin-left: -15px;
+				margin-right: -15px;
+			}
+			&.lending {
+				padding: 127px 0 !important;
+				background: url('../img/about-us/responsible-lending.jpg') !important;
+				background-position: 50% 90% !important;
+				background-size: cover !important;
+				p {
+					text-align: center;
+					padding: 0 30px;
+					color: @white !important;
+					margin-bottom: 52px;
+				}
+				a{
+					color: #bbb9b9 !important;
+					position: relative;
+
+					&:after{
+						color: #bbb9b9 !important;
+					}
+				}
+				h2 {
+					margin-top: 0;
+					margin-bottom: 40px;
+					font-size: 44px;
+					@media (max-width: 600px) {
+						font-size: 40px;
+					}
+					@media (max-width: 530px) {
+						font-size: 30px;
+					}
+					@media (max-width: 476px) {
+						font-size: 26px;
+					}
+				}
+			}
+		}
+	}
+	
+	.prod-loan {
+		background-image: url(../img/about-us/white-pattern.jpg) !important;
+	}
+	
+	.wicl {
+		background-image: url(../img/about-us/blue-pattern.jpg) !important;
+	}
+	
+	.before-footer {
+		margin-top: 35px;
+		
+		.stay-in-touch-headline {
+			width: 100%;
+			font-weight: bold;
+			color: #ff0000;
+			font-size: 22px;
+			line-height: 22px;
+			margin: 0;
+			text-align: center;
+			color: #ff1f20;
+			margin-bottom: 35px;
+		}
+		.aboutus-share-link {
+			display: inline-block;
+			vertical-align: middle;
+			width: (100%/3)-1;
+			padding: 0 15px;
+			@media(max-width: @screen-md-max) {
+				span {
+					margin-top: 10px;
+				}
+				&:first-child {
+					span {
+						margin-top: 0;
+					}
+				}
+			}
+			@media(max-width: @screen-xs-max) {
+				width: 50%;
+				&:first-child {
+					margin-bottom: 25px;
+					width: 100%;
+				}
+			}
+			img {
+				margin-top: 0;
+				@media(min-width: @screen-lg) {
+					display: inline-block;
+					vertical-align: middle;
+					max-width: 58%;
+				}
+			}
+			span {
+				font-size: 16px;
+				@media(min-width: @screen-lg) {
+					display: inline-block;
+					max-width: 40%;
+					vertical-align: middle;
+					padding-left: 15px;
+				}
+				@media(max-width: @screen-md-max) {
+					display: block;
+				}
+				@media(max-width: @screen-xs-max) {
+					font-size: 14px;
+				}
+			}
+		}
+		.contact-link {
+			padding: 30px;
+			a {
+				color: @red;
+				text-transform: uppercase;
+				text-decoration: underline;
+				font-size: 26px;
+				font-weight: 700;
+				&:hover {
+					text-decoration: none;
+				}
+				@media (max-width: 600px) {
+					font-size: 22px;
+				}
+				@media (max-width: 530px) {
+					font-size: 18px;
+				}
+				@media (max-width: 476px) {
+					font-size: 15px;
+				}
+				@media (max-width: 340px) {
+					font-size: 11px;
+				}
+			}
+		}
+		.logo-bottom {
+			&.eye-logo {
+				width: 100px;
+			}
+		}
+		.second-row {
+			.logo-bottom {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.doodle{
+
+		&.heading-1{
+			position: absolute;
+			left: -15px;
+			top: 0px;
+			width: 83px;
+		}
+		&.heading-2{
+			position: absolute;
+			top: -100px;
+			right: 35%;
+			width: 79px;
+			z-index: 5;
+		}
+		&.go-for-it{
+			position: absolute;
+			width: 83px;
+			top: -35px;
+			left: 40%;
+			@media (min-width: 991px) {
+				left: 24%;
+			}
+		}
+		&.spoiled{
+			position: absolute;
+			width: 121px;
+			left: -20px;
+			top: 52px;
+		}
+	}
+	@media (min-width: @screen-sm-min) {
+		.logo-bottom {
+			width: auto;
+			height: auto;
+			max-height: 150px;
+			max-width: 200px;
+
+			&.baidu-logo-bottom {
+				margin-top: 25px;
+			}
+		}
+	}
+
+
+}

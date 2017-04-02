@@ -1,0 +1,9 @@
+<section class="policy">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<?php echo $pageData['content']; ?>
+			</div>
+		</div>
+	</div>
+</section>

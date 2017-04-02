@@ -1,0 +1,41 @@
+{block #header}
+	<!-- Navigation -->
+
+
+<nav id="top-navbar" class="navbar navbar-transparent navbar-fixed-top{ifset $navbarClass} {$navbarClass}{/ifset}">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">{_messages.menu.show_navigation}</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" n:href="Homepage:">捷信垫小二</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar">
+
+                {var $link = '/'}
+                {ifCurrent Homepage:}
+                    {var $link = ''}
+                {/ifCurrent}
+
+                <ul class="nav navbar-nav navbar-left">
+                    <li {ifCurrent Homepage:default}class="active"{/ifCurrent}><a onclick="ga('send', 'event', 'menu', 'click', 'home');" class="gevent" n:gevent="gaTriggerEvent, Engagement, Click, 'Menu - Domů'" n:href="Homepage:default">{_messages.menu.home}</a></li>
+                    <li><a onclick="ga('send', 'event', 'menu', 'click', 'engagement');" class="gevent" n:gevent="gaTriggerEvent, Engagement, Click, 'Menu - Proč koupito'" n:href="Homepage:#how-it-works">{_messages.menu.benefits}</a></li>
+                    <li {ifCurrent Homepage:terms}class="active"{/ifCurrent}><a onclick="ga('send', 'event', 'menu', 'click', 'terms');" n:href="Homepage:terms">{_messages.terms}</a></li>
+                    <li {ifCurrent Homepage:faq}class="active"{/ifCurrent}><a onclick="ga('send', 'event', 'menu', 'click', 'faq');" n:href="Homepage:faq">{_messages.faq}</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a n:href="Homepage:default, locale => 'en'" class="{$locale == 'en' ? 'active'}">EN</a></li>
+                    <li><a n:href="Homepage:default, locale => 'cn'" class="{$locale == 'cn' ? 'active'}">中文</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+{/block}

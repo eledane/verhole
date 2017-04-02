@@ -1,0 +1,19 @@
+.Link {
+    font-size: 24px;
+    color: @red;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    .transition(all 0.4s ease);
+
+
+    &:hover, &:focus {
+        color: darken(@red, 10%);
+        border: none;
+        outline: none;
+    }
+
+    &:active {
+        color: darken(@red, 20%);
+    }
+}

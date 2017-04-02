@@ -1,0 +1,11 @@
+# Authtype Basic
+# AuthName "Test server"
+# AuthUserFile /home/china2/www/hc-china2/dx2/.htpasswd
+# Require valid-user
+
+RewriteEngine On
+RewriteBase /dx2
+#RewriteCond %{HTTP_HOST} ^(www\.)?homecreditcfc\.cn$
+RewriteRule ^$ www/ [L]
+#RewriteCond %{HTTP_HOST} ^(www\.)?homecreditcfc\.cn$
+RewriteRule ^(.*) www/$1 [L]

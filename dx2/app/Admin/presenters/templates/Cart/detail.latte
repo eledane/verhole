@@ -1,0 +1,181 @@
+{layout ../@admin.latte}
+
+{block #content}
+
+    <div id="registrationModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" arai-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <h4>{_messages.admin.cart.create_order}</h4>
+                </div>
+                <div class="modal-body">
+                    {form createNewOrder class => 'form'}
+                        <div class="form-group">
+                            {label name /}
+                            {input name class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label surname /}
+                            {input surname class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label email /}
+                            {input email class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label phone /}
+                            {input phone class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label loan_count_2 /}
+                            {input loan_count_2 class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label street /}
+                            {input street class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label city /}
+                            {input city class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label postal_code /}
+                            {input postal_code class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label call_time /}
+                            {input call_time class => 'form-control'}
+                        </div>
+                        <div class="checkbox">
+                            {label toc}
+                                {input toc }
+                            {/label}
+                        </div>
+
+                        <div class="form-group">
+                            {input send class => 'btn btn-default'}
+                        </div>
+                        {input total_price class => 'form-control'}
+                    {/form}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-item-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" arai-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <h4>{_messages.admin.order.add_subject}</h4>
+                </div>
+                <div class="modal-body">
+                    {form addCartItemForm}
+                        <div class="form-group">
+                            {label name /}
+                            {input name class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label price /}
+                            {input price class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label item_link /}
+                            {input item_link class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {input add class => 'btn btn-success'}
+                        </div>
+                    {/form}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>{_messages.admin.grid.name}: {_messages.admin.cart.cart}_{$cart->id}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <table class="table table-bordered">
+                <tbody>
+
+                    <tr>
+                        <td><strong>ID:</strong></td>
+                        <td>{$cart->id}</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>{_messages.admin.grid.option}:</strong></td>
+                        <td>{$cart->version}</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>{_messages.admin.grid.cart_price}:</strong></td>
+                        <td>{$cart_price}</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>{_messages.admin.grid.note}:</strong></td>
+                        <td>{$cart->note}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    {_messages.admin.order.cart_content}
+                </div>
+
+                {snippet cartList}
+                <table class="table cart-detail">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>{_messages.admin.order.image}</th>
+                            <th>{_messages.admin.order.name}</th>
+                            <th>{_messages.admin.order.price}</th>
+                            <th>{_messages.admin.order.name}</th>
+                            <th>{_messages.admin.order.action}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {foreach $cart_items as $item}
+                        <tr>
+                            <td>{$item->id}</td>
+                            <td class="item-image"><img src="{$item->img_link}" alt="{$item->name}"></td>
+                            <td>
+                                <a target="_blank" href="{$item->item_link}">{$item->name}</a><br />
+                                <small>{$item->item_link}</small>
+                            </td>
+                            <td>{$item->price}</td>
+                            <td>{$item->note}</td>
+                            <td><a n:href="deleteCartItem! $item->id">{_messages.admin.grid.delete}</a></td>
+                        </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                {/snippet}
+
+                <div class="panel-footer text-right">
+                    <button n:if="count($cart_items) < 5" type="button" class="btn btn-warning" data-toggle="modal" data-target="#cart-item-modal">{_messages.admin.order.add_subject}</button>
+                    <button n:if="!$completed" type="button" class="btn btn-success" data-toggle="modal" data-target="#registrationModal">{_messages.admin.cart.create_order}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{/block}

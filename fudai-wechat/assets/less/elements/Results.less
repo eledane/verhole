@@ -1,0 +1,124 @@
+.Results {
+    border-top: dashed 2px @border;
+    
+    &-text {
+        font-size: 22px;
+        color: @lightGray;
+        vertical-align: middle;
+        margin: 0;
+        margin: 6px 0 16px 0;
+
+
+        &--strong {
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        &--large {
+            color: @green;
+            font-size: 36px;
+            margin-right: 20px;  
+            position: relative;
+            bottom: -3px;  
+        }
+    }
+}
+
+
+
+@media (max-width: 460px) {
+    .Results {
+        &-text {
+            font-size: 18px;
+
+            &--strong {
+                margin: 0 5px;
+            }
+
+            &--large {
+                font-size: 28px;
+                bottom: -2px;  
+            }
+        }
+    }
+}
+
+@media (max-width: 445px) {
+    .Results {
+        &-text {
+
+            &--strong {
+                margin: 0 2px;
+            }
+
+            &--large {
+                font-size: 28px;
+                margin-right: 0px;  
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .Results {
+        &-text {
+            font-size: 16px;
+            &--strong {
+                font-size: 18px;
+            }
+            &--large {
+                font-size: 25px;
+                bottom: -2px;  
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .Results {
+        &-text {
+            //@scalez400*22px;
+            margin: 3px 0 8px 0;
+
+            &--large {
+                //font-size: @scale400*36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .Results {
+        &-text {
+            //@scale380*22px;
+
+            &--large {
+                //font-size: @scale380*36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .Results {
+        &-text {
+            //@scale350*22px;
+
+            &--large {
+                //font-size: @scale350*36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .Results {
+        &-text {
+            //@scale320*22px;
+
+            &--large {
+                //font-size: @scale320*36px;
+            }
+        }
+    }
+}

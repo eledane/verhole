@@ -1,0 +1,53 @@
+.MainBanner {
+    background: url('@{imageSrc}banner/bg.jpg') center center;
+    .background-size(cover);
+    padding: 0;
+    text-align: center;
+
+    &-text {
+
+        &--rotate {
+            .rotate(-3deg);
+            display: inline-block;
+        }
+
+        &Wrapper {
+            color: @white;
+            background: url('@{imageSrc}banner/shape.png') center center no-repeat;
+            background-size: auto 100%;
+            padding: 25px;
+            font-size: 44px;
+            line-height: 60px;
+            font-weight: bold;
+            margin: 0;
+
+            @media (max-width: 400px) {
+                font-size: @scale400*42px;
+                line-height: @scale400*56px;
+                padding: @scale400*25px;
+            }
+
+            @media (max-width: 380px) {
+                font-size: @scale380*42px;
+                line-height: @scale380*56px;
+                padding: @scale380*25px;
+            }
+
+            @media (max-width: 350px) {
+                font-size: @scale350*42px;
+                line-height: @scale350*56px;
+                padding: @scale350*25px;
+            }    
+
+            @media (max-width: 320px) {
+                font-size: @scale320*42px;
+                line-height: @scale320*56px;
+                padding: @scale320*25px;
+            }
+
+
+        }
+
+
+    }
+}

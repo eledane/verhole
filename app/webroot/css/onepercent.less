@@ -1,0 +1,864 @@
+
+.onepercent {
+
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #000;
+
+    a {
+    text-decoration: none;
+    color: #000;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cf:before,
+    .cf:after {
+        display: table;
+        content: " ";
+    }
+    .cf:after {
+        clear: both
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: 1140px;
+        }
+}
+}
+
+.section-banner1 {
+    background: #8E1C18 url(../img/onepercent/banner1.jpg) no-repeat 50%;
+    height: 346px;
+
+    @media (min-width: 1500px) {
+        background: #8E1C18 url(../img/onepercent/banner1-large.jpg) no-repeat center center;
+        height: 400px;
+        .background-size(cover);
+    }
+
+    img {
+        display: none;
+    }
+}
+
+.section-banner2 {
+    background: #D8220D url(../img/onepercent/banner2_pattern.png) repeat-x 50%;
+    height: 766px;
+
+    .inner {
+        background: url(../img/onepercent/banner2.png) no-repeat 50%;
+        height: 100%;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+.section-fqg {
+    padding: 70px 0;
+    background: #fff;
+    text-align: center;
+
+    .headline {
+        margin: 0 auto 50px;
+        width: 627px;
+        height: 24px;
+        background: url(../img/onepercent/fqg_headline.png) no-repeat 50%;
+        color: #d8210d;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .products {
+        margin-bottom: 60px;
+
+        .prod {
+            width: 200px;
+            background: no-repeat 50% 0;
+            display: inline-block;
+            margin: 10px 60px;
+            padding-top: 180px;
+
+            span {
+                color: #060c25;
+                font-size: 20px;
+                margin: 0 -20px;
+                display: block;
+                line-height: 1.2;
+            }
+        }
+        .pc {
+            background-image: url(../img/onepercent/fqg_prod_pc.png);
+        }
+        .mobile {
+            background-image: url(../img/onepercent/fqg_prod_mobile.png);
+        }
+        .motor {
+            background-image: url(../img/onepercent/fqg_prod_motor.png);
+        }
+        .electronic {
+            background-image: url(../img/onepercent/fqg_prod_electronic.png);
+        }
+        .appliance {
+            background-image: url(../img/onepercent/fqg_prod_appliance.png);
+        }
+    }
+
+    .contactus {
+        background: url(../img/onepercent/fqg_contactus.png) no-repeat 0 50%;
+        height: 85px;
+        width: 240px;
+        padding-left: 80px;
+        margin: 0 auto;
+        color: #444;
+        text-align: left;
+        line-height: 1.3;
+        box-sizing: content-box; 
+        .text {
+            font-size: 30px;
+            strong {
+                font-size: 38px;
+                display: block;
+            }
+        }
+    }
+}
+
+.section-statistics {
+    background: #D8220D url(../img/onepercent/statistics_pattern.png) repeat-x 50% 100%;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0 100px;
+    overflow: hidden;
+
+    ul,
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .headline {
+        margin: 0 0 30px;
+        background: url(../img/onepercent/statistics_headline_icon.png) no-repeat 50% 0;
+        padding-top: 130px;
+
+        span {
+            background: url(../img/onepercent/statistics_headline.png) no-repeat;
+            width: 621px;
+            height: 25px;
+            display: inline-block;
+            line-height: 1;
+            font-weight: normal;
+        }
+    }
+
+    .statistics-box {
+        width: 873px;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: content-box;
+
+        .table {
+            background: url(../img/onepercent/statistics_table.png) no-repeat;
+            width: 827px;
+            height: 231px;
+            padding: 23px;
+            color: #2e2e2e;
+            margin-bottom: 30px;
+            font-weight: bold;
+            box-sizing: content-box;
+
+            li {
+                float: left;
+                height: 100%;
+                + li {
+                    border-left: 2px solid #EAC595;
+                }
+            }
+
+            .h {
+                font-size: 20px;
+                border-bottom: 2px solid #EAC595;
+                height: 130px;
+
+                .icon {
+                    height: 64px;
+                    width: 64px;
+                    background: no-repeat 50%;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 20px 0 3px;
+                }
+                .name {
+                    display: block;
+                }
+            }
+            .d {
+                clear: left;
+                font-size: 16px;
+                display: table;
+                width: 100%;
+                height: 100px;
+                span {
+                    display: table-cell;
+                    text-align: center;
+                    vertical-align: middle;
+                    padding: 0 10px;
+                }
+            }
+
+            .item-1 {width:250px;}
+            .item-2 {width:180px;}
+            .item-3 {width:180px;}
+            .item-4 {width:211px;}
+
+            .item-1 .icon { background-image: url(../img/onepercent/statistics_icon_bag.png) }
+            .item-2 .icon { background-image: url(../img/onepercent/statistics_icon_coins.png) }
+            .item-3 .icon { background-image: url(../img/onepercent/statistics_icon_statistic.png) }
+            .item-4 .icon { background-image: url(../img/onepercent/statistics_icon_cal.png) }
+        }
+        .remarks {
+            float: right;
+            margin-bottom: 60px;
+            text-align: left;
+            font-size: 16px;
+            margin-right: 25px;
+            li {
+                margin-bottom: .5em;
+            }
+        }
+        .cloud {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .cloud-1 {
+            width: 188px;
+            top: -150px;
+            left: -185px;
+        }
+        .cloud-2 {
+            top: 10px;
+            left: -420px;
+        }
+        .cloud-3 {
+            width: 131px;
+            top: 195px;
+            left: -75px;
+        }
+        .cloud-4 {
+            width: 154px;
+            top: 315px;
+            left: -340px;
+        }
+        .cloud-5 {
+            width: 209px;
+            top: -145px;
+            left: 1090px;
+        }
+        .cloud-6 {
+            width: 146px;
+            top: 125px;
+            left: 820px;
+        }
+        .cloud-7 {
+            width: 183px;
+            top: 265px;
+            left: 1044px;
+        }
+    }
+    .ft {
+        clear: both;
+    }
+}
+
+.section-process {
+    background: url(../img/onepercent/process_clouds.png) no-repeat 50% 215px;
+    padding: 80px 0 110px;
+    text-align: center;
+    color: #2e2e2e;
+
+    .headline {
+        margin: 0 0 45px;
+    }
+
+    .subtitle {
+        margin-bottom: 70px;
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+    .files {
+        margin-bottom: 50px;
+    }
+
+    .plus {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 40px auto;
+        span{
+            background: #D8220D;
+            position: absolute;
+        }
+        .h {
+            width: 50px;
+            height: 6px;
+            top: 23px;
+            left: 0;
+        }
+        .v {
+            height: 50px;
+            width: 6px;
+            top: 0;
+            left: 23px;
+        }
+    }
+
+    .file {
+        text-align: center;
+        img {
+            margin-bottom: 20px;
+            vertical-align: top;
+        }
+        span {
+            font-size: 16px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .options {
+        width: 820px;
+        margin: 0 auto 10px;
+        .file {
+            width: 33.3%;
+            float: left;
+            margin-bottom: 60px;
+            span {
+                max-width: 174px;
+            }
+        }
+    }
+
+    .attention {
+        font-size: 16px;
+        h3 {
+            margin:  0 0 50px;
+        }
+        ol {
+            li {
+                display: inline;
+                margin: 0 25px;
+            }
+        }
+    }
+}
+
+
+.zh {
+    font-family: "Microsoft Yahei", arial, sans-serif;
+}
+.en {
+    .section-banner1 {
+        background-image: url(../img/onepercent/en/banner1.jpg);
+
+        @media (min-width: 1500px) {
+            background: #8E1C18 url(../img/onepercent/en/banner1-large.jpg) no-repeat center center;
+            .background-size(cover);
+        }
+    }
+    .section-banner2 .inner {
+        background-image: url(../img/onepercent/en/banner2.png);
+    }
+    .section-fqg .headline,
+    .section-statistics .headline span {
+        background: none;
+    }
+    .section-statistics {
+        .remarks {
+            text-align: center;
+            float: none;
+        }
+    }
+    .section-process {
+        .family {
+            clear: left;
+        }
+        .attention {
+            text-align: center;
+            li {
+                display: block;
+                + li {
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-banner1,
+    .section-banner2 {
+        background: none;
+        height: auto;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .section-banner2 {
+        position: relative;
+        .inner {
+            display: none;
+        }
+        .lantern {
+            position: absolute;
+            top: 25%;
+            width: 17%;
+            padding-top: 26%;
+            background: url(../img/onepercent/banner2_lantern.png) no-repeat 50% 0;
+            background-size: contain;
+            transform-origin: 50% 0;
+            transition: 0.1s;
+        }
+        .lantern-left {
+            left: 5%;
+        }
+        .lantern-right {
+            right: 5%;
+        }
+    }
+
+    .section-fqg {
+        padding: 35px 0 45px;
+        .headline {
+            margin: 0 auto 50px;
+            width: 273px;
+            height: 41px;
+            background-image: url(../img/onepercent/fqg_headline_m.png);
+            background-size: contain;
+        }
+        .products {
+            width: 270px;
+            height: 216px;
+            background: url(../img/onepercent/fqg_circle_m.png) no-repeat;
+            background-size: contain;
+            margin: 0 auto 80px;
+            position: relative;
+
+            .prod {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 149px;
+                margin: 0;
+                background-color: #fff;
+                background-size: contain;
+                padding-top: 0;
+                transform: scale(.42);
+                transition: 0.6s ease-out;
+                z-index: 1;
+
+                &:before {
+                    content: "";
+                    width: 100%;
+                    height: 140px;
+                    background: #fff no-repeat 50% 0;
+                    background-size: contain;
+                    display: block;
+                    transition: 0.6s ease-out;
+                }
+
+                span {
+                    font-size: 18px;
+                }
+            }
+            .pc {
+                background-image: url(../img/onepercent/fqg_prod_pc_m.png);
+
+                &:before {
+                    background-image: url(../img/onepercent/fqg_prod_pc_m_gray.png);
+                }
+            }
+            .mobile {
+                background-image: url(../img/onepercent/fqg_prod_mobile_m.png);
+
+                &:before {
+                    background-image: url(../img/onepercent/fqg_prod_mobile_m_gray.png);
+                }
+            }
+            .motor {
+                background-image: url(../img/onepercent/fqg_prod_motor_m.png);
+
+
+                &:before {
+                    background-image: url(../img/onepercent/fqg_prod_motor_m_gray.png);
+                }
+            }
+            .electronic {
+                background-image: url(../img/onepercent/fqg_prod_electronic_m.png);
+
+                &:before {
+                    background-image: url(../img/onepercent/fqg_prod_electronic_m_gray.png);
+                }
+            }
+            .appliance {
+                background-image: url(../img/onepercent/fqg_prod_appliance_m.png);
+
+                &:before {
+                    background-image: url(../img/onepercent/fqg_prod_appliance_m_gray.png);
+                }
+            }
+
+            .pos-1 {
+                transform: translate3d(65px, 80px ,0);
+                z-index: 2;
+
+                &:before {
+                    opacity: 0;
+                }
+            }
+            .pos-2 {
+                transform: translate3d(-75px, 20px ,0) scale(.42);
+            }
+            .pos-3 {
+                transform: translate3d(0, -70px ,0) scale(.42);
+            }
+            .pos-4 {
+                transform: translate3d(125px, -70px ,0) scale(.42);
+            }
+            .pos-5 {
+                transform: translate3d(195px, 20px ,0) scale(.42);
+            }
+        }
+
+        .contactus {
+            background-size: contain;
+            height: 50px;
+            padding-left: 55px;
+            width: 150px;
+            box-sizing: content-box;
+
+            .text {
+                font-size: 17px;
+                strong {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+
+    .section-statistics {
+        padding: 30px 0 50px;
+        background-size: auto 10px;
+        .headline {
+            background-size: auto 40px;
+            padding-top: 58px;
+
+            span {
+                background-image: url(../img/onepercent/statistics_headline_m.png);
+                background-size: contain;
+                width: 224px;
+                height: 41px;
+            }
+        }
+        .statistics-box {
+            width: 319px;
+            box-sizing: content-box;
+            
+            .table {
+                background-image: url(../img/onepercent/statistics_table_m.png);
+                background-size: 100% 100%;
+                width: 100%;
+                height: 429px;
+                padding: 8px 9px 9px 8px;
+                box-sizing: border-box;
+                margin-bottom: 15px;
+                li {
+                    float: none;
+                    width: 100%!important;
+                    height: 103px;
+                    display: table;
+                    table-layout:fixed;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    border-bottom: 0;
+                    background: #fff;
+                    + li {
+                        border-left: 0;
+                    }
+                }
+                .h,.d {
+                    width: 50%;
+                    height: auto;
+                    border: 1px solid #EAC595;
+                    border-bottom: 0;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                .h {
+                    .icon {
+                        width: 43px;
+                        height: 43px;
+                        margin-top: 0;
+                    }
+                    .name {
+                        font-size: 15px;
+                    }
+                }
+                .d {
+                    margin: 0;
+                    padding: 0 10px;
+                    clear: none;
+                    font-size: 14px;
+                    text-align: center;
+                    span {
+                        display: inline;
+                        padding: 0;
+                    }
+                }
+                .item-1 .icon { background-size: 36px 37px }
+                .item-2 .icon { background-size: 43px 35px }
+                .item-3 .icon { background-size: 25px 24px }
+                .item-4 .icon { background-size: 29px 37px }
+            }
+            .remarks {
+                float: none;
+                font-size: 14px;
+                margin-left: 10px;
+                margin-bottom: 35px;
+            }
+            .cloud-1 {
+                left: -10px;
+                top: -110px;
+                width: 68px;
+            }
+            .cloud-2 {
+                left: 270px;
+                top: 70px;
+                width: 90px;
+            }
+            .cloud-3 {
+                left: -8px;
+                top: 145px;
+                width: 58px;
+            }
+            .cloud-4 {
+                left: -29px;
+                top: 317px;
+                width: 81px;
+            }
+            .cloud-5,
+            .cloud-6,
+            .cloud-7 {
+                display: none;
+            }
+        }
+        .ft {
+            img {
+                width: 217px;
+            }
+        }
+    }
+
+    .section-process {
+        background: none;
+        padding: 35px 0 50px;
+        .headline {
+            margin-bottom: 20px;
+            img {
+                width: 88px;
+            }
+        }
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 70px;
+        }
+
+        .files {
+            width: 284px;
+            height: 245px;
+            background: url(../img/onepercent/process_circle.png) no-repeat;
+            background-size: contain;
+            margin: 0 auto 80px;
+            position: relative;
+
+            .file {
+                width: 90px;
+                img {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+
+            .required {
+                width: 105px;
+                margin: 35px auto 10px;
+            }
+            .plus {
+                width: 21px;
+                height: 21px;
+                margin: 0 auto;
+
+                .h {
+                    width: 21px;
+                    height: 3px;
+                    top: 9px;
+                }
+                .v {
+                    width: 3px;
+                    height: 21px;
+                    left: 9px;
+                }
+            }
+            .options {
+                .file {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: 0.6s ease-out;
+                    background: no-repeat 50% 0;
+                    background-size: contain;
+                    img {
+                        opacity: 0;
+                        transition: 0.6s ease-out;
+                        margin-bottom: 5px;
+                    }
+                    span {
+                        margin: 0 -2em;
+                    }
+                }
+                .security {
+                    background-image: url(../img/onepercent/process_card_security_gray.png);
+                }
+                .bank {
+                    background-image: url(../img/onepercent/process_card_bank_gray.png);
+                }
+                .driving {
+                    background-image: url(../img/onepercent/process_card_driving_gray.png);
+                }
+                .family {
+                    background-image: url(../img/onepercent/process_card_family_gray.png);
+                }
+                .insurance {
+                    background-image: url(../img/onepercent/process_card_insurance_gray.png);
+                }
+                .work {
+                    background-image: url(../img/onepercent/process_card_work_gray.png);
+                }
+                .pos-1 {
+                    transform: translate3d(98px, 180px, 0);
+                    img {
+                        opacity: 1;
+                        margin-bottom: 10px;
+                    }
+                }
+                .pos-2 {
+                    transform: translate3d(-25px, 107px, 0) scale(.55);
+                }
+                .pos-3 {
+                    transform: translate3d(-15px, 2px, 0) scale(.55);
+                }
+                .pos-4 {
+                    transform: translate3d(96px, -45px, 0) scale(.55);
+                }
+                .pos-5 {
+                    transform: translate3d(215px, 2px, 0) scale(.55);
+                }
+                .pos-6 {
+                    transform: translate3d(215px, 107px, 0) scale(.55);
+                }
+            }
+        }
+
+        .attention {
+            h3 {
+                margin-bottom: 30px;
+            }
+            img {
+                width: 58px;
+            }
+            ol {
+                margin: 0 30px;
+                li {
+                    display: block;
+                    margin: 0 0 1em;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .en {
+        #footer {
+            .products,
+            .important-links {
+                width: auto;
+                float: none;
+                margin-bottom: 30px;
+                overflow: hidden;
+            }
+            .products {
+                li {
+                    width: 50%;
+                    float: left;
+                }
+            }
+        }
+        .section-fqg {
+            .headline {
+                width: 16em;
+                height: auto;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+        .section-statistics {
+            .headline span {
+                width: auto;
+                height: auto;
+                font-size: 16px;
+            }
+            .remarks {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .ft img {
+                width: 250px;
+            }
+        }
+        .section-process {
+            .headline {
+                img {
+                    width: 179px;
+                }
+            }
+            .attention {
+                img {
+                    width: 84px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,161 @@
+.related-stories {
+
+	a {
+		text-transform: uppercase;
+		position: relative;
+	}
+	h2 {
+		color: @china-red;
+		text-align: center;
+		font-weight: bold;
+		margin: 22px 0;
+		a {
+			text-transform: none;
+		}
+	}
+
+	p {
+		font-size: 12.5px;
+		margin: 0;
+		padding: 0;
+		color: black;
+	}
+	
+	.body {
+		display: table;
+		border-top: 1px solid #e5e5e5;
+	}
+
+	.post-inner {
+		&.video {
+			a {
+				display: inline-block;
+				&:before {
+					content: '';
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: top center;
+					background-image: data-uri('../img/play-arrow.png');
+					display: block;
+					width: 40px;
+					height: 40px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					.translate(-50%, -50%);
+					z-index: 99;
+				}
+			}
+		}
+	}
+
+	.left-side {
+		float: none;
+		display: table-cell;
+		padding: 0;
+		position: relative;
+
+		&.video {
+			&:before {
+				content: '';
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: top center;
+				background-image: data-uri('../img/play-arrow.png');
+				display: block;
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				.translate(-50%, -50%);
+				z-index: 99;
+			}
+		}
+
+		img {
+			width: 100% !important;
+		}
+	}
+
+	.right-side {
+		float: none;
+		display: table-cell;
+		text-align: left;
+		vertical-align: middle;
+		padding-bottom: 15px;
+
+		p {
+			padding: 15px 0;
+		}
+	}
+	
+	.bottom-link {
+		padding: 20px 0;
+		border: 1px solid @silver;
+		border-width: 1px 0;
+	}
+
+	.all-related {
+		position: relative;
+		font-weight: bold;
+		&:after {
+			right: -30px;
+			top: -1px;
+		}
+		&:hover {
+			&:after {
+				right: -40px;
+			}
+		}
+	}
+	.doodle {
+		position: absolute;
+		&.yay {
+			width: 50px;
+			top: 10px;
+			left: 15px;
+		}
+	}
+	.article {
+		margin-top: 75px;
+		margin-bottom: 30px;
+		h1 {
+			text-transform: none;
+			font-size: 23px!important;
+			line-height: 28px;
+
+			a {
+				text-transform: none;
+			}
+		}
+		.post-inner {
+			margin: 0 -15px;
+			img {
+				max-width: auto;
+				width: 100%;
+			}
+		}
+		p {
+			margin: 20px 0;
+			strong, span {
+				font-size: 16px!important;
+			}
+		}
+	}
+	.bottom-link {
+		background: @silver;
+	}
+	.read-more {
+		position: relative;
+		font-size: 16px;
+		&:after {
+			right: -25px;
+		}
+		&:hover {
+			&:after {
+				right: -30px;
+			}
+		}
+	}
+}

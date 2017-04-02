@@ -1,0 +1,325 @@
+@charset 'utf-8';
+/* CSS Document */
+body,
+form,
+div,
+span,
+ul,
+ol,
+li,
+p,
+pre,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+a,
+fieldset,
+legend,
+address,
+label,
+textarea,
+select,
+input,
+figure,
+table,
+th,
+td,
+b,
+i
+{
+    font-family: Microsoft YaHei;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: bottom;
+}
+div:focus
+{
+    background: none;
+}
+fieldset,
+img
+{
+    border: 0;
+}
+ul,
+li
+{
+    list-style: none;
+}
+em,
+i
+{
+    font-style: normal;
+}
+table
+{
+    border-spacing: 0;
+    border-collapse: separate;
+}
+a
+{
+    text-decoration: none;
+}
+input,
+button,
+select,
+textarea
+{
+    outline: none;
+}
+input,
+select,
+img
+{
+    vertical-align: middle;
+}
+legend
+{
+    display: none;
+}
+textarea
+{
+    resize: none;
+}
+.overhidden
+{
+    overflow: hidden;
+}
+.overflowX
+{
+    overflow-x: hidden;
+}
+.clear
+{
+    clear: both;
+}
+.clearfix
+{
+    zoom: 1;
+}
+.clearfix:after
+{
+    line-height: 0;
+
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '';
+}
+body
+{
+    font-family: '微软雅黑';
+    font-size: 14px;
+
+    position: relative;
+
+    overflow-x: hidden;
+
+    width: 100%;
+
+    -moz-user-select: none;
+    vertical-align: bottom;
+
+    color: #000;
+}
+
+img
+{
+//    width: 100%;
+    max-width: 100%;
+}
+
+
+
+
+.downloadPart{
+    width: 100%;
+}
+.downloadPart .pc{
+    display: none;
+}
+.d-main{
+    width: 100%;
+    position: relative;
+}
+.textP{
+    padding:15% 0;
+}
+.d-main h3{
+    font-size: 18px;
+    line-height: 40px;
+    color: #000;
+    text-align: center
+}
+.d-main h4{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #333;
+    text-align: center;
+}
+.d-main .btn{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+.d-main .phoneImg{
+    text-align: center;
+}
+.d-main .phoneImg img{
+    width: 60%;
+}
+.d-bottom{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.d-bottom .bottomImg{
+    width: 100%;
+    overflow: hidden;
+}
+.d-bottom .bottomImg1{
+    width: 68%;
+    float: left;
+}
+.d-bottom .bottomImg2{
+    width: 32%;
+    float: left;
+}
+.d-bottom .d-b-close{
+    position: absolute;
+    height: 100%;
+    width: 9%;
+    top: 0;
+    left: 0;
+    background: none;
+}
+
+@media (min-width: 768px){
+    .downloadPart .mobile{
+        display: none;
+    }
+    .downloadPart .pc{
+        display: block;
+    }
+    .d-main{
+        width: 750px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .d-main .phoneImg{
+        width: 250px;
+    }
+    .textP{
+        position: absolute;
+        width: 500px;
+        left: 250px;
+        top: 0;
+        text-align: center;
+        padding-top: 90px;
+    }
+    .d-main h3{
+        font-size: 40px;
+        font-weight: normal;
+        line-height: 80px;
+        color: #000;
+    }
+    .d-main h4{
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 40px;
+        color: #333;
+    }
+    .d-bottom{
+        width: 100%;
+        background: url("../img/appblock/download_app_bg750.png");
+        position: fixed;
+        top:auto;
+        bottom: 0;
+        left: 0;
+        height: 200px;
+    }
+    .d-bottom .bottomImg{
+        width: 100%;
+    }
+    .d-bottom .d-b-close{
+        position: absolute;
+        width: auto;
+        height: auto;
+        display: inline-block;
+        top: 40px;
+        left:auto;
+        right: 40px;
+        background: url("../img/appblock/download_icon_close.png") no-repeat left center;
+        font-size: 16px;
+        color: #fff;
+        line-height: 20px;
+        padding-left:20px;
+    }
+}
+
+@media (min-width: 992px){
+    .d-main{
+        width: 960px;
+    }
+    .d-main .phoneImg{
+        width: 360px;
+    }
+    .textP{
+        width: 600px;
+        left: 360px;
+        padding-top: 90px;
+    }
+    .d-main h3{
+        font-size: 50px;
+        line-height: 100px;
+    }
+    .d-main h4{
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .d-bottom{
+        height: 256px;
+        background: url("../img/appblock/download_app_bg960.png");
+    }
+}
+
+@media (min-width: 1200px){
+    .d-main{
+        width: 1200px;
+    }
+    .d-main .phoneImg{
+        width: auto;
+    }
+    .textP{
+        width: 770px;
+        left: 430px;
+        padding-top: 90px;
+    }
+    .d-main h3{
+        font-size: 70px;
+        line-height: 130px;
+    }
+    .d-main h4{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .d-bottom{
+        height: 320px;
+        background: url("../img/appblock/download_app_bg1200.png");
+    }
+}
+
+.d-bottom {z-index: 100}

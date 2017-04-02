@@ -1,0 +1,31 @@
+.radio-red {
+	label {
+		padding-left: 30px;
+	}
+	input {
+		display: none;
+
+		+ .radio-input {
+			position: relative;
+			display: block;
+			float: left;
+			width: 20px;
+			height: 20px;
+			top: 3px;
+			margin-left: -30px;
+
+			border-radius: 10px;
+			background-color: transparent;
+			border: 1px solid #8e8e8e;
+		}
+		&:checked {
+			+ .radio-input {
+				background-color: @bg-red;
+				border: 1px solid @bg-red;
+			}
+		}
+	}
+	&:last-child {
+		padding-bottom: 7px;
+	}
+}

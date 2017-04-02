@@ -1,0 +1,62 @@
+<?php
+echo $this->Element('mainCarousel');
+?>
+<?php
+echo $this->Element('guaranteeBar');
+?>
+<?php
+echo $this->Element('announcements');
+?>
+<div class="container homepage-indicator">
+	<?php
+		if(isset($csvWCL)){
+			echo $this->Element('calculator-wcl',array("contactFormElement" => '<div class="ajaxLeaveForm"  style="display: none;background:transparent;">'. $this->element('ContactForms/ask-users',array('class_menu' => 'homepage-menu','class' => 'homepage-leaveForm', 'sectionNameContactForm' => $WCLPage['Page']['title'])).'</div>'));
+		}
+	?>
+</div>
+
+<?php /*
+<div class="container homepage-indicator">
+	<?php
+		if(isset($csvWCL)){
+			echo $this->Element('calculator-wcl',array("contactFormElement" => '<div class="ajaxLeaveForm"  style="display: none;background:transparent;">'. $this->element('ContactForms/contact-form',array('class' => 'homepage-leaveForm', 'sectionNameContactForm' => $WCLPage['Page']['title'])).'</div>'));
+		}
+	?>
+</div>  */ ?>
+
+<div class="visible-xs-block visible-sm-block hidden-md hidden-lg">
+	<?php
+	echo $this->Element('loanProcessHP');
+	?>
+</div>
+<div class="hidden-sm hidden-xs visible-md-block visible-lg-block">
+	<?php echo $this->Element('loanProcessHPDesktop'); ?>
+</div>
+
+<?php
+echo $this->element('map');
+?>
+<?php
+echo $this->element('appBlock');
+?>
+
+<div class="visible-xs-block visible-sm-block hidden-md hidden-lg">
+	<?php
+	echo $this->Element('testimonials');
+	?>
+</div>
+<div class="hidden-sm hidden-xs visible-md-block visible-lg-block">
+	<?php echo $this->Element('testimonials-desktop'); ?>
+</div>
+
+<?php
+//echo $this->Element('info');
+?>
+<script type="text/javascript">
+	var calcData = <?php echo $csvWCL; ?>;
+</script>
+<script type="text/javascript">
+	var calcDataPosl = <?php echo $csvPOSL; ?>;
+	var homeMonthSliderInitialStep = 3;
+	var homeAmountSliderInitialStep = 3;
+</script>

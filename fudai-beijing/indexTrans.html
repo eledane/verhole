@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>__pageTitleHomepage__</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+<!--        <link rel='stylesheet' href='./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css' type='text/css' media='all' /> -->
+<!--        <link rel='stylesheet' href='./lib/jquery-ui-1.11.4.custom/jquery-ui.min.css' type='text/css' media='all' />-->
+<!--        <link rel='stylesheet' href='./assets/css/style.css' type='text/css' media='all' />-->
+        <link rel='stylesheet' href='./assets/css/min/all.css' type='text/css' media='all' />
+        <link rel='stylesheet' href='./lib/jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.min.css' type='text/css' media='all' />
+        __engStyleSheet__
+
+        
+<!--        <script type="text/javascript" src="./lib/jquery.min.js"></script>
+        <script type="text/javascript" src="./lib/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+        <script type="text/javascript" src="./lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>-->
+<!--        <script type="text/javascript" src="./lib/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="./lib/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script type="text/javascript" src="./lib/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="./lib/jquery-smooth-scroll-master/jquery.smooth-scroll.min.js"></script>
+        <script type="text/javascript" src="./lib/TouchSwipe-Jquery-Plugin-master/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="./lib/meetselva-attrchange/js/attrchange.js"></script>
+        <script type="text/javascript" src="./lib/TweenMax.min.js"></script>
+        <script type="text/javascript" src="./assets/js/animation.js"></script>
+        <script type="text/javascript" src="./assets/js/app.js"></script>
+        <script type="text/javascript" src="./assets/js/controller.js"></script>
+        <script type="text/javascript" src="./assets/js/listener.js"></script>
+
+        <script type="text/javascript" src="./assets/js/script.js"></script>-->
+
+<!--        <script type="text/javascript" src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>-->
+<!--        <script type="text/javascript" src="./lib/fastclick.js"></script>
+        <script type="text/javascript" src="./lib/respond/src/respond.js"></script>
+        
+        <script type="text/javascript" src="./lib/jquery.corner.js"></script>-->
+        <script type="text/javascript" src="./assets/js/min/all.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+                
+        <script type="text/javascript">    
+        jQuery(document).ready(function(){
+            jQuery(".loanButton").corner("round 30px");
+            jQuery(".buttonDiv").corner("round 20px");
+            jQuery(".step .wrap").corner("round 10px");
+            jQuery(".stepButtonInnerDiv").corner("round 28px").parent().css('padding', '2px').corner("round 36px");
+        });
+        </script>  
+        
+        <!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="./assets/css/styleIE.css" />
+        <script type="text/javascript" src="./lib/jquery.corner.js"></script>
+        <script type="text/javascript">    
+        jQuery(document).ready(function(){
+            jQuery(".first_span").next().addClass("hidden_a");
+        });
+        </script>  
+
+        <![endif]-->
+        
+        <script type="text/javascript">
+            $(function() {
+                FastClick.attach(document.body);
+            });
+
+            (function( $, undefined ) {
+
+                $.extend($.ui.slider.prototype.options, {
+                    dragAnimate: true
+                });
+
+                var _mouseCapture = $.ui.slider.prototype._mouseCapture;
+                $.widget("ui.slider", $.extend({}, $.ui.slider.prototype, {
+                    _mouseCapture: function(event) {
+                        _mouseCapture.apply(this, arguments);
+                        this.options.dragAnimate ? this._animateOff = false : this._animateOff = true;
+                        return true;
+                    }
+                }));
+
+            }(jQuery));
+        </script>
+
+        <script>
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        var userAgent = navigator.userAgent;
+        var QQBrowser = userAgent.indexOf('QQ') >= 0;
+        var WeChat = userAgent.indexOf('MicroMessenger') >= 0;
+        var browser = QQBrowser ? 'QQ' : WeChat ? 'WeChat' : 'Other Browser';
+
+        ga('create', 'UA-65950413-6', 'auto');
+        ga('send', 'pageview');
+
+        </script>
+
+
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?8f9073478e972aeaaf00971862b9490a";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='first_span'  style='border:0;visibility:hidden;'  id='cnzz_stat_icon_1256287498'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/q_stat.php%3Fid%3D1256287498%26l%3D3' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+        <!-- Piwik -->
+        <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//52.74.87.198/analytics/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 12]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+        </script>
+        <script type="text/javascript" src="https://api-uat.homecredit.cn/trackingweb/js/complex-tracking-min.js" trackingHost="https://api-uat.homecredit.cn/trackingweb" ></script>
+        <!--   <script type="text/javascript" src="https://app.homecredit.cn/trackingweb/js/complex-tracking-min.js" trackingHost="https://app.homecredit.cn/trackingweb" ></script>-->
+        <noscript><p><img src="//52.74.87.198/analytics/piwik.php?idsite=12" style="border:0;visibility:hidden;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
+    </head>
+    <body ontouchstart="">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar last"></span>
+                </button>
+                <div class="nav-wrapper">
+                    <div class="navbar-header">
+                        <a href="index.php?__langCode__" class="navbar-brand">
+                            <img alt="HCC" src="./assets/img/logo.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="call-us">
+                    <a href="tel:400 027 1265" id="callUs"><span class="callText">__callUs__ 400 027 1265</span><span class="phone"><img src="./assets/img/phone.png" /></span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="menuLi menuLiFirst"><a id="firstMenu" href="#process">__menuProcesses__</a></li>
+                        <li class="menuLi"><a id="secondMenu" href="index.php?page=faq&__langCode__">__menuFAQ__</a></li>
+                        <li class="menuLi"><a id="thirdMenu" href="http://homecreditcfc.cn/" target="_blank">__menuHomecredit__</a></li>
+                        <li class="menuLi"><div class="buttonDiv"><a id="fourthMenu" href="#calculator" class="button">__menuCalculator__</a></div></li>
+                    </ul>
+                    <div class="languages">
+                        <a href="index.php?lang=cn" class="cn first">中文</a>
+                        <a href="index.php?lang=en" class="en">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid header">
+            <div class="textTop">
+                __textTop__
+            </div>
+            <div class="textBottom">
+                __textBottom__
+            </div>
+            <img id="headerImg" src="./assets/img/header.png" />
+            <img id="headerSmallImg" src="./assets/img/headerSmall.png" />
+        </div>
+        <div class="container-fluid calculator" id="calculator">
+            <div class="wrapper">
+                <div class="calc">
+                    <div class="calcHeader">
+                        <h1>__calculatorTitle__</h1>
+                        <p>__calculatorDesc__</p>
+                    </div>
+                    <div class="strip1">
+                        <p>1.__stripOne__ :</p>
+                        <div id="slider1"></div>
+                        <div class="legend">
+                            <div class="min">¥ 100</div>
+                            <div class="max">¥ 500</div>
+                        </div>
+                    </div>
+                    <div class="strip2">
+                        <p>2.__stripTwo__ :</p>
+                        <div id="slider2"></div>
+                        <div class="legend">
+                            <div class="min">1 (__month__)</div>
+                            <div class="max">6 (__months__)</div>
+                        </div>
+                    </div>
+                    <div class="loan">
+                        <img src="./assets/img/loan.png" /> __monthPayment__ : <div class="calcLoanWrapper">¥ <span class="calcLoan">90</span></div>
+                        <div class="loanButton __paused__"><a href="#" id="loanButton">__loanButton__</a></div>
+                        __pausedText__
+                    </div>  
+                    <div class="calcFooter">
+                        <p>__customerService__ <a id="termsButton" href='index.php?page=terms&__langCode__' target="_blank">__clickHere__</a> __customerService2__</p>
+                        <p class="bottomSer">__customService2__</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid dots">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="dot1">
+                        <img src="./assets/img/dot1.png" />
+                        <div class="dotTitle">__dot1Title__</div>
+                        <div class="dotDesc">__dot1Desc__</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="dot2">
+                        <img src="./assets/img/dot2.png"/>
+                        <div class="dotTitle">__dot2Title__</div>
+                        <div class="dotDesc">__dot2Desc__</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 dot3Wrap">
+                    <div class="dot3">
+                        <img src="./assets/img/dot3.png" />   
+                        <div class="dotTitle">__dot3Title__</div> 
+                        <div class="dotDesc">__dot3Desc__ </div>    
+                    </div>    
+                </div>
+            </div>          
+        </div>
+        <div class="container-fluid proccess" id="process">
+            <div class="proccessHeader">
+                <h1>__processHeader__</h1>
+                <p>__processDesc__</p>
+            </div>
+            <div class="row">
+                <div class="stepWrapper step1 active">
+                    <div class="step">
+                        <div class="wrap">
+                        <img src="./assets/img/step1.png"/>
+                            <div class="stepHeader">__process1Header1__<br />__process1Header2__ </div>
+                            <p>__process1Desc__</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows arrow1 active" id="arrow1">
+                    <img class="arrowsNoIE"  src="./assets/img/arrows.png" />
+                    <img class="arrowsIE" src="./assets/img/arrowsIE.png" />
+                </div>
+                <div class="stepWrapper step2">
+                    <div class="step">
+                        <div class="wrap">
+                        <img src="./assets/img/step2.png"/>
+                            <div class="stepHeader">__process2Header1__<br>__process2Header2__</div>
+                            <p>__process2Desc__</p>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="arrows arrow2" id="arrow2">
+                    <img class="arrowsNoIE" src="./assets/img/arrows.png" />
+                    <img class="arrowsIE" src="./assets/img/arrowsIE.png" />
+                </div>
+                <div class="stepWrapper step3">
+                    <div class="step">
+                        <div class="wrap">
+                        <img src="./assets/img/step3.png"/>
+                            <div class="stepHeader">__process3Header1__<br>__process3Header2__</div>
+                            <p>__process3Desc__</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows arrow3" id="arrow3">
+                    <img class="arrowsNoIE"  src="./assets/img/arrows.png" />
+                    <img class="arrowsIE"  src="./assets/img/arrowsIE.png" />
+                </div>
+                <div class="stepWrapper step4">
+                    <div class="step">
+                        <div class="wrap">
+                        <img src="./assets/img/step4.png"/>
+                            <div class="stepHeader">__process4Header1__<br>__process4Header2__</div>
+                            <p>__process4Desc__</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stepButtonDiv"><div class="stepButtonInnerDiv"><a href="#calculator" class="stepButton">__processButton__</a></div></div>
+        </div>
+        <div class="container-fluid prop">
+            <div class="propHeader">
+                <h1>__propHeader__</h1>
+                <p>__propDesc__</p>
+            </div>
+            <div class="propWrapper">
+                <div class="propDetail">
+                    <img src="./assets/img/prop1.png" />
+                    <p>__prop1__</p>
+                </div>
+                <div class="propDetail">
+                    <img src="./assets/img/prop2.png" />
+                    <p>__prop2__</p>
+                </div>
+                <div class="propDetail">
+                    <img src="./assets/img/prop3.png" />
+                    <p>__prop3__</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <p>© 2015捷信版权所有, ICP: 津ICP备12001060号</p>
+        </div>
+        <script type="text/javascript">
+            var app;
+            $(document).on('ready', function () {
+                app = App.init();
+                app.configure();
+            });
+        </script>        
+    </body>
+</html>

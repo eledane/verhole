@@ -1,0 +1,71 @@
+msgid "can not be empty"
+msgstr "Please, fill in this field."
+
+msgid "invalid email address"
+msgstr "Please enter a valid email"
+
+msgid "invalid phone number"
+msgstr "Please enter a valid phone number"
+
+msgid "contact form error"
+msgstr "Some of the required fields are missing. Please fill them in."
+
+msgid "contact form thank you"
+msgstr "Thank you!"
+
+msgid "contact form thank you part 2"
+msgstr "We will get back to you very soon."
+
+msgid "Home Credit - Contact request"
+msgstr "Home Credit - Contact request"
+
+msgid "Name must contain at least 5 characters."
+msgstr "Name must contain at least 5 characters."
+
+msgid "Name can contain 50 characters at maximum."
+msgstr "Name can contain 50 characters at maximum."
+
+msgid "Phone number must contain at least 9 digits."
+msgstr "Phone number must contain at least 9 digits."
+
+msgid "Phone number can contain 11 digits at maximum."
+msgstr "Phone number can contain 11 digits at maximum."
+
+msgid "yes"
+msgstr "yes"
+
+msgid "no"
+msgstr "no"
+
+msgid "sent succes title"
+msgstr "Submitted successfully"
+
+msgid "sent succes msg"
+msgstr "We will contact you to confirm your application by the following phones #:"
+
+msgid "sent succes phones"
+msgstr "0755-33987193 / 027-59233588 / 0731-88598444"
+
+msgid "sent succes end"
+msgstr "Please note that we don’t charge any fees before the loan is approved."
+
+msgid "from"
+msgstr "from"
+
+msgid "month"
+msgstr "month"
+
+msgid "months"
+msgstr "months"
+
+msgid "monthly"
+msgstr "monthly"
+
+msgid "monthly"
+msgstr "monthly"
+
+msgid "Name must contain at least 2 characters."
+msgstr "Name must contain at least 2 characters."
+
+msgid "Phone number can contain 12 digits at maximum."
+msgstr "Phone number can contain 12 digits at maximum."

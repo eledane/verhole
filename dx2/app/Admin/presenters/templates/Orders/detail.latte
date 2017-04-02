@@ -1,0 +1,266 @@
+{layout ../@admin.latte}
+
+{block bodyid}order-detail{/block}
+
+{block #content}
+
+    <div id="cart-item-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" arai-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <h4>{_messages.admin.order.add_subject}</h4>
+                </div>
+                <div class="modal-body">
+                    {form addCartItemForm}
+                        <div class="form-group">
+                            {label name /}
+                            {input name class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label price /}
+                            {input price class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label img_link /}
+                            {input img_link class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {label item_link /}
+                            {input item_link class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {input add class => 'btn btn-success'}
+                        </div>
+                    {/form}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="change-call-time" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" arai-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <h4>{_messages.admin.order.change_calltime}</h4>
+                </div>
+                <div class="modal-body">
+                    {form changeCallTimeForm class => 'form'}
+                        <div class="form-group">
+                            {label call_time /}
+                            {input call_time class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {input change class => 'btn btn-default'}
+                        </div>
+                    {/form}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="client-cancel" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                {snippet clientCancel}
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                        <h4 class="modal-title">{_messages.admin.order.client_cancel}</h4>
+                    </div>
+                    <div class="modal-body">
+                        {form clientCancel class => 'form'}
+                            <div class="form-group">
+                                {label cancel /}
+                                {input cancel class => 'form-control'}
+                            </div>
+                            <div class="form-group">
+                                {input send class => 'btn btn-success'}
+                            </div>
+                        {/form}
+                    </div>
+                {/snippet}
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="change-state" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" arai-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4>{_messages.admin.order.order_processing}</h4>
+                </div>
+                <div class="modal-body">
+                    {form changeStateForm class => 'form'}
+                        <div class="form-group">
+                            {label status /}
+                            {input status class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {input add class => 'btn btn-default'}
+                        </div>
+                    {/form}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-8">
+            <h1>{_messages.admin.order.order} - ID {$order->id}</h1>
+        </div>
+        <div n:if="$order->handler" class="col-xs-12 col-md-4 text-right">
+            {_messages.admin.order.handler} {$order->handler} <a n:href="closeOrder! $order->id" class="btn btn-info">Ukončit</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td><strong>{_messages.admin.grid.name}:</strong></td>
+                        <td>{$order->user->name}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.grid.email}:</strong></td>
+                        <td>{$order->user->email}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.grid.phone}:</strong></td>
+                        <td>{$order->user->phone}</td>
+                    </tr>
+                    {form changeUserInformation class => 'form form-inline'}
+                    <tr>
+                        <td><strong>{label street /}</strong></td>
+                        <td>{input street class => 'form-control'}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{label city /}</strong></td>
+                        <td>{input city class => 'form-control'}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{label postal_code /}</strong></td>
+                        <td>{input postal_code class => 'form-control'}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{label delivery_company /}</strong></td>
+                        <td>{input delivery_company class => 'form-control'}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="text-right">{input add class => 'btn btn-sm btn-default'}</td>
+                    </tr>
+                    {/form}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xs-6">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td><strong>{_messages.admin.order.total_price}:</strong></td>
+                        <td>{$order->total_price}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.order.instalment_count}:</strong></td>
+                        <td>{$order->loan_count}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.order.instalment_price}:</strong></td>
+                        <td>{$interest}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.order.asap}:</strong></td>
+                        <td>{$order->soon}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.order.calltime}:</strong></td>
+                        <td>{$order->call_time} <a n:if="$order->handler" href="#" data-toggle="modal" data-target="#change-call-time" class="pull-right btn btn-sm btn-default">{_messages.admin.grid.change}</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.order.option}:</strong></td>
+                        <td>{$order->cart->version}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.order.type}:</strong></td>
+                        <td>{$order->type}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.order.state}:</strong></td>
+                        <td>{_messages.admin.order.states.{$status[$order->status]}}
+                            <a href="#" data-toggle="modal" data-target="#change-state"
+                               class="pull-right btn btn-xs btn-default">Change</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>{_messages.admin.order.note}:</strong></td>
+                        <td>{$order->note}</td>
+                    </tr>
+                    <tr n:if="!empty($order->cancel)">
+                        <td><strong>{_messages.admin.order.note_cancel}:</strong></td>
+                        <td>{$order->cancel}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">{_messages.admin.order.cart_content} <span class="badge">{$cart_items_count}</span></div>
+                    </div>
+                </div>
+
+                <table class="table cart-detail">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>{_messages.admin.order.image}</th>
+                            <th>{_messages.admin.order.name}</th>
+                            <th>{_messages.admin.order.price}</th>
+                            <th>{_messages.admin.order.note}</th>
+                            <th>{_messages.admin.order.action}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr n:foreach="$cart_items as $item">
+                            <td>{$item->id}</td>
+                            <td class="item-image"><img src="{$item->img_link}" alt="{$item->name}"></td>
+                            <td>
+                                <a href="{$item->item_link}" target="_blank">{$item->name}</a><br />
+                                <small>{$item->item_link}</small>
+                            </td>
+                            <td>{$item->price}</td>
+                            <td>{$item->note}</td>
+                            <td><a n:href="deleteCartItem $order->id, $item->id">{_messages.admin.grid.delete}</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div n:if="$order->handler" class="row">
+        <div class="col-xs-12">
+            {form addNoteForm class => 'form'}
+                <div class="form-group">
+                    {label note /}
+                    {input note class => 'form-control', placeholder => 'Poznámka'}
+                </div>
+                <div class="form-group">
+                    {input add class => 'btn btn-default pull-right'}
+                </div>
+            {/form}
+        </div>
+    </div>
+
+{/block}

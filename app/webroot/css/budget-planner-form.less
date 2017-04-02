@@ -1,0 +1,525 @@
+.budget-tool {
+	padding-bottom: 0;
+	background: url('../img/budget-planner/bplanner-bg.jpg') repeat;
+	
+	.budget-head {
+		@media (min-width: @screen-lg-min){
+			padding-top: 30px;
+		}
+	}
+
+	.doodle {
+		&.bubble-uh-oh {
+			position: absolute;
+			right: 0;
+			max-width: 150px;
+			width: 32%;
+			z-index: 1;
+		}
+		&.go-for-it {
+			position: absolute;
+			right: 15px;
+			width: 120px;
+			top: -30px;
+			
+			@media (max-width: 362px) {
+				width: 22%;
+				max-width: 120px;
+				top: 0px;
+			}
+		}
+		&.great {
+			position: absolute;
+			left: 15px;
+			width: 120px;
+			top: -70px;
+		}
+	}
+
+	> .container {
+		h2 {
+			color: @black;
+			padding: 78px 0;
+			font-weight: 700;
+			@media(max-width: @screen-sm) {
+				font-size: @font-size-medium;
+				font-weight: bold;
+				margin-top: 45px;
+				margin-bottom: 20px;
+			}
+			@media(max-width: 700px) {
+				background-size: 140px;
+				height: 118px;
+				padding: 46px 0;
+			}
+			@media(max-width: 540px) {
+				background-size: 100px;
+				height: 86px;
+				padding: 30px 0;
+			}
+			@media(max-width: @screen-xs) {
+				font-size: 18px;
+				height: 86px;
+				padding: 33px 0;
+			}
+			@media(max-width: 400px) {
+				background-size: 80px;
+				height: 70px;
+				padding: 25px 0;
+			}
+			@media(max-width: 360px) {
+				background-size: 60px;
+				height: 53px;
+				padding: 16px 0;
+			}
+		}
+	}
+	
+	.inline-img {
+		position: absolute;
+		width: 25px;
+		margin-top: 4px;
+	}
+	
+	.question-mark {
+		width: 20px;
+	}
+	
+
+	legend {
+		padding-left: 35px;
+		font-size: @font-size-medium;
+	}
+
+	.middle {
+		line-height: 70px;
+		display: inline-block;
+	}
+}
+	.selected-loans {
+		margin-top: 8px;
+		h3 {
+			@media(max-width: 767px) {
+				text-align: center;
+			}
+		}
+		.recommended-loan {
+			color: @text-green;
+			font-size: 30px;
+			@media(max-width: 767px) {
+				text-align: center;
+			}
+		}
+		table {
+			width: 100%;
+		}
+		th, td {
+			padding-right: 15px;
+			font-size: 16px;
+			text-align: center;
+			@media(max-width: 850px) {
+				font-size: 16px;
+			}
+		}
+		td {
+			&:first-child {
+				color: @text-green;
+				font-size: 17px;
+				font-weight: bold;
+				@media(max-width: 850px) {
+					font-size: 16px;
+				}
+			}
+		}
+		th {
+			font-size: 18px;
+			padding-bottom: 5px;
+			color: @text-light-gray;
+			@media(max-width: 850px) {
+				font-size: 17px;
+			}
+			@media(max-width: 450px) {
+				font-size: 15px;
+			}
+		}
+	}
+.budget-tool-bg {
+	margin-bottom: 30px;
+	padding-top: 22px;
+	@media (min-width: @screen-lg-min){
+		margin-bottom: 0;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+.budget-tool-form {
+	margin: 40px 0;
+	.mandatory-text {
+		 color: #AEAEAE;
+		 font-size: 14px;
+	}
+	> .row {
+		margin-top: 40px;
+		@media (min-width: @screen-lg-min){
+			margin-top: 0px;
+			&.last {
+				margin-top: 20px;
+				background: transparent;
+				&>div {
+					background: transparent;	
+				}
+			}
+		}
+		@media (max-width: @screen-md) {
+			margin-top: 15px;
+		}
+		&.income-fields-row {
+			margin-top: 20px;
+			@media (max-width: @screen-md) {
+				margin-top: 15px;
+			}
+			@media (min-width: @screen-lg-min){
+				margin-top: 0px;
+				&>div {
+					padding-top: 20px;	
+				}
+			}
+		}
+		&.mandatory-row {
+			margin-top: 0;
+		}
+		
+			@media(max-width: @screen-xs) {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+		fieldset {
+			legend {
+				font-weight: bold;
+				color: @text-gray;
+				border: none;
+				background-repeat: no-repeat;
+				padding-left: 35px;
+				line-height: 28px;
+			}
+			input[type="radio"] {
+				margin-right: 25px;
+				margin-bottom: 4px;
+				display: none;
+				&:checked {
+					+ label {
+						&:before {
+							background-color: @bg-red;
+							color: white;
+							font-size: 12px;
+							font-weight: bold;
+							text-align: center;
+							.box-shadow(none);
+							border: 1px solid @bg-red;
+						}
+					}
+				}
+				+ label {
+					font-weight: 700;
+					margin-right: 70px;
+					font-size: @font-size-small;
+					&:before {
+						content: " ";
+						background-color: transparent;
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						margin-right: 15px;
+						margin-top: -2px;
+						vertical-align: middle;
+						.transition(all ease 0.3s);
+						.border-radius(50%);
+						border: 1px solid @text-light-gray;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+					@media (max-width: @screen-md) {
+						margin-right: 20px;
+					}
+					@media (max-width: 767px) {
+						margin-right: 0;
+						margin-bottom: 25px;
+						display: block;
+					}
+				}
+			}
+			&.error {
+				position: relative;
+				label.error-budgetType {
+					color: @text-red;
+					position: absolute;
+					left: 0;
+					bottom: -22px;
+					font-size: 16px;
+					font-weight: normal;
+					margin-bottom: 0;
+					margin-top: 5px;
+					margin-top: 0;
+				}
+				input[type="radio"] {
+					+ label {
+						&:before {
+							border-color: @text-red;
+						}
+					}
+				}
+
+			}
+			.form-group {
+				position: relative;
+				margin-bottom: 35px;
+				@media (max-width: @screen-md) {
+					margin-bottom: 35px;
+				}
+				label {
+					font-size: 16px;
+					display: block;
+					&:hover {
+						cursor: pointer;
+					}
+					.meta-required {
+						color: @text-red;
+						font-weight: normal;
+					}
+					&.error {
+						color: @text-red;
+						position: absolute;
+						left: 0;
+						bottom: auto;
+						font-weight: normal;
+						margin-bottom: 0;
+						margin-top: 5px;
+					}
+				}
+				.form-control {
+					&.error {
+						border-color: @text-red;
+					}
+				}
+				input[data-type="number"] {
+					padding-left: 35px;
+					&::-webkit-input-placeholder {
+						color: @text-extra-light-gray;
+					}
+					&:-moz-placeholder {
+						color: @text-extra-light-gray;
+					}
+					&::-moz-placeholder {
+						color: @text-extra-light-gray;
+					}
+					&:-ms-input-placeholder {
+						color: @text-extra-light-gray;
+					}
+					&:focus {
+						border-color: inherit;
+						.box-shadow(none);
+					}
+				}
+				.input-placeholder-helper {
+					background: transparent;
+					position: absolute;
+					left: 15px;
+					bottom: 0;
+					color: @text-extra-light-gray;
+					height: 42px;
+					padding-top: 10px;
+				}
+			}
+		}
+	}
+}
+.budget-results {
+	width: 100% !important;
+	display: none;
+	padding-bottom: 50px;
+	background: url('../img/budget-planner/bplanner-bg.jpg') repeat;
+	> .container:not(.container-full) {
+		@media (min-width: 1200px) {
+			max-width: 830px;
+		}
+		@media (min-width: 992px) {
+			max-width: 830px;
+		}
+	}
+	.contact-us {
+		margin-top: 50px;
+		.contact-data {
+			text-align: center;
+		}
+		.leaveForm {
+			margin-top: 0;
+		}
+	}
+	.results-sections {
+		padding: 0 15px;
+	}
+	.budget-result-loan {
+		background-color: white;
+		padding: 5px 0 5px;
+		position: relative;
+		.border-radius(2px);
+		.box-shadow(0px 1px 5px 1px rgba(0, 0, 0, 0.1));
+		@media (max-width: @screen-md) {
+			margin-bottom: 30px;
+		}
+		h2 {
+			text-align: center;
+			font-size: 27px;
+			margin: 0;
+			margin-bottom: 15px;
+			margin-top: 10px;
+		}
+		p {
+			padding: 0;
+		}
+		&:after, &:before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-width: 12px;
+			border-style: solid;
+			border-color: transparent transparent #fff transparent;
+			top: -24px;
+			left: 50%;
+			.translateX(-50%);
+		}
+		&:before {
+			border-width: 14px;
+			border-color: transparent transparent rgba(0,0,0,0.03) transparent;
+			top: -29px;
+		}
+		.result-loan-status {
+			border-top: 1px solid @bg-light-gray;
+			position: relative;
+			.disposable-income, .savings-emergency, .income-monthly-installment {
+				
+				font-weight: bold;
+				
+				&.loan-status-error {
+					color: @text-red;
+					//color: @text-green;
+				}
+				&.loan-status-success {
+					color: @text-green;
+				}
+				&.loan-status-warning {
+					color: @text-orange;
+				}
+			}
+			
+			.inline-img {
+				width: 22px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				left: 7px;
+			}
+		}
+		.result-loan-heading {
+			font-weight: bold;
+			color: @text-light-gray;
+			margin-bottom: 0;
+			padding-left: 38px;
+			width: 60%;	
+		}
+		
+		.result-loan-bottom-heading {
+			font-weight: bold;
+			color: black;
+			margin-bottom: 0;
+			padding-left: 38px;
+			width: 60%;
+			font-size: 17.5px;
+		}
+
+		p {
+			width: 100%!important;
+			padding: 0 !important;
+			text-align: center;
+
+			&:first-child {
+				margin-top: 15px
+			}
+		}
+		.result-loan-income, .result-loan-expenses {
+			width: 38%;
+			text-align: right;
+			padding-right: 10px;
+		}
+		.result-loan-income, .result-loan-expenses, .disposable-income, .savings-emergency, .income-monthly-installment {
+		font-size: 25px;
+		}
+		.result-loan-expenses {
+			color: @text-red;
+			font-weight: bold;
+		}
+		.result-loan-income {
+			color: #000000;
+			font-weight: bold;
+		}
+	}
+	.result-info {
+		display: none;
+		margin-top: 30px;
+		&.result-shown {
+			display: block;
+		}
+		.budget-result-header {
+			width: 100%;
+			margin-bottom: 30px;
+			position: relative;
+			.budget-result-icon {
+				display: inline-block;
+				width: 86px;
+				height: 88px;
+				float: left;
+				background-color: transparent;
+				background-repeat: no-repeat;
+				background-image: url('../img/budget-tool-sprite.png');
+				background-attachment: scroll;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.budget-result-claim {
+				display: inline-block;
+				vertical-align: middle;
+				padding-left: 100px;
+				margin-top: 13px;
+				font-size: 25px;
+				@media (max-width: @screen-sm) {
+					margin-top: 30px;
+					font-size: 20px;
+				}
+				@media (max-width: @screen-xs-max) {
+					margin-top: 30px;
+					font-size: 20px;
+				}
+			}
+		}
+		&.result-info-error {
+			.budget-result-icon {
+				background-position: 0 0;
+			}
+		}
+		&.result-info-warning {
+			.budget-result-icon {
+				background-position: 0 -88px;
+			}
+		}
+		&.result-info-success {
+			.budget-result-icon {
+				background-position: 0 -176px;
+			}
+		}
+	}
+}

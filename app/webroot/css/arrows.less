@@ -1,0 +1,101 @@
+.arrow {
+	display: inline-block;
+	width: 6px;
+	height: 11px;
+
+	&.dark-gray-left {
+		background: transparent data-uri("../img/arrows/dark-gray-left.png") no-repeat 50% 50%;
+		margin-right: 13px;
+	}
+	&.dark-gray-right {
+		background: transparent data-uri("../img/arrows/dark-gray-right.png") no-repeat 50% 50%;
+		margin-left: 13px;
+	}
+
+	&.white-right {
+		background: transparent data-uri("../img/arrows/white-right.png") no-repeat 50% 50%;
+		margin-left: 13px;
+	}
+
+	&.light-gray-left {
+		background: transparent data-uri("../img/arrows/light-gray-left.png") no-repeat 50% 50%;
+		margin-right: 13px;
+	}
+	&.light-gray-right {
+		background: transparent data-uri("../img/arrows/light-gray-right.png") no-repeat 50% 50%;
+		margin-left: 13px;
+	}
+}
+
+.big-arrow {
+	display: block;
+	width: 100%;
+	@media (max-width: (@screen-sm)) {
+		display: none;
+	}
+
+	&.left-to-right {
+		background: transparent data-uri("../img/arrows/dotted-left-to-right-big.png") no-repeat 50% 50%;
+
+		background-size: auto 185px;
+		height: 185px;
+		@media (max-width: @screen-md) {
+			background-size: auto 180px;
+			height: 180px;
+		}
+	}
+
+	&.right-to-left {
+		background: transparent data-uri("../img/arrows/dotted-right-to-left-big.png") no-repeat 50% 50%;
+
+		background-size: auto 185px;
+		height: 185px;
+		@media (max-width: @screen-md) {
+			background-size: auto 180px;
+			height: 180px;
+		}
+	}
+
+
+	&.right-to-left-small {
+		width: 384px;
+		background: transparent data-uri("../img/arrows/dotted-right-to-left-small.png") no-repeat 50% 50%;
+		background-size: auto 99px;
+		height: 99px;
+	}
+	&.arrow-to-cta {
+		background: transparent data-uri("../img/arrows/arrow-to-cta.png") no-repeat 20px 50%;
+		height: 105px;
+	}
+}
+.long-arrow {
+	&:extend(.big-arrow);
+	&.right-to-left {
+		background: transparent data-uri("../img/arrows/dotted-right-to-left-big-long.png") no-repeat 50% 50%;
+		height: 81px;
+	}
+	&.section-divider {
+		margin: 20px 0;
+	}
+}
+
+.arrow-first-loan {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 150px;
+	left: 70%;
+	margin-top: -50px;
+	margin-left: -50px;
+	font-size: 100px;
+	text-align: center;
+	color: #e5e5e5;
+	cursor: pointer;
+	.transition(color ease 0.2s);
+	&:hover {
+		color: #d5d5d5;
+	}
+	&.arrow-left {
+		left: 30%;
+	}
+}

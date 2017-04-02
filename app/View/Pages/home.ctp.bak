@@ -1,0 +1,169 @@
+<?php if(!empty($pageData['modulesData']['promotion'])) {
+	?>
+	<section class="product-header promotion-header">
+	<div class="product-header-wrapper">
+			<?php
+				$imgSm = $this->Media->getImagePathByName($pageData['modulesData']['promotion']['Promotion']['moduleMedia'],'background-sm');
+				$imgMd = $this->Media->getImagePathByName($pageData['modulesData']['promotion']['Promotion']['moduleMedia'],'background-md');
+				$imgLg = $this->Media->getImagePathByName($pageData['modulesData']['promotion']['Promotion']['moduleMedia'],'background-lg');
+				$imgOrigin = $this->Media->getImagePathByName($pageData['modulesData']['promotion']['Promotion']['moduleMedia'],'background-origin');
+				$imgFull = $this->Media->getImagePathByName($pageData['modulesData']['promotion']['Promotion']['moduleMedia'],'background-full');
+			?>
+			<img class="background-sm" src="" data-image="/<?php echo $imgSm; ?>">
+			<img class="background-md" src="" data-image="/<?php echo $imgMd; ?>">
+			<img class="background-lg" src="" data-image="/<?php echo $imgLg; ?>">
+			<img class="background-origin" src="" data-image="/<?php echo $imgOrigin; ?>">
+			<img class="background-full" src="" data-image="/<?php echo $imgFull; ?>">
+			<div class="product-captions">
+				<div class="product-caption-wrapper container">
+					<div class="product-caption">
+					<?php
+						$imgThumb = $this->Media->getThumb($this->Media->getImagePathByName($pageData['modulesData']['promotion']['Promotion']['moduleMedia'],'thumbnail-promotion'), 90);
+					?>
+						<?php if ($imgThumb) {
+							?>
+						<img src="/<?php echo $imgThumb; ?>" class="product-caption-thumbnail">
+						<?php
+							}
+						?>
+						<h4 class="caption-name"><?php echo $pageData['modulesData']['promotion']['Promotion']['title']; ?></h4>
+						<?php
+							if(!empty($pageData['modulesData']['promotion']['Promotion']['subtitle'])) { ?>
+								<h3 class="caption-title">
+									<?php echo $pageData['modulesData']['promotion']['Promotion']['subtitle']; ?>
+								</h3>
+							<?php }
+						?>
+						<?php if($pageData['modulesData']['promotion']['Product']['price'] && $pageData['modulesData']['promotion']['Promotion']['partner_url']) {
+						?>
+							<div class="row btn-group">
+								<div class="col-sm-12">
+									<a class="btn green" href="<?php echo $pageData['modulesData']['promotion']['Promotion']['partner_url']; ?>" title="<?php echo $this->StaticText->getStripped('Homepage - GET IT FOR'); ?> <?php echo $this->CurrencyNumber->formattedPrice($pageData['modulesData']['promotion']['Product']['price']); ?>" target="_blank"><?php echo $this->StaticText->getStripped('Homepage - GET IT FOR'); ?> <?php echo $this->CurrencyNumber->formattedPrice($pageData['modulesData']['promotion']['Product']['price']); ?></a>
+								</div>
+							</div>
+						<?php
+						}
+						?>
+						<div class="row remaining-time">
+							<div class="col-sm-5">
+								<strong><?php echo $this->StaticText->getStripped('Promotion - Remaining time'); ?></strong>
+							</div>
+							<div class="col-sm-7 countdown" data-end="<?php echo h($pageData['modulesData']['promotion']['Promotion']['end']); ?>">
+								<span class="days">0</span> <span class="hours">0</span> <span class="minutes">0</span> <span class="seconds">0</span>
+							</div>
+						</div>
+						<?php
+							if(!empty($pageData['modulesData']['promotion']['Promotion']['description'])) {?>
+								<div class="promotion-description">
+									<?php echo $pageData['modulesData']['promotion']['Promotion']['description']; ?>
+								</div>
+							<?php }
+						?>
+					</div>
+					<div class="promotion-testimonial">
+						<?php echo $pageData['modulesData']['promotion']['Promotion']['testimonial']; ?>
+					</div>
+				</div>
+			</div>
+	</div>
+</section>
+<section class="promotion">
+	<?php 
+	$productCategoryId = $pageData['modulesData']['promotion']['Product']['product_category_id'];
+	$category = "";
+	foreach ($pageData['modulesData']['product_categories'] as $productCategory) {
+		if ($productCategory['ProductCategory']['id'] === $productCategoryId) {
+			$category = $productCategory['ProductCategory'];
+			$pageData['id'] = Configure::read('Page.' . str_replace('-', '', $productCategory['ProductCategory']['url']));
+			break;
+		}
+	}
+	?>
+	<div class="container">
+		<div class="product-introduction">
+			<div class="row">
+				<h1 class="normal small"><strong><?php echo $this->StaticText->getStripped('Promotion - Loan calculation'); ?></strong></h1>
+				<div class="cleaner"></div>
+				<?php
+				echo $this->Html->link($this->StaticText->getStripped('Promotion - Can I afford it?').'<span class="arrow dark-gray-right"></span>',array(
+					'pageurl' => '/'.$canI['Page']['tree_slug'].'?category='.$category['url'],
+				),array(
+					'escape' => false,
+					'class' => 'first-loan-link',
+					'title' => $this->StaticText->getStripped('Promotion - Can I afford it?'),
+				));
+				?>
+				<div class="big-arrow arrow-to-cta"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-7">
+				<?php echo $this->element('calculator'); ?>
+			</div>
+			<div class="col-sm-4 sm-offset-half">
+				<?php echo $this->element('box'); ?>
+			</div>
+		</div>
+		<section class="box bg-light-gray form mt20 leaveForm none">
+			<p class="color-light-gray biggerInForm"><strong><?php echo $this->StaticText->getStripped('Contact us - Leave us your contact information'); ?></strong> <?php echo $this->StaticText->getStripped('Contact us - and we will get back to you soon as possible'); ?></p>
+			<?php echo $this->element('fbConnect'); ?>
+			<div class="ajaxLeaveForm">
+				<?php echo $this->element('leaveForm'); ?>
+			</div>
+		</section>
+		<div class="long-arrow right-to-left"></div>
+	</div>
+</section>
+	<?php echo $this->element('sectionSplit'); ?>
+	<?php echo $this->element('map'); ?>
+	<section class="product-description container">
+		<?php echo $pageData['modulesData']['promotion']['Product']['description']; ?>
+	</section>
+<?php
+} else {?>
+
+<?php
+    echo $this->element('carousel');
+?>
+<section class="homepage">
+	<div class="container">
+		<div class="product-introduction">
+			<div class="row">
+				<h1 class="normal small"><strong><?php echo $this->StaticText->getStripped('Homepage - How much cash'); ?></strong> <?php echo $this->StaticText->getStripped('Homepage - can I get'); ?></h1>
+				<div class="cleaner"></div>
+				<?php
+				echo $this->Html->link($this->StaticText->getStripped('Homepage - My first loan').' <span class="arrow dark-gray-right"></span>',array(
+					'pageurl' => '/'.$firstLoanPage['Page']['tree_slug']
+				),array(
+					'class'=>'first-loan-link',
+					'title' => $this->StaticText->getStripped('Homepage - My first loan'),
+					'escape' => false
+				));
+				?>
+				<div class="big-arrow arrow-to-cta"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-7">
+				<?php echo $this->element('calculatorHomepage'); ?>
+			</div>
+			<div class="col-sm-4 sm-offset-half">
+				<?php echo $this->element('box'); ?>
+			</div>
+		</div>
+		<section class="box bg-light-gray form mt20 leaveForm none">
+			<p class="color-light-gray biggerInForm"><strong><?php echo $this->StaticText->getStripped('Contact us - Leave us your contact information'); ?></strong> <?php echo $this->StaticText->getStripped('Contact us - and we will get back to you soon as possible'); ?></p>
+			<?php echo $this->element('fbConnect'); ?>
+			<div class="ajaxLeaveForm">
+				<?php echo $this->element('leaveForm'); ?>
+			</div>
+		</section>
+		<div class="long-arrow right-to-left"></div>
+	</div>
+</section>
+	<?php
+ 	echo $this->element('howToGetLoan');
+	echo $this->element('sectionSplit');
+	echo $this->element('map');
+	echo $this->element('testimonials');
+} ?>

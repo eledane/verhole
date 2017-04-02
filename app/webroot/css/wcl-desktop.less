@@ -1,0 +1,122 @@
+.wcl-features.desktop {
+  display: none;
+}
+
+.loan-list {
+  font-weight: bold;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 14px;
+  @media(max-width: @screen-xs-max) {
+    margin-top: 0px;
+  }
+  
+  a {
+    background: url('../img/loan-list.png') left center no-repeat;
+    background-size: 22px 22px;
+    padding-left: 36px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .wcl-wcl1 {
+    .long-requirement, .impatient-people, .wcl-temper {
+      img {
+        max-width: 160px;
+      }
+    } 
+  }
+  .wcl-wcl2 {
+    .long-requirement, .wcl-temper {
+      img {
+        max-width: 160px;
+      }
+    } 
+  }
+}
+
+@media all and (min-width: 968px) {
+  .wcl {
+    .heading {
+      .section-img {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  .wcl-features.mobile, .wcl-would {
+    display: none;
+  }
+
+  .wcl-features.desktop {
+    display: block;
+  }
+
+  .wcl-features {
+    .item {
+      text-align: center;
+      img {
+        height: 102px !important;
+        width: auto;
+        margin-top: 30px;
+      }
+      p {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .calculator-results {
+    //border: 3px solid #ccc;
+    //border-radius: 10px;
+    //padding: 28px;
+    //padding-bottom: 6px;
+    //margin: 38px 0;
+		margin: 15px 0;
+		padding: 15px;
+  }
+
+  .long-requirement, .impatient-people, .wcl-temper {
+    h2 {
+      font-size: 24px !important; 
+    }
+    p.subtitle {
+      font-size: 17px;
+    }
+  } 
+}
+
+@media all and (min-width: 1200px) {
+
+}
+
+
+.loan-process-desktop {
+  background: #768e94;
+  padding-bottom: 40px;
+  h2.title {
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 38px;
+    margin-top: 36px;
+  }
+  .img-wrapper {
+    background-clip: padding-box;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 220px;
+    height: 220px;
+    border-radius: 110px;
+  }
+  .content-wrapper {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+

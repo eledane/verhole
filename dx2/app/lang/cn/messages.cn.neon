@@ -1,0 +1,177 @@
+brand: 捷信垫小二
+terms: 使用协议
+faq: 常见问题
+congratulation: Congratulation
+
+header:
+    title: "<strong>分期还包邮？捷信垫小二帮你任性买起来!</strong>"
+    insert_link: "客官，请把宝贝链接复制粘贴到这里哦！"
+
+agreement:
+    text: 点击分期，表示您同意捷信垫小二
+    link: "《使用协议》"
+
+menu:
+    show_navigation: "展开指示"
+    home: "首页"
+    benefits: "捷信垫小二的优势"
+    terms: "用户协议"
+    faq: "常见问题"
+
+how_it_works:
+    titles:
+        title: "简单4步，即刻入手好货！"
+        search_product: "第1步 选好宝贝，粘贴链接"
+        copy_address: "第2步 填写信息，申请贷款"
+        loan_count: "第3步 等待审核，小二下单"
+        done: "第4步 坐等好货，开始还款"
+    images:
+        search_product: "img/how-it-works/01.png"
+        copy_address: "img/how-it-works/02.png"
+        loan_count: "img/how-it-works/03.png"
+        done: "img/how-it-works/04.png"
+    content:
+        search_product: "<a href=# data-toggle=modal data-target=#how-to>在电商网站上挑选宝贝并将网址粘贴在这里</a>"
+        copy_address: "填好订单详情及贷款信息"
+        loan_count: "提交后等待审核；通过后捷信垫小二会迅速下单"
+        done: "坐等宝贝到手，开始按时还款咯"
+
+benefits:
+    titles:
+        title: "捷信垫小二的优势"
+        anything: "适用广"
+        monthly_payment: "灵活付"
+        saves_time: "省时省力"
+        clear_interest: "月费率低"
+    images:
+        anything: "img/benefits/01.png"
+        monthly_payment: "img/benefits/06.png"
+        saves_time: "img/benefits/03.png"
+        clear_interest: "img/benefits/04.png"
+    content:
+        anything: "适用于指定网站任意100-500元的宝贝"
+        monthly_payment: "1-6个月期数任选"
+        saves_time: "申请分期与购买宝贝同步搞定"
+        clear_interest: "月费率低至2%"
+
+example:
+    title: "捷信垫小二小算盘  算算您每月的还款额吧"
+    value: "请选择宝贝价格"
+    loan_count: "请选择分期期数"
+    monthly_payment: "您的月还款额"
+    monthly_interest: "月费率"
+    interest_pay: "您支付的费用利息总额"
+    total_pay: "您的总还款额"
+    need_to_know: "您需要提供这些信息来申请贷款"
+    choosetenor: "请选择期数"
+
+help:
+    title: "需要帮助？呼叫垫小二！"
+    call_us: "垫小二家的客服热线400-027-1265"
+    mo_sa: "周一至周日9:00 - 18:00"
+    su: "No service on weekends"
+    cart_id: "ID of basket"
+
+just_bought:
+    title: "顾客刚刚买了"
+
+socials:
+    like: "您喜欢我们的服务吗？"
+    give_like: "给我们点个赞吧！"
+
+footer:
+    koupito: "Koupito.cz, 2015"
+    creativedock: "Službu vytvořil<br> a realizuje tým"
+    usertech: "Design a development<br>zajišťuje"
+    homecredit: "Poskytovatel služby je Home Credit a.s."
+
+currently_watching:
+    first: "个顾客正在光顾捷信垫小二"
+    last: "顾客购物"
+
+error_modal:
+    title: "啊哦，添加宝贝时遇到问题了"
+    content: "您选择的宝贝价格在限定的范围内（100至500元）吗？您选择了多件宝贝吗？"
+
+free_modal:
+    content: "当您使用分期付款购买宝贝时，通常贷款提供商会支付预付款给商家。在这里，您直接从捷信消费金融公司贷款，我们无须支付预付款给商家，所以您能在这享受更优惠的贷款服务"
+
+how_to:
+    titles:
+        title: "如何复制宝贝链接"
+        address: "如何找到宝贝链接"
+        copy: "如何复制宝贝链接"
+    images:
+        address: "img/how-to/url.png"
+        copy_1: "img/how-to/copy.png"
+        copy_2: "img/how-to/copy-gui-2.png"
+    content:
+        address: "您可以在网页的地址栏找到宝贝的链接，看起来像这样"
+        copy_1: "点击地址栏并全选地址，您可按快捷键“Ctrl+C”（苹果电脑请按“Cmd+C）来复制地址；然后回到捷信垫小二网页，按快捷键“Ctrl+V” （苹果电脑请按“Cmd+V）来粘贴地址。"
+        copy_2: "如果您不喜欢使用快捷键，您也可全选地址后，点击右键后选择“复制”； 然后回到捷信垫小二网页，点击右键后选择“粘贴”"
+
+what_we_need_to_know:
+    content: "为了能够更好地为您提供分期服务，我们需要验证您的身份。所以在您给我们发送订单后，需要跳转到捷信网站填写简单的个人资料并提交贷款申请。我们仅用几分钟便可在页面告知您贷款申请的审核结果。"
+
+product_search:
+    title: "在此粘贴宝贝链接"
+    product_name: "商品名称"
+    product_name_required: "请填写商品名称"
+    placeholder: 客官，请把宝贝链接复制粘贴到这里哦！
+    button: "添加到购物车"
+    free_shipping: "免邮费"
+    added: "购物车里的宝贝"
+    add_more: "添加更多宝贝到购物车"
+    price: "价格"
+    price_required: "请填写价格(包含邮费及优惠等)"
+    price_range: "商品价格区间应为100至500元"
+    per_month: "每月"
+    blacklisted: "抱歉，抱歉，您无法在这个网站使用捷信垫小二购买宝贝"
+    low_price: "商品价格区间应为100至500元"
+    max_price: "商品价格区间应为100至500元"
+    close: "关闭"
+    cannot_find: "抱歉，抱歉，垫小二找不到您要的宝贝哦"
+    help: "任何问题请拨打下面热线找垫小二帮忙"
+    province: 省
+    city: 市
+    district: 区
+    town: Town
+    area: 地区
+    street: 详细地址
+    house_nr: "House no. / Group no."
+    zip_code: 邮政编码
+    note: Note
+    note_placeholder: "包括宝贝的颜色、尺码等（如有）"
+    unsupported_shop_message: "目前只支持www.jumei.com哦，请您留下联系方式，垫小二会在其他网站开放后通知您。"
+    unsupported_thank_you: 感谢您的留言，垫小二会尽快开放这家网站
+    name: 您的姓名
+    name_required: 请输入姓名
+    phoneNumber: 备用联系电话
+    email_required: E-mail is required
+    phone_required: 请输入联系电话
+    email: 电子邮箱
+    email_valid: 请填写有效的电子邮箱
+
+form:
+    fill_info: 请填写下列商品信息
+    personalInfo: 收货信息
+    description: "订单备注"
+    detailaddress: 详细地址
+    name: 收货人姓名
+    phone: 联系电话
+    button: 同意协议并分期
+    edit: 修改
+    error:
+        url:
+            invalid: "任何问题请拨打下面热线找垫小二帮忙"
+            required: "客官，请把宝贝链接复制粘贴到这里哦！"
+    request:
+        name: 姓名
+        name_required: "请在此处填写您的姓名"
+        contact_info: "联系方式（邮箱，电话）"
+        contact_info_required: "请留下您的联系方式"
+        send: 发送
+
+crawledprice:
+    ok: "确认"
+    reset: "重置"

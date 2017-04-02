@@ -1,0 +1,54 @@
+.loan-process.desktop {
+  display: none;
+}
+.pos-loan-list-bg {
+  background: #ffffff;
+  padding-top: 1px;
+}
+@media (min-width: @screen-md) {
+  .loan-process {
+    display: none;
+  }
+  .loan-process.desktop {
+    display: block;
+    padding: 10px 0 0 0;
+    .step-info {
+      .content-wrapper {
+        padding-top: 24px;
+        p {
+          text-align: center;
+        }
+      }
+      .btn {
+        margin-top: 20px;
+      }
+    }
+  }
+  .loan-process h2.title {
+    position: static;
+    .translateX(0);
+  }
+  
+  .loan-process .see-details {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    color: #fff;
+    
+    &:after {
+      content: '\203A';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -26px;
+      top: -1px;
+      .transition(all 0.2s linear);
+    }
+    
+    &:hover:after {
+      right: -36px;
+    }
+    
+  }
+}

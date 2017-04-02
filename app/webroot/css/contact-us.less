@@ -1,0 +1,261 @@
+.contact-us {
+	text-align: center;
+	background: url("../img/cta-bg.png") repeat;
+	
+	.page-heading {
+		position: relative;
+	}
+	
+	.doodle {
+		position: absolute;
+		
+		&.cellphone {
+			left: 0px;
+			width: 73px;
+			bottom: 0;
+			
+			@media(min-width: 768px) {
+				top: 12px;
+				width: 102px;
+			}
+		}
+	}
+	
+	.contact-row {
+		 margin-bottom: 40px;
+	}
+	p{
+		font-weight: bold;
+		color: @black;
+	}
+	h2{
+		.baseH2;
+	}
+	.leave-contact{
+		margin-top: 20px;
+
+		@media (max-width: @screen-sm){
+			margin-top: 5px;
+		}
+	}
+	.or{
+		display: block;
+		text-align: center;
+		margin-top: 40px;
+		margin-bottom: 30px;
+
+		@media (max-width: @screen-sm){
+			margin-top: 0px;
+		}
+	}
+	.silver-border{
+		background: #fff;
+	}
+	.phone-number {
+		color: #757575;
+		font-weight: bold;
+	}
+	
+	.phone-number, .mail, .phone-button {
+		i{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			vertical-align: middle;
+			background: data-uri('../img/icon-phone.png') no-repeat center;
+			background-size: contain;
+			margin: 0 15px 3px -15px;
+		}
+	}
+	.phone-button {
+		i {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+			background: data-uri('../img/icon-phone-white.png') no-repeat center;
+			background-size: contain;
+			margin: 0 10px 3px 0px;
+		}
+		&:hover {
+			color: @white !important;
+		}
+	}
+	.mail{
+		i{
+			background: data-uri('../img/icon-mail.png') no-repeat center;
+			background-size: contain;
+		}
+		@media (max-width: @screen-sm){
+			margin: 15px 0 35px;
+		}
+	}
+	@media (min-width: @screen-sm-min) {
+		.contact-qr-wrapper {
+			height: 200px;
+			text-align: center;
+			a {
+				display: block;
+				margin: 10px auto;
+				text-align: center;
+				cursor: pointer;
+			}
+			.row {
+				height: 100%;
+
+				.col-sm-6 {
+					height: 100%;
+
+					.silver-border {
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	.qr{
+
+		img{
+			margin-top: 40px;
+			max-width: 100%;
+
+			@media (max-width: @screen-sm){
+				margin: 0px 0 5px;
+				max-width: 230px;
+			}
+		}
+		&.qr-chat{
+
+			img{
+				border: 1px solid @gray-light;
+				.border-radius(3px);
+			}
+		}
+	}
+	.wechat-contact {
+		max-width: 90%;
+	}
+	.social-logo {
+
+		img {
+			max-width: 50%;
+			max-height: 50px;
+			margin: 25px 20px;
+		}
+	}
+
+	.hc-offices{
+		margin-bottom: -50px;
+		background: url("../img/offices-bg.jpg") no-repeat center;
+		background-size: cover;
+		padding: 31px 0 25px;
+		position: relative;
+		text-align: center;
+		@media(max-width: @screen-xs-max) {
+			background-position: top center;
+		}
+		@media(max-width: @screen-xs) {
+			margin-bottom: -25px;
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			.translateY(100%);
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 11px 8px 0 8px;
+			border-color: #02070d transparent transparent transparent;
+			z-index: 5;
+		}
+		h2{
+			color: #fff;
+			@media (max-width: @screen-sm){
+				margin-top: 0px;
+				margin-bottom: 0;
+			}
+		}
+		.item{
+			text-align: center;
+
+			.doodle{
+				position: absolute;
+				left: 50px;
+				top: -14px;
+				.translateX(-160%);
+				left: 50%;
+
+				@media (max-width: @screen-sm-max){
+					max-width: 100%;
+				}
+				@media (max-width: @screen-sm){
+					width: 71px;
+					top: -6px;
+				}
+			}
+			img{
+				max-width: 100%;
+				margin: 30px auto;
+
+				@media (max-width: @screen-sm){
+					margin: 15px auto 9px;
+					max-width: 60px;
+				}
+			}
+			.name{
+				font-weight: bold;
+				font-size: 16px;
+				margin-bottom: 10px;
+				color: #fff;
+			}
+			.address{
+				font-size: 14px;
+				margin-bottom: 10px;
+				color: @c3-gray;
+
+				@media (max-width: @screen-sm){
+					margin-bottom: 10px;
+				}
+			}
+
+			.contacts{
+				color: #fff;
+				font-weight: bold;
+				font-size: 16px;
+				display: block;
+				margin: 6px 3px;
+
+				&.color-red{
+					color: @text-red;
+				}
+
+				@media (max-width: @screen-sm){
+					margin: 0px 3px 8px;
+				}
+			}
+		}
+	}
+	.main-form {
+		padding: 15px 0 50px 0;
+	}
+
+	@media (min-width: @screen-md-min) {
+		.phone-buttons {
+			> div {
+				&:nth-child(even) {
+					padding-left: 100px;
+					text-align: left;
+				}
+				&:nth-child(odd) {
+					padding-right: 100px;
+					text-align: right;
+				}
+			}
+		}
+	}
+}

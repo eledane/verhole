@@ -1,0 +1,269 @@
+<?php
+/**
+ * Application level Controller
+ *
+ * This file is application-wide controller file. You can put all
+ * application-wide controller-related methods here.
+ *
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @package       app.Controller
+ * @since         CakePHP(tm) v 0.2.9
+ */
+
+App::uses('SeedCoreController', 'Seed.Controller');
+App::uses('Folder', 'Utility');
+App::uses('File', 'Utility');
+
+/**
+ * Application Controller
+ *
+ * Add your application-wide methods in the class below, your controllers
+ * will inherit them.
+ *
+ * @package		app.Controller
+ * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
+ */
+class AppController extends SeedCoreController {
+	
+	public $sessionLang;
+	
+	public function beforeFilter() {
+		parent::beforeFilter();
+		if($this->params['action'] == "display") {
+			$this->sessionLang = $this->Session->read('Config.language');
+			$this->Session->write('Config.language', Configure::read('Config.language'));
+			$this->setPromotions();
+			$this->setStores();
+			$this->setSteps();
+			$this->setDetaultValue();
+			$this->setCanIAffordItPage();
+			$this->setPromotionPage();
+			$this->setFirstLoanPage();
+			$this->setPosLoanPage();
+			$this->setWalkInCashLoanPage();
+			$this->setMyFirstLoanPage();
+			$this->setBudgetToolPage();
+			$this->setDocumentsPage();
+			$this->setFaqPage();
+			$this->setTestimonials();
+			$this->setRegions();
+			$this->setProductCategories();
+			$this->setContactTypes();
+<<<<<<< HEAD
+			$this->setValueAddedServicesPage();
+=======
+			$this->setCsvPoslFile();
+			$this->setCsvWclFile();
+>>>>>>> 77c3adc0f54e566bdf51999302743e0bcc3e3362
+		}
+		if (strpos($this->here, '/admin') !== false) {
+			$this->viewClass = 'Homecredit.Admin';
+		}
+	}
+	
+	/**
+	 * Set regions to view
+	 */
+	public function setRegions() {
+		$this->loadModel('Homecredit.Region');
+		$this->set('regions', $this->Region->getFormattedRegions());
+	}
+	
+	public function setPromotions() {
+		$this->loadModel('Homecredit.Promotion');
+		$this->set('promotions',$this->Promotion->getPromotions());
+	}
+	public function setStores() {
+		$this->loadModel('Homecredit.Store');
+		$this->set('stores',$this->Store->getStores());
+	}
+	public function setContactTypes() {
+		$this->loadModel('Homecredit.Contact');
+		$this->loadModel('Homecredit.ContactType');
+		$this->set('contactTypes',$this->ContactType->find('list',array(
+			'order' => array(
+				'ContactType.ordering' => 'ASC'
+			)
+		)));
+	}
+	
+	public function setSteps() {
+		$this->loadModel('Homecredit.MyFirstLoanCategory');
+		$steps = $this->MyFirstLoanCategory->getCategoriesWithSteps();
+		$this->set('loanSteps',$steps);
+	}
+	
+	public function setDetaultValue() {
+		$value = null;
+		$this->loadModel('Homecredit.ProductCategory');
+		$categories = $this->ProductCategory->find('list',array('fields'=>array('url','id')));
+		if(!empty($this->request->query['category']) && !empty($categories[$this->request->query['category']])) {
+			$value = Configure::read('BudgetTool.nevim_co_to_je.'.$categories[$this->request->query['category']]);
+		}
+		$this->set('selectedCategory',$value);
+	}
+	
+	public function setCanIAffordItPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.id' => Configure::read('Page.can_i_afford_it')
+			)
+		));
+		$this->set('canI',$p);
+	}
+
+	public function setPromotionPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.template' => 'promotion.ctp'
+			)
+		));
+		$this->set('promotionPage',$p);
+	}
+
+<<<<<<< HEAD
+	public function setValueAddedServicesPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.template' => 'valueAddedServices.ctp'
+			)
+		));
+		$this->set('valueAddedServicesPage',$p);
+=======
+	public function setCsvPoslFile() {
+		$this->loadModel('Homecredit.CsvFile');
+		$p = $this->CsvFile->find('first', array(
+			'conditions' => array(
+				'CsvFile.name' => 'POSL'
+			)
+		));
+		$p = $this->CsvFile->getForamtedData($p);
+		$this->set('csvPOSL',$p);
+	}
+	public function setCsvWclFile() {
+		$this->loadModel('Homecredit.CsvFile');
+		$p = $this->CsvFile->find('first', array(
+			'conditions' => array(
+				'CsvFile.name' => 'WCL'
+			)
+		));
+		$p = $this->CsvFile->getForamtedData($p);
+		$this->set('csvWCL',$p);
+>>>>>>> 77c3adc0f54e566bdf51999302743e0bcc3e3362
+	}
+
+	public function setBudgetToolPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.template' => 'budgetTool.ctp'
+			)
+		));
+		$this->set('budgetToolPage',$p);
+	}
+
+	public function setDocumentsPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.template' => 'documents.ctp'
+			)
+		));
+		$this->set('documentsPage',$p);
+	}
+
+	public function setFirstLoanPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.template' => 'firstLoan.ctp'
+			)
+		));
+		$this->set('firstLoanPage',$p);
+	}
+
+	public function setFaqPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.template' => 'faq.ctp'
+			)
+		));
+		$this->set('faqPage',$p);
+	}
+
+	public function setPosLoanPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.template' => 'posLoan.ctp'
+			)
+		));
+		$this->set('posLoanPage',$p);
+	}
+
+	public function setWalkInCashLoanPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.template' => 'walkInCashLoan.ctp'
+			)
+		));
+		$this->set('WCLPage',$p);
+	}
+	
+	public function setMyFirstLoanPage() {
+		$this->loadModel('Pages.Page');
+		$p = $this->Page->find('first',array(
+			'conditions' => array(
+				'Page.id' => Configure::read('Page.my_first_loan')
+			)
+		));
+		$this->set('firstLoanPage',$p);
+	}
+	
+	public function setTestimonials() {
+		$this->loadModel('Homecredit.Testimonial');
+		$this->Testimonial->loadMedia = true;
+		$t = $this->Testimonial->find('all',array(
+			'limit' => 5,
+			'order' => 'RAND()'
+		));
+		$this->set('testimonials',$t);
+	}
+	public function setProductCategories() {
+		$this->loadModel('Homecredit.ProductCategory');
+		$this->set('ProductCategories', $this->ProductCategory->getProductCategories());
+	}
+	
+	public function fakePageData() {
+		//jde o to, ze pri ajaxove response potrebuju nasetovat spravne lokale a nacist staticke texty
+		$locale = Configure::read('Config.defaultLanguage');
+		$availableLangs = Configure::read('Config.availableLanguages');
+		if(!empty($this->request->params['language']) && !empty($availableLangs[$this->request->params['language']])) {
+			$locale = $availableLangs[$this->request->params['language']];
+		}
+		Configure::write('Config.language',$locale);
+		$this->loadModel('Texts.Text');
+		$this->Text->locale = $locale;
+		$texts = $this->Text->find('all');
+		// set string translations into global variable
+		global $seed_string_translations;
+		$seed_string_translations = Hash::combine($texts, '{n}.Text.name', '{n}.Text.content');
+	}
+	
+	public function admin_index() {
+		parent::admin_index();
+		if(!empty($this->model) && $this->model->alias == 'Text') {
+			$this->view = 'Homecredit.Texts/list';
+		}
+ 	}
+	
+	public function afterFilter() {
+		parent::afterFilter();
+		$this->Session->write('Config.language', $this->sessionLang); 
+	}
+}

@@ -1,0 +1,337 @@
+<!--正文内容-->
+<div class="server-kv page-heading" style="background-image:url('<?php echo $this->webroot; ?>img/nvas/vas-pc.png')">
+	<div class="heading-wrapper">
+			<h1>可选服务</h1>
+	</div>
+</div>
+<section class="value-added-services policy">
+	<div class="optionservice">
+         <div class="server-nav">
+             <ul>
+               <li class="leftli active" rel="k_all">灵活还款服务包</li>
+			   <li class="rightli" rel="l_all">客户保障计划</li>
+			 </ul>
+		 </div>
+
+
+		 <div class="server-title">
+               <div class="l_title l_all hide">
+                     <p>客户保障计划包括寿险计划和数码产品意外损坏保险计划。客户保障计划，是一把雨伞，一根拐杖，可以不用，但不可不备。对于每个客户来说，如果还款期间发生了意外，都有可能给其个人甚至家庭带来一定的影响。因此捷信特别推出了捷信专属客户保障计划，在享受分期服务所带来的畅快购物体验的同时，为客户提供相应的还款保障。</p>
+                     <p>当客户办理分期付款时，可以自愿申请加入客户保障计划，确定加入客户保障计划后，需要支付一定的客户保障计划月手续费，该项费用包含在客户的每月期款之中。参加客户保障计划，在面对将来的未知风险时会多一条经济实惠的减轻困难的途径。如果发生了保险合同中约定的保险事故，则保险公司的赔付可以减轻意外状况发生后的还款压力。</p>
+			   </div>
+
+			   <div class="k_title k_all">
+                    <p>为了向客户提供便捷的还款服务，我司推出了可选服务：灵活还款服务包，客户仅需支付 15 元/月，即可享受包含延期还款、变更还款日期和优惠提前还款三项服务。如果客户购买灵活还款服务包后，在尚未使用其中任一服务项目的情况下，也可以根据自身需要，选择申请取消灵活还款服务包。</p>
+                    <p>服务特点：选择多样，更灵活地解决还款过程中碰到的临时性或突发性困难，还款更为便捷轻松。</p>
+			   </div>
+
+		 </div>
+
+
+		 <div class="l_content">
+               <div class="l_nav l_all hide">
+                    <div class="l_nav_ul">
+                         <ul>
+                            <li>
+                               <div class="lifeplan active">
+								     <div class="kheight defalutK" rel="0"></div>
+                                     寿险计划
+									 <div class="lifetitlearrow1"></div>             
+							   </div>
+							</li>
+                            <li>
+                                <div class="rightplan">
+								     <div class="kheight" rel="1"></div>
+                                     数码产品意外损坏保险计划
+									 <div class="lifetitlearrow1 hide"></div>  
+							   </div
+							</li>
+						 </ul>
+					</div>
+			   </div>
+			   <div style="clear:both"></div>
+			   <div class="l_nav k_all">
+                    <div class="l_nav_ul01">
+                         <ul>
+                            <li>
+                               <div class="lifeplan01 active">
+								     <div class="kheight defalutK" rel="2"></div>
+                                     延期还款
+									 <div class="lifetitlearrow"></div>             
+							   </div>
+							</li>
+                            <li>
+                                <div class="rightplan01">
+								     <div class="kheight" rel="3"></div>
+                                     变更还款日期
+									 <div class="lifetitlearrow hide"></div>   
+							   </div
+
+							</li>
+							  <li>
+                                <div class="rightplan02">
+								     <div class="kheight" rel="4"></div>
+                                     优惠提前还款
+									 <div class="lifetitlearrow hide"></div>   
+							   </div
+
+							</li>
+						 </ul>
+					</div>
+			   </div>
+               <div style="clear:both"></div>
+			   <div class="lifetitle">
+                    <div class="title_p show_0 hide">
+						<p>住院津贴：任一还款期内因意外伤害或严重疾病住院即赔付当期期款，每期仅限赔付一次。</p>
+						<p>交通工具意外住院津贴：驾驶或乘坐交通工具发生意外导致住院，每个还款期内额外给付100元津贴/天，最多3天。（摩托车和电动车除外）</p>
+						<p>身故、伤残保险金：意外伤害或疾病导致死亡或1级伤残，及意外伤害导致2-10级伤残，赔付贷款本金1.3倍的保险金以冲抵欠款。</p>
+					</div>   
+
+
+					 <div class="title_p show_1 hide">
+					<p>手机或平板电脑由于意外导致的碎屏、进水、挤压、碰撞或跌落，保险公司将根据损坏情况报销客户维修费用或一次性赔偿客户损失（累计赔付上限为商品价格）。</p>
+
+<p>温馨提示：数码产品意外损坏保险计划目前仅限苏州、天津、郑州、广州、成都5个城市的客户申请，且适用商品仅限于手机或和平板电脑。</p>
+					</div>  
+
+
+					<div class="title_p show_2">
+						<p>客户可以根据自己的情况延期还款。由捷信提供一定时间的免还款期，可以为客户在可支配资金特别紧张的月份减轻还款压力。</p>
+					</div>  
+
+
+					 <div class="title_p show_3 hide">
+						<p>客户可以根据自己的情况来选择变更还款日，使自己更便捷地进行还款。</p>
+					</div>  
+
+
+					 <div class="title_p show_4 hide">
+						<p>一旦客户手头资金宽裕，有能力提前偿还剩余贷款，客户可以致电捷信申请提前还款，且无需支付提前还款费用。</p>
+			
+					</div>  
+
+
+					<div class="js l_all hide">
+						 <div class="jsleft">
+							 <div class="floatw floatw1">
+							 <p class="title">还款期间内因驾驶车辆发生交通事故，住院治疗了一段时间，贷款怎么办？</p>
+							 <p>如果参加了客户保障计划，保险公司的保险赔偿金将用于偿还客户当月期款，而客户无需偿还当月期款，且可以额外获得每晚100元，最多3晚的住院津贴。</p>
+							 </div>
+						 </div>
+					</div>     
+
+
+					<div class="js k_all">
+						 <div class="jsleft1">
+							 <div class="floatw">
+							 <p class="title">这个月意料之外的支出特别多，无法按时还款怎么办？</p>
+							 <p>如果客户购买了灵活还款服务包，出现突发性的经济困难、预计无法按时足额偿还贷款，客户可以在满足上述相应服务使用指引的前提下，提前致电捷信，申请使用延期还款服务，延缓一定天数还款而无需增加任何额外费用，也不影响客户的征信记录。客户在资金特别紧张的月份使用这一服务，可以减轻自身的经济压力。另外，贷款期间不同，对应的可申请延期还款的次数和累计延期的期数也会有所不同。</p>
+							 </div>
+						 </div>
+					</div> 
+                   
+				   <div class="js k_all">
+						 <div class="jsleft2">
+							 <div class="floatw rloatw">
+							 <p class="title">换了一份工作，发工资的日期发生了变化，想更换还款日期怎么办？ </p>
+							 <p>如果客户购买了灵活还款服务包，在还款期间变动工作，而新工作单位的工资奖金发放时间不同，客户可以根据实际情况，按上述服务使用指引，申请变更还款日。客户申请变更还款日的次数也因其贷款期间不同而有所不同。</p>
+							 </div>
+						 </div>
+					</div> 
+
+                   <div style="clear:both"></div>
+				   <div class="xxjj">*具体使用详情以消费信贷合同条款为准</div>
+			       </div>
+			   			<div class="js_check_content">
+						        <div class="js_ck">
+								
+                                <div class="cktitle k_all">
+								            服务使用指引
+							    <p class="mtop"><img src="<?php echo $this->webroot; ?>img/nvas/downs.png" class="arrows"></p>
+								</div>
+								<div class="cktitle l_all hide">
+								           查看更多信息
+							    <p class="mtop"><img src="<?php echo $this->webroot; ?>img/nvas/downs.png" class="arrows"></p>
+								</div>
+                                <div class="gdnr hide  gdnr01">
+                                     <p class="mtop">为确保客户的知情权、提高透明度，我司的贷款合同文件包括贷款申请表、消费信贷合同与条款、借款人须知、客户保障计划参保须知等客户重要合同文件会清
+									 晰显示客户保障计划手续费金额、具体保障范围，如何寻求帮助等内容。此外若客户想退出客户保障计划，可随时向捷信销售人员索取申请表格，或自行在捷信
+									 网站上下载该表格，填写好后发送到指定邮箱， 捷信会在5日内处理并将处理结果以短信的方式发送给您。为方便客户快速理赔，提供了多种报案途径如下：</p>
+
+									 <p class="mtop">恒安标准人寿保险有限公司： </p>
+									 <p><span>-</span>拨打捷信客服热线：400-027-1262，客服人员会及时将案件情况转达给保险公司</p>
+									 <p><span>-</span>(或)微信关注“恒安标准在线”选择“客户服务 - 自助服务 - 理赔资料上传 - 捷信理赔资料上传”</p>
+									 <p><span>-</span>(或)直接致电保险公司热线电话：400-818-8699</p>
+									 <p><span>-</span>(或)直接发送邮件给保险公司邮箱：HASLclaim@hengansl.com</p>
+						
+									 <p class="mtop">中意人寿保险有限公司:</p>
+									 <p><span>-</span>拨打捷信客服热线：400-027-1262，客服人员会及时将案件情况转达给保险公司</p>
+									 <p><span>-</span>(或)直接致电保险公司热线电话：400-888-7555</p>
+									 <p><span>-</span>(或) 188-2017-2620（搜索添加微信）（工作日 9:00-21:00）</p>
+									 <p><span>-</span>(或)直接发送邮件给保险公司邮箱：PPF@generalichina.com</p>
+
+
+									 <p class="mtop">渤海财产保险股份有限公司:</p>
+									 <p><span>-</span>拨打捷信客服热线：400-027-1262，客服人员会及时将案件情况转达给保险公司</p>
+									 <p><span>-</span>(或)直接致电保险公司热线电话：400-611-6666</p>
+									 <p><span>-</span>(或)微信关注“渤海保险”，选择“微服务-自助理赔”</p>
+									 <p class="mtop">客户保障计划，致力于帮助客户解决因意外、未知风险而导致的不便或实际困难，获得客户的一致好评。</p>
+								</div>
+								
+								
+							  <div class="gdnr hide gdnr02">
+                                     <p class="mtop">如选择购买了灵活还款服务包，客户申请使用各项服务时应遵守下述具体指引：</p>
+
+									
+									 <p><span>01</span>如果客户申请延期还款服务，需已按时足额偿还五期期款，并在下一个还款到期日的至少十五日前提出使用申请。</p>
+									 <p><span>02</span>如果客户申请变更还款日期服务，需足额偿还一期期款，并且提出申请的日期与首个变更后的还款日期之间至少间隔十五日。</p>
+									 <p><span>03</span>如果客户申请优惠提前还款服务，需连续足额偿还三期期款，并且在下一个还款日的至少三日前提出使用申请。</p>
+						             <p><span>04</span>客户在同一时间可以申请一项灵活还款服务，在前一项灵活还款服务使用结束并偿还一期期款后，才可申请使用其他项服务。</p>
+									
+								</div>
+								</div>
+								
+								</div>
+					          </div> 
+					          </div> 
+		           </div>
+	</div>
+</section>
+<!--正文内容END-->
+<script type="text/javascript">
+
+
+var optionservice=window.optionservice || {
+        init:function(){
+              this.showStr="k_all";
+              this.showContent="show_2";
+              this.defaultclass=$(".defalutK");
+              this.contents=null;
+              this.onNav();
+        },
+        onNav:function(){
+            var that=this;
+            $(".server-nav ul li").on("click",function(){
+                  var str=$(this).attr("rel");
+                 
+                 // console.log("str",str);
+                  
+                  var downs='<?php echo $this->webroot;?>img/nvas/downs.png';
+                  
+                  if(that.showStr!=str){
+                       if(that.contents!=null){
+                           that.contents.addClass("hide");
+                       }
+
+                       $(".kheight").parent().removeClass("active");
+                       $(".kheight").siblings(".lifetitlearrow").addClass("hide");
+                       $(".kheight").siblings(".lifetitlearrow1").addClass("hide");
+
+
+                       that.defaultclass.siblings(".lifetitlearrow").removeClass("hide");
+                       that.defaultclass.siblings(".lifetitlearrow1").removeClass("hide");
+
+
+                       that.defaultclass.parent().addClass("active");
+
+                       $("."+that.showContent).addClass("hide");
+
+
+                       $("."+that.showStr).addClass("hide");
+
+
+                       $("."+str).removeClass("hide");
+                       $(".server-nav ul li").removeClass("active");
+                       $(this).addClass("active");
+                       $(".arrows").attr("src", downs);
+                       that.showStr=str;
+
+
+                       if(str=="k_all"){
+                          that.showContent="show_2";
+                           $("."+that.showContent).removeClass("hide");
+                       }else{
+                          that.showContent="show_0";  
+                           $("."+that.showContent).removeClass("hide");
+
+                       }
+
+                       //that.showContent
+                  }
+            })
+
+
+
+
+            $(".kheight").on("click",function(){
+                   var ind=$(this).attr("rel");
+                   var names="show_"+ind;
+                   var thisf=$(this).parent();
+                   
+                   
+
+                   if(that.showContent!=names){
+                       
+                       $("."+that.showContent).addClass("hide");
+
+                       $("."+names).removeClass("hide");
+
+                       $(".kheight").siblings(".lifetitlearrow").addClass("hide");
+                       $(".kheight").siblings(".lifetitlearrow1").addClass("hide");
+
+                       $(".kheight").parent().removeClass("active");
+
+                       $(this).siblings(".lifetitlearrow").removeClass("hide");
+                       $(this).siblings(".lifetitlearrow1").removeClass("hide");
+
+
+                       thisf.addClass("active");
+                      
+                       that.showContent=names;
+                   }
+            })
+
+            
+	  var downsup='<?php echo $this->webroot;?>img/nvas/downsup.png';
+          var downss='<?php echo $this->webroot;?>img/nvas/downs.png';
+
+            $(".cktitle").on("click",function(){
+               // console.log("that.showStr",that.showStr,$(".gdnr01").hasClass("hide"));
+                  if(that.showStr=="l_all"){
+                     if($(".gdnr01").hasClass("hide")){
+                        $(".gdnr01").removeClass("hide");
+                        that.contents=$(".gdnr01");
+                        $(".arrows").attr("src", downsup);
+                     }else{
+                   
+                        $(".gdnr01").addClass("hide");
+                        that.contents=$(".gdnr01");
+                        $(".arrows").attr("src", downss);
+                     }
+                  }else{
+                       if($(".gdnr02").hasClass("hide")){
+                        $(".gdnr02").removeClass("hide");
+                       // $().addClass("hide");
+                        that.contents=$(".gdnr02");
+                         $(".arrows").attr("src", downsup);
+                       }else{
+                          $(".gdnr02").addClass("hide");
+                       // $().addClass("hide");
+                        that.contents=$(".gdnr02");
+                         $(".arrows").attr("src", downs);
+
+                       }
+                  }
+            })
+        }
+}
+
+
+
+$(document).ready(function(){
+    optionservice.init();
+})       
+
+ 
+</script>
+

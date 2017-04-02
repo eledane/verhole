@@ -1,0 +1,318 @@
+.calculator .wrapper{
+    _width: expression(this.scrollWidth > 770 ? "770px" : "auto"); /* sets max-width for IE6 */  
+}
+
+
+.hidden_a{
+    visibility: hidden;
+    display: none;
+}
+    
+.navbar .container-fluid{
+    height: 100px !important;
+}
+
+.navbar-nav li.menuLi {
+    margin-left: 75px;
+    position: relative;
+    display: block;
+    float: left;
+}   
+
+.navbar-nav li.menuLiFirst{
+    margin-left: 0px;    
+}
+
+.navbar-default .navbar-nav li.menuLi a{
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 40px;
+    padding: 0;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+#fourthMenu{
+    margin: 0px;
+}
+
+.navbar .container-fluid .navbar-brand {
+    margin-left: -15px;
+}
+
+.navbar .nav-wrapper {
+    width: 20% !important;
+}
+
+#navbar{
+    position: relative !important;
+}
+
+.buttonDiv .jquery-corner div{
+    border-color: #4c4c4c !important;
+}
+
+
+.languages{
+    position: absolute !important;
+    top: 0px !important;
+    right: 10px !important;
+    left: inherit !important;
+    display: block !important;
+}
+
+.header {
+    margin-top: 0px !important;
+}
+
+.textTop{
+    font-size: 30px;
+}
+
+.textBottom{
+    font-size:22px !important;
+}
+
+.headerImg{
+    display: block !important;
+}
+
+.headerSmallImg{
+    display: none !important;
+}
+
+.calc {
+    padding: 0px !important;
+}
+
+.calcHeader{
+    position: relative;
+}
+
+.strip1, .strip2 {
+    margin: 50px 70px 0 70px !important;
+}
+
+.calcFooter{
+    margin: 0 70px 0 70px;
+}
+
+.jquery-corner div{
+    background-color: transparent !important;
+}
+
+.loanButton{
+    line-height: 24px;
+}
+
+#loanButton{
+    margin-top: 0px !important;
+}
+    
+.loan a:hover, .loan a:focus, .loan a:active{
+    background-color: #fe0000 !important;   
+}
+
+.dots .row{
+    width: 840px !important;
+}
+
+.col-sm-4 {
+    width: 33% !important;
+}
+
+.dot1, .dot3{
+    width: 200px !important;
+}
+
+.proccess{
+    height: 881px !important;
+}
+
+.proccessHeader{
+    width: 1350px;
+}
+
+.step .wrap {
+    padding: 0px;
+}
+
+.step .wrap .jquery-corner div{
+    border-color: #f37a79 !important;
+}
+
+.step .wrap p{
+    padding-right: 28px;
+    padding-left: 28px;
+}
+
+.step .wrap .stepHeader{
+    padding-top: 28px;
+    padding-right: 28px;
+    padding-left: 28px;    
+}
+
+.step .wrap img{
+    padding-top: 28px;
+    padding-right: 28px;
+}
+
+
+.arrowsNoIE{
+    display: none;
+}
+
+.arrowsIE{
+    display: inline;
+}
+
+.arrows img{
+    margin-top: 210px;
+}
+
+.arrow1{
+    background: #f37a79 !important;
+}
+
+.stepButtonDiv{
+    border: none !important; 
+}
+
+.stepButtonInnerDiv{
+    border: 2px solid #ffffff !important;     
+}
+
+.stepButtonInnerDiv .jquery-corner{
+    width: 236px !important;
+}
+
+.stepButtonDiv .jquery-corner{
+    z-index: 100;    
+}
+
+.stepButtonDiv .jquery-corner div{
+    border-color: #f37a79 !important;
+/*    background-color: #f37a79 !important;*/
+}
+
+.stepButtonInnerDiv .jquery-corner div{
+    border-color: #ffffff !important;    
+}
+
+.stepButton{
+    line-height: 52px !important;
+}
+
+.calc .ui-state-default{
+    width: 21px !important;
+    height: 21px !important;
+}
+
+.ui-slider-range-min{
+    position: relative !important;
+    z-index: 1;
+}
+
+.actualValue{
+    position: absolute;
+}
+
+.strip1 .legend{
+    margin-top: -45px !important;
+}
+
+.strip1 p, .strip2 p{
+    height: 64px;
+}
+
+.strip2{
+    padding-top: 45px;
+}
+
+.strip2 .legend{
+    margin-top: -45px !important;
+}
+
+.loan{
+    padding-top: 45px;
+}
+
+.prop{
+    padding-bottom: 80px !important;
+}
+
+.propDetail img {
+    width: 102px !important;
+}
+
+.propDetail{
+    width: 297px !important;
+}
+
+.propDetail p{
+    padding-right: 10px !important;
+}
+
+.propWrapper{
+    width: 950px !important;
+    margin-bottom: 0px !important;
+}
+
+.propHeader h1{
+    margin-top: 0px !important;
+}
+
+.propHeader{
+    padding-top: 90px !important;
+}
+
+.footer{
+    padding: 0px !important;
+}
+
+.footer p{
+    padding-top: 100px !important;
+}
+
+.faqWrapper .faqTitle{
+    height: 50px !important;
+    padding-bottom: 0px !important;
+}
+
+.faqsWrapper .open{
+    background-color: #f5f5f5 !important;
+    padding: 0px !important;
+}
+
+.faqsWrapper .open .faqTitle{
+    padding: 26px 26px 0px 26px !important;
+    margin: 0px !important;
+}
+
+.faqsWrapper .open .faqTitle img{
+    padding: 26px !important;
+}
+
+.faqsWrapper .open .faqResp{
+    margin: 26px !important;
+}
+
+#faq13{
+    margin-bottom: 0px !important;
+}
+
+a.faqButton:hover, a.faqButton:focus, a.faqButton:active {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fe0000;
+}
+
+@media (min-width:850px){    
+    .dots .row{
+        width: 770px;
+        _width: expression(this.scrollWidth > 770 ? "770px" : "auto"); /* sets max-width for IE6 */  
+    }
+    
+}

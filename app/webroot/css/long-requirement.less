@@ -1,0 +1,56 @@
+.long-requirement {
+	background: url('../img/about-us/blue-pattern.jpg') center;
+
+	h2 {
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	p {	
+		margin-top: 20px;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 700;
+		font-style: italic;
+		
+		span {
+			color: #ff0000;
+			display: block;
+		}
+	}
+	
+	img {
+		max-width: 200px;
+		display: block;
+		margin: auto;
+		
+		@media (max-width: @screen-xs-max) {
+			width: 117%;
+			text-align: center;
+		}
+	}
+	
+	.conditions {
+		margin-top: 10%;
+		list-style: none;
+		
+		li {
+			font-size: 15px;
+			font-weight: bold;
+			
+			&:before {
+				content: '';
+				position: absolute;
+				width: 18.5px;
+				height: 18.5px;
+				background: url('../img/list-style-checked.png') center center no-repeat;
+				.background-size(cover);
+				left: 22px;
+			}
+			
+			& + li {
+				margin-top: 15px;
+			}
+		}
+	}
+}

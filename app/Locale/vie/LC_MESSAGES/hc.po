@@ -1,0 +1,32 @@
+msgid "can not be empty"
+msgstr "Không thể để trống"
+
+msgid "invalid email address"
+msgstr "Xin điền vào một địa chỉ email hợp lệ"
+
+msgid "invalid phone number"
+msgstr "Xin điền vào một số điện thoại hợp lệ"
+
+msgid "contact form error"
+msgstr "Xuất hiện lỗi trong quá trình xử lý yêu cầu"
+
+msgid "contact form thank you"
+msgstr "Xin cảm ơn!"
+
+msgid "contact form thank you part 2"
+msgstr "Chúng tôi sẽ liên hệ với anh chị trong thời gian sớm nhất"
+
+msgid "Home Credit - Contact request"
+msgstr "Home Credit - Yêu cầu liên hệ"
+
+msgid "Name must contain at least 5 characters."
+msgstr ""
+
+msgid "Name can contain 50 characters at maximum."
+msgstr ""
+
+msgid "Phone number must contain at least 9 digits."
+msgstr ""
+
+msgid "Phone number can contain 11 digits at maximum."
+msgstr ""

@@ -1,0 +1,68 @@
+msgid "can not be empty"
+msgstr "请填写这一栏"
+
+msgid "invalid email address"
+msgstr "请输入有效电邮地址"
+
+msgid "invalid phone number"
+msgstr "请输入有效电话号码"
+
+msgid "contact form error"
+msgstr "在处理您的要求过程中出了问题"
+
+msgid "contact form thank you"
+msgstr "谢谢"
+
+msgid "contact form thank you part 2"
+msgstr  "我们会尽快回复您"
+
+msgid "Home Credit - Contact request"
+msgstr "捷信 - 联系申请"
+
+msgid "Name must contain at least 5 characters."
+msgstr "名字最少包含5个字符"
+
+msgid "Name can contain 50 characters at maximum."
+msgstr "名字最多包含50个字符"
+
+msgid "Phone number must contain at least 9 digits."
+msgstr "电话号码必须包含最少9个数字"
+
+msgid "Phone number can contain 11 digits at maximum."
+msgstr "电话号码最多包含11个数字"
+
+msgid "yes"
+msgstr "是"
+
+msgid "no"
+msgstr "否"
+
+msgid "sent succes title"
+msgstr "提交成功。"
+
+msgid "sent succes msg"
+msgstr "随后我们将通过如下电话与您确认申请事宜："
+
+msgid "sent succes phones"
+msgstr "0755-33987193 / 027-59233588 / 0731-88598444"
+
+msgid "sent succes end"
+msgstr "在贷款获得批准之前我们不收取任何费用，敬请知悉。"
+
+msgid "from"
+msgstr "从"
+
+msgid "month"
+msgstr "月"
+
+msgid "months"
+msgstr "个月"
+
+msgid "monthly"
+msgstr "月付"
+
+msgid "Name must contain at least 2 characters."
+msgstr "姓名必须包含最少2个汉字。"
+
+msgid "Phone number can contain 12 digits at maximum."
+msgstr "电话号码最多包含12个数字"

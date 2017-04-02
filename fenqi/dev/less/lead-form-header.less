@@ -1,0 +1,145 @@
+#searchFormHeader{
+	position: relative;
+	margin-top: 300px;
+
+	@media (max-width: 767px) {
+		margin-top: 270px;
+	}
+
+	@media (max-width: 550px) {
+		margin-top: 200px;
+	}
+
+	@media (max-width: 450px) {
+		margin-top: 150px;
+	}
+
+	@media(max-width: @screen-xs-max) {
+		form .input-group .error-message{
+			padding-top: 15px;
+			padding-bottom: 5px;
+			display: block;
+		}
+	}
+}
+
+#leadFormHeader{
+	width: 100%;
+	background: #fff;
+	.border-radius(8px);
+	padding: 10px;
+	margin-bottom: 15px;
+	position: absolute;
+	display: none;
+	top: 72px;
+	z-index: 5;
+
+	@media (max-width: 500px) {
+		top: 125px;
+	}
+
+	.box-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+
+	#productPriceHeader{
+		width: 100%;
+		font-size: 20px;
+		color: #505050;
+		text-align: center;
+		padding-top: 10px;
+		margin-bottom: 20px;
+
+		.parsing-error {
+			display: none;
+
+			background: transparent;
+			color: @brand-secondary;
+		}
+	}
+
+	&.lower {
+		top: 112px;
+	}
+
+	h2{
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: none;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	p{
+		color: #505050;
+	}
+
+	label{
+		color: #505050;
+		width: 100%;
+		float: left;
+	}
+
+	.input-group{
+		background: none;
+		.box-shadow(none);
+		border: 5px solid #fff;
+	}
+
+	.contact {
+		width: 80%;
+		margin: 0 auto;
+
+		input[type="text"] {
+			width: 80%;
+			display: inline-block;
+			margin-right: 0 !important;
+		}
+
+		input[type="submit"] {
+			width: 20%;
+			display: inline-block;
+
+			@media (max-width: 500px) {
+				position: relative;
+				top: -1px;
+			}
+		}
+	}
+
+	#slider-top{
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+
+	.slider.slider-horizontal .slider-tick-label-container{
+		font-size: 14px;
+	}
+
+	#price-per-month-2{
+
+		h3{
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		.monthly-header{
+			margin-bottom: 0;
+		}
+
+		.monthly{
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+	}
+
+	@media(max-width: @screen-xs-max) {
+
+		.contact{
+			width: 100%;
+		}
+
+	}
+
+}

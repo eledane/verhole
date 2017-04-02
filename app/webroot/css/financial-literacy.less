@@ -1,0 +1,61 @@
+.financial-literacy {
+	padding-bottom: 0;
+	position: relative;
+
+	.faq-categories {
+		h2 {
+			color: #ff1f20;
+			font-size: 27px;
+			font-weight: 700;
+			text-align: center;
+		}
+		h3 {
+			color: @bg-btn-black;
+			opacity: 0.5;
+			font-size: @font-size-medium;
+			font-weight: 700;
+			text-align: center;
+			margin-top: 15px;
+			margin-bottom: 23px;
+		}
+		.faq-listing {
+			h2 {
+				color: @gray-light;
+				margin: 8px 0 20px 0;
+				font-size: 23px;
+			}
+		}
+	}
+
+	.doodle {
+		&.kiss {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			width: 120px;
+
+			@media (min-width: @screen-md-min) {
+				right: 18%;
+			}
+			@media (max-width: @screen-xs-max) {
+				width: 79px;
+				margin-top: 25px;
+				right: 0;
+			}
+			@media (max-width: 358px) {
+				width: 60px;
+				margin-top: 36px;
+			}
+		}
+		&.uh-oh {
+			position: absolute;
+			width: 50px;
+			left: 15px;
+			margin-top: 5px;
+			@media (min-width: @screen-md-min) {
+				left: 10%;
+			}
+		}
+	}
+
+}

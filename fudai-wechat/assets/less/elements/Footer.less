@@ -1,0 +1,34 @@
+.Footer {
+    background: @bgGray;
+    border-top: 1px solid @border;
+    padding: 13px 30px;
+    text-align: center;
+
+    &--faqPadding {
+        padding: 13px 20px;
+    }
+    &--noBorder {
+        border: none;
+    }
+    &-text {
+        color: @lightGray;
+        font-size: 18px;
+
+
+        @media (max-width: 400px) {
+            font-size: @scale400 * 18px;
+        }
+
+        @media (max-width: 380px) {
+            font-size: @scale380 * 18px;
+        }
+
+        @media (max-width: 350px) {
+            font-size: @scale350 * 18px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: @scale320*18px;
+        }
+    }
+}

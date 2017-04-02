@@ -1,0 +1,52 @@
+{layout ../@admin.latte}
+
+{block #content}
+
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2">
+			{form addSiteForm class => 'form'}
+				<div class="form-group">
+					{label domain /}
+					{input domain class => 'form-control', placeholder => 'Doména'}
+				</div>
+				<div class="form-group">
+					{label price_selector /}
+					{input price_selector class => 'form-control', placeholder => 'Selektor ceny'}
+				</div>
+				<div class="form-group">
+					{label name_selector /}
+					{input name_selector class => 'form-control', placeholder => 'Selektor názvu'}
+				</div>
+				<div class="form-group">
+					{label img_selector /}
+					{input img_selector class => 'form-control', placeholder => 'Selektor obrázku'}
+				</div>
+				<div class="form-group">
+                    {label category_selector /}
+                    {input category_selector class => 'form-control', placeholder => 'Selektor kategorie'}
+                </div>
+				<div class="form-group">
+					{label thousands_separator /}
+					{input thousands_separator class => 'form-control', placeholder => 'Oddělovač tisíců'}
+				</div>
+				<div class="form-group">
+					{label decimal_separator /}
+					{input decimal_separator class => 'form-control', placeholder => 'Oddělovač desetiných míst'}
+				</div>
+				<div class="form-group">
+					{label ordering /}
+					{input ordering class => 'form-control', placeholder => 'Řazení'}
+				</div>
+				<div class="form-group">
+					{label crawler_class /}
+					{input crawler_class class => 'form-control', placeholder => 'Název vlastního crawleru'}
+				</div>
+				<div class="form-group text-right">
+					{input send class => 'btn btn-primary'}
+					{input send_continue class => 'btn btn-primary'}
+				</div>
+			{/form}
+		</div>
+	</div>
+
+{/block}

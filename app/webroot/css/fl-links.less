@@ -1,0 +1,39 @@
+.fl-link1, .fl-link2 {
+	padding: 0;
+	a {
+		background-color: @gray;
+		background-repeat: no-repeat;
+		background-position: center left 30px;
+		color: @white;
+		display: block;
+		width: 100%;
+		padding: 27px 78px;
+		font-size: 15.5px;
+		font-weight: 600;
+		.transition(all ease 0.3);
+		&:hover, &:focus {
+			text-decoration: none;
+			background-color: @gray-light;
+		}
+		&:active {
+			background-color: #cc0000;
+		}
+		@media(max-width: @screen-xs) {
+			background-position: center left 20px;
+			padding: 26px 73px;
+		}
+	}
+}
+.fl-link1 {
+	border-bottom: 1px solid @silver;
+	a {
+		background-image: url('../img/financial-literacy/download.png');
+		background-size: 25px 24px;
+	}
+}
+.fl-link2 {
+	a {
+		background-image: url('../img/financial-literacy/budget-planner.png');
+		background-size: 23px 29px;
+	}
+}

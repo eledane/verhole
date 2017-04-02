@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>__pageTitleHomepage__</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+        <!-- 
+        <link rel='stylesheet' href='./assets/css/min/all.css' type='text/css' media='all' />
+        -->
+        <link rel='stylesheet' href='./assets/css/style.css' type='text/css' media='all' />
+
+        <link rel='stylesheet' href='./lib/jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.min.css' type='text/css' media='all' />
+
+
+        <script type="text/javascript" src="./assets/js/min/all.js"></script>
+        
+        <script type="text/javascript">
+            $(function() {
+                FastClick.attach(document.body);
+            });
+
+            (function( $, undefined ) {
+
+                $.extend($.ui.slider.prototype.options, {
+                    dragAnimate: true
+                });
+
+                var _mouseCapture = $.ui.slider.prototype._mouseCapture;
+                $.widget("ui.slider", $.extend({}, $.ui.slider.prototype, {
+                    _mouseCapture: function(event) {
+                        _mouseCapture.apply(this, arguments);
+                        this.options.dragAnimate ? this._animateOff = false : this._animateOff = true;
+                        return true;
+                    }
+                }));
+
+            }(jQuery));
+        </script>
+
+        <script>
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        var userAgent = navigator.userAgent;
+        var QQBrowser = userAgent.indexOf('QQ') >= 0;
+        var WeChat = userAgent.indexOf('MicroMessenger') >= 0;
+        var browser = QQBrowser ? 'QQ' : WeChat ? 'WeChat' : 'Other Browser';
+
+        ga('create', 'UA-65950413-6', 'auto');
+        ga('send', 'pageview');
+
+        </script>
+
+
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?8f9073478e972aeaaf00971862b9490a";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='first_span'  style='border:0;visibility:hidden;'  id='cnzz_stat_icon_1256287498'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/q_stat.php%3Fid%3D1256287498%26l%3D3' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+        <!-- Piwik -->
+        <!--
+        <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//52.74.87.198/analytics/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 12]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+        </script>
+
+        <noscript><p><img src="//52.74.87.198/analytics/piwik.php?idsite=12" style="border:0;visibility:hidden;" alt="" /></p></noscript>
+        -->
+        <!-- End Piwik Code -->
+
+        <!-- complex tracking code -->
+
+        <script>
+            if (window.location.href.indexOf('hc-cn-mcl.utdigit.com/') >= 0) {
+                document.write('<script type="text/javascript" src="https://api-uat.homecredit.cn/trackingweb/js/complex-tracking-min.js" trackingHost="https://api-uat.homecredit.cn/trackingweb" ><\/script>');
+            } else {
+                document.write('<script type="text/javascript" src="https://app.homecredit.cn/trackingweb/js/complex-tracking-min.js" trackingHost="https://app.homecredit.cn/trackingweb" ><\/script>');
+            }
+        </script>
+
+        <!-- /complex tracking code -->
+    </head>
+    <body ontouchstart="" class="Page">
+
+        <div class="Section Section-faq">
+            <div class="">
+                <div class="panel-group" id="accordion" role="tablist">
+                  <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingfaq1">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq1" aria-expanded="false" aria-controls="faq1">
+                          <span class="panel-title-number">1</span><span class="panel-title-arrow"></span>
+                          __faq1Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq1">
+                      <div class="panel-body">
+                        __faq1Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq2">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq2" aria-expanded="false" aria-controls="faq2">
+                            <span class="panel-title-number">2</span><span class="panel-title-arrow"></span>
+                          __faq2Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq2">
+                      <div class="panel-body">
+                        __faq2Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq2">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq3" aria-expanded="false" aria-controls="faq3">
+                            <span class="panel-title-number">3</span><span class="panel-title-arrow"></span>
+                          __faq3Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq3">
+                      <div class="panel-body">
+                        __faq3Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq4">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq4" aria-expanded="false" aria-controls="faq4">
+                            <span class="panel-title-number">4</span><span class="panel-title-arrow"></span>
+                          __faq4Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq4">
+                      <div class="panel-body">
+                        __faq4Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq5">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq5" aria-expanded="false" aria-controls="faq5">
+                            <span class="panel-title-number">5</span><span class="panel-title-arrow"></span>
+                          __faq5Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq5">
+                      <div class="panel-body">
+                        __faq5Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq6">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq6" aria-expanded="false" aria-controls="faq6">
+                            <span class="panel-title-number">6</span><span class="panel-title-arrow"></span>
+                          __faq6Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq6">
+                      <div class="panel-body">
+                        __faq6Desc__
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq7">
+                      <h4 class="panel-title wrap">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq7" aria-expanded="false" aria-controls="faq7">
+                            <span class="panel-title-number">7</span><span class="panel-title-arrow"></span>
+                          __faq7Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq7">
+                      <div class="panel-body">
+                        __faq7Desc__
+                        <table class="faqTable">
+                            <tr>
+                                <td>__top2__
+                                </td>
+                                <td>__top3__
+                                </td>
+                                <td>__top4__
+                                </td>
+                                <td>__top5__
+                                </td>
+                            </tr>
+                                <td>__bottom2__
+                                </td>
+                                <td>__bottom3__
+                                </td>
+                                <td>__bottom4__
+                                </td>
+                                <td>__bottom5__
+                                </td>
+                            <tr>
+                            </tr>
+                        </table>
+                        __faq7Bottom__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq8">
+                      <h4 class="panel-title wrap">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq8" aria-expanded="false" aria-controls="faq8">
+                            <span class="panel-title-number">8</span><span class="panel-title-arrow"></span>
+                          __faq8Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq8">
+                      <div class="panel-body">
+                        __faq8Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq9">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq9" aria-expanded="false" aria-controls="faq9">
+                            <span class="panel-title-number">9</span><span class="panel-title-arrow"></span>
+                          __faq9Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq9">
+                      <div class="panel-body">
+                        __faq9Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq10">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq10" aria-expanded="false" aria-controls="faq10">
+                            <span class="panel-title-number">10</span><span class="panel-title-arrow"></span>
+                          __faq10Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq10">
+                      <div class="panel-body">
+                        __faq10Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq11">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq11" aria-expanded="false" aria-controls="faq11">
+                            <span class="panel-title-number">11</span><span class="panel-title-arrow"></span>
+                          __faq11Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq11">
+                      <div class="panel-body">
+                        __faq11Desc__
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq12">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq12" aria-expanded="false" aria-controls="faq12">
+                            <span class="panel-title-number">12</span><span class="panel-title-arrow"></span>
+                          __faq12Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq12">
+                      <div class="panel-body">
+                        __faq12Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel ">
+                    <div class="panel-heading" role="tab" id="headingfaq13">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq13" aria-expanded="false" aria-controls="faq13">
+                            <span class="panel-title-number">13</span><span class="panel-title-arrow"></span>
+                          __faq13Header__
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="faq13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfaq13">
+                      <div class="panel-body">
+                        __faq13Desc__
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="Footer Footer--noBorder Footer--faqPadding">
+            <div class="Footer-text">
+                <a href="?page=" id="" class="Btn Btn--green">点击申请</a>
+            </div>
+        </footer>
+
+        <script type="text/javascript">
+            var app;
+            $(document).on('ready', function () {
+                app = App.init();
+                app.configure();
+            });
+        </script>
+    </body>
+</html>

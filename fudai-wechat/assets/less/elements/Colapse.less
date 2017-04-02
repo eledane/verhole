@@ -1,0 +1,137 @@
+.panel {
+    border: 0;
+    border-bottom: 1px solid @border;
+    margin: 0;
+
+    .box-shadow(none);
+    
+    &-group {
+        margin: 0;
+    }
+    
+    &-heading {
+        background: @white;
+        padding: 0;
+    }
+
+    &-title {
+        font-size: 24px;
+        line-height: 1.3em;
+        font-weight: bold;
+        color: @black;
+
+        white-space: nowrap;
+        
+        &.wrap{
+            white-space: normal;
+        }
+
+        @media (max-width: 400px) {
+            font-size: @scale400 * 24px;
+        }
+        @media (max-width: 380px) {
+            font-size: @scale380 * 24px;
+        }
+        @media (max-width: 350px) {
+            font-size: @scale350 * 24px;
+        }
+        @media (max-width: 320px) {
+            font-size: @scale320 * 24px;
+        }
+
+        a {
+            padding: 30px 60px 30px 80px;
+
+             @media (max-width: 400px) {
+                padding: @scale400*30px 60px @scale400*30px 80px;
+            }
+            @media (max-width: 380px) {
+                padding: @scale380*30px 60px @scale380*30px 80px;
+            }
+            @media (max-width: 350px) {
+                padding: @scale350*30px 60px @scale350*30px 80px;
+            }
+            @media (max-width: 320px) {
+                padding: @scale320*30px 60px @scale320*30px 80px;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            text-decoration: none;
+            position: relative;
+            display: block;
+        }
+
+
+
+        &-number {
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            .translate(0, -50%);
+            display: block;
+
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            vertical-align: middle;
+
+            font-size: 13px;
+            line-height: 35px;
+            font-weight: 400;
+
+            .border-radius(50%);
+            border: 1px solid @green;
+            color: @white;
+            background: @green;
+            .transition(all 0.4s ease);
+
+            [aria-expanded=false] & {
+                color: @green;
+                background: @white;
+            }
+
+            &:after {
+                position: relative;
+                content: '.';
+                margin-right: -2px;
+            }
+        }
+        &-arrow {
+            position: absolute;
+            right: 25px;
+            width: 24px * 0.7;
+            height: 13px * 0.7;
+            background: url('@{imagePartsSrc}arrowClose.png') center center no-repeat; 
+            .background-size(cover);
+            top: 50%;
+            margin-top: -6px;
+
+            .transition(all 0.2s ease);
+            .rotate(180deg);
+
+            [aria-expanded=false] & {
+                .rotate(0deg);
+                .opacity(0.6); 
+            }
+
+        }
+    }
+
+    &-body {
+        color: @faqBodyColor;
+        background: @bgGray;
+
+        border-top: none!important;
+
+        .faqTable {
+            margin: 10px 0;
+            td {
+                padding: 10px;
+                border: 1px solid @border;
+            }
+        }
+    }
+}

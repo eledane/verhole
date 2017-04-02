@@ -1,0 +1,15 @@
+{
+  "name": "hc",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.9.1",
+    "modernizr": "2.8.3",
+    "fastclick": "latest",
+    "lesshat": "~3.0.2",
+    "html5shiv": "latest",
+    "respond": "~1.4.2",
+    "easing": "https://github.com/gdsmith/jquery.easing.git",
+    "bootstrap-3": "https://github.com/twbs/bootstrap.git#3.3.1"
+  }
+}

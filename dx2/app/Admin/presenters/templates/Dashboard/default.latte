@@ -1,0 +1,100 @@
+{layout "../@admin.latte"}
+
+{block #content}
+    <div id="handler-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                {snippet stateModal}
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">{_messages.admin.order.order_processing}</h4>
+                    </div>
+                    <div class="modal-body">
+                        {form changeStateForm}
+                            <div class="form-group">
+                                {label status /}
+                                {input status class => 'form-control'}
+                            </div>
+                            <div class="form-group">
+                                {input add class => 'btn btn-success'}
+                            </div>
+                        {/form}
+                    </div>
+                {/snippet}
+            </div>
+        </div>
+    </div>
+
+    <div id="new-order" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">{_messages.admin.order.order_version}</h4>
+                </div>
+                <div class="modal-body">
+                    {form newOrderVersionForm}
+                        <div class="form-group">
+                            {label version /}
+                            {input version class => 'form-control'}
+                        </div>
+                        <div class="form-group">
+                            {input add class => 'btn btn-success'}
+                        </div>
+                    {/form}
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="row">
+        <div class="col-xs-6">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="col-xs-6 text-right">
+            <a class="btn btn-info btn-add-order" href="#" data-toggle="modal"
+               data-target="#new-order">{_messages.admin.order.add_order}</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    {_messages.admin.order.newest}
+                </div>
+
+                <table id="dashboard-listing" class="table">
+                    <thead>
+                    <tr>
+                        <th>{_messages.admin.order.no}</th>
+                        <th>{_messages.admin.order.name}</th>
+                        <th>{_messages.admin.order.price}</th>
+                        <th>{_messages.admin.order.instalment_count}</th>
+                        <th>{_messages.admin.order.phone}</th>
+                        <th>{_messages.admin.order.state}</th>
+                        <th>{_messages.admin.order.detail}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {var soon = ["Ne", "Ano"]}
+                    <tr n:foreach="$latestOrders as $item" data-toggle="tooltip" data-placement="top"
+                                                           title="{$item->note}">
+                        <td>{$item->id}</td>
+                        <td>{$item->user->name}</td>
+                        <td>¥ {$item->total_price}</td>
+                        <td>{$item->loan_count}</td>
+                        <td>{$item->user->phone}</td>
+                        <td>{_messages.admin.order.states.{$order_statuses[$item->status]}}</td>
+                        <td>
+                            <a class="ajax grid-action-detail btn btn-sm btn-success" n:href="stateModal! $item->id" data-toggle="modal" data-target="state-modal">{_messages.admin.actions.process}</a>
+                            <a class="btn btn-sm btn-default" n:href="Orders:detail $item->id">{_messages.admin.actions.show}</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{/block}

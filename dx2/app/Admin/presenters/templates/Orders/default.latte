@@ -1,0 +1,34 @@
+{layout "../@admin.latte"}
+
+{block #content}
+
+    <div id="handler-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                {snippet stateModal}
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">{_messages.admin.order.order_processing}</h4>
+                    </div>
+                    <div class="modal-body">
+                        {form changeStateForm}
+                            <div class="form-group">
+                                {label status /}
+                                {input status class => 'form-control'}
+                            </div>
+                            <div class="form-group">
+                                {input add class => 'btn btn-success'}
+                            </div>
+                        {/form}
+                    </div>
+                {/snippet}
+            </div>
+        </div>
+    </div>
+
+
+    <h1>{_messages.admin.menu.orders}</h1>
+
+    {control listing}
+
+{/block}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>__pageTitleHomepage__</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+        <link rel='stylesheet' href='./assets/css/min/all.css?version=1.0' type='text/css' media='all' />
+
+        <link rel='stylesheet' href='./lib/jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.min.css' type='text/css' media='all' />
+
+
+        
+    </head>
+    <body ontouchstart="">
+        <div class="Page">
+            <div class="modal fade" tabindex="-1" role="dialog" id="modal-term">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button id="modalClose" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">__termsHeader__</h2>
+                  </div>
+                  <div class="modal-body">
+                    <div class="wrapper terms">
+                        <p>__termsP1__</p>
+
+                        <p>__termsP2__</p>
+
+                        <h3>__termsH1__</h3>
+
+                                            <p><u>__termP3__</u></p>
+
+                                            <p><u>__termP4__</u></p>
+
+                                            <p>__termP5__</p>
+
+                        <h3>__termsH2__</h3>
+
+                        <p>__termP6__</p>
+
+                                            <p><u>__termP7__</u></p>
+
+                                            <p><u>__termP8__</u></p>
+
+                                            <p><u>__termP9__</u></p>
+
+                                            <p><u>__termP10__</u></p>
+
+                                            <p><u>__termP11__</u></p>
+
+                                            <p><u>__termP12__</u></p>
+
+                                            <p><u>__termP13__</u></p>
+
+                        <h3>__termsH3__</h3>
+
+                                            <p><u>__termP14__</u></p>
+
+                                            <p style="text-indent:0px"><u>__termP15__</u></p>
+
+                                            <p><u>__termP16__</u></p>
+
+                                            <p><u>__termP17__</u></p>
+
+                                            <p><u>__termP18__</u></p>
+
+                        <h3>__termsH4__</h3>
+
+                        <p>__termP19__</p>
+
+                        <h3>__termsH5__</h3>
+
+                                            <p>__termP20a__<a href="http://www.homecreditcfc.cn/__termP20Lang__">http://www.homecreditcfc.cn/__termP20Lang__</a>__termP20b__</p>
+
+                        <p>__termP21__</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="MainBanner">
+                <div class="Page-container">
+                    <h1 class="MainBanner-textWrapper"><span class="MainBanner-text MainBanner-text--rotate">捷信福袋,<br>你的借款神器!</span></h1>
+                </div>
+            </div>
+
+            <div class="Section">
+                <div class="Page-container Page-container--withPadding Page-container--alignCenter">
+
+                    <div class="Slider__loader">
+                    </div>
+
+                    <div class="Sliders Sliders--hidden">
+                        <div class="Slider-wrapper">
+                            <div class="Slider-value Slider-value--scale Slider-value--left Slider-value--bottom">
+                                100
+                            </div>
+                            <div class="Slider-value Slider-value--scale Slider-value--right Slider-value--bottom">
+                                500
+                            </div>
+                            <div class="Slider-value Slider-value--current Slider-value--center Slider-value--bottom">
+                                金额<br>
+                                <strong>¥<span class="Slider-currentValue"></span></strong>
+                            </div>
+                            <div id="Slider1" class="Slider"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="Slider-wrapper">
+                            <div class="Slider-value Slider-value--scale Slider-value--left Slider-value--top">
+                                1
+                            </div>
+                            <div class="Slider-value Slider-value--scale Slider-value--right Slider-value--top">
+                                6
+                            </div>
+                            <div class="Slider-value Slider-value--current Slider-value--center Slider-value--top">
+                                <strong><span class="Slider-currentValue"></span>个月</strong><br>
+                                期数<br> 
+                            </div>
+                            <div id="Slider2" class="Slider Slider--bottom"></div>
+                        </div>
+                    </div>
+                    <div class="Results">
+                        <p class="Results-text">
+                            月还款额 <strong class="Results-text--green Results-text--strong Results-text--large">¥<span class="Results-textFinal"></span></strong> 总还款额 <strong class="Results-text--strong">¥<span class="Results-textSum"></span></strong> 
+                        </p>
+                        <div class="Results-btn">
+                            <a id="loanButton" class="Btn Btn--green Btn--paused">同意协议并继续<i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <footer class="Footer">
+                <div class="Footer-text">
+                    点击继续，表示您已阅读并同意捷信<a id="termsButton" class="Link" href="#" role="button" data-toggle="modal" data-target="#modal-term">《使用协议》</a> 。
+                </div>
+            </footer>
+
+        </div>
+
+        <script type="text/javascript" src="./assets/js/min/all.js?version=1.0"></script>
+        
+        <script type="text/javascript">
+            $(function() {
+                FastClick.attach(document.body);
+            });
+
+            (function( $, undefined ) {
+
+                $.extend($.ui.slider.prototype.options, {
+                    dragAnimate: true
+                });
+
+                var _mouseCapture = $.ui.slider.prototype._mouseCapture;
+                $.widget("ui.slider", $.extend({}, $.ui.slider.prototype, {
+                    _mouseCapture: function(event) {
+                        _mouseCapture.apply(this, arguments);
+                        this.options.dragAnimate ? this._animateOff = false : this._animateOff = true;
+                        return true;
+                    }
+                }));
+
+            }(jQuery));
+        </script>
+
+        <script>
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        var userAgent = navigator.userAgent;
+        var QQBrowser = userAgent.indexOf('QQ') >= 0;
+        var WeChat = userAgent.indexOf('MicroMessenger') >= 0;
+        var browser = QQBrowser ? 'QQ' : WeChat ? 'WeChat' : 'Other Browser';
+
+        ga('create', 'UA-65950413-6', 'auto');
+        ga('send', 'pageview');
+
+        </script>
+
+
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?8f9073478e972aeaaf00971862b9490a";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+
+        
+
+
+       <!-- Piwik -->
+        <!--
+        <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//52.74.87.198/analytics/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 12]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+        </script>
+
+        <noscript><p><img src="//52.74.87.198/analytics/piwik.php?idsite=12" style="border:0;visibility:hidden;" alt="" /></p></noscript>
+        -->
+        <!-- End Piwik Code -->
+
+        <!-- complex tracking code -->
+
+        <script>
+            if (window.location.href.indexOf('hc-cn-mcl.utdigit.com/') >= 0 || window.location.href.indexOf('fudai.homecredit.cn') >= 0) {
+                document.write('<script type="text/javascript" src="https://api-uat.homecredit.cn/trackingweb/js/complex-tracking-min.js" trackingHost="https://api-uat.homecredit.cn/trackingweb" ><\/script>');
+            } else {
+                document.write('<script type="text/javascript" src="https://app.homecredit.cn/trackingweb/js/complex-tracking-min.js" trackingHost="https://app.homecredit.cn/trackingweb" ><\/script>');
+            }
+        </script>
+
+        <!-- /complex tracking code -->
+
+        <!-- Hotjar Tracking Code for www.homecreditcfc.cn -->
+        <script>
+        (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:33811,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        <!-- End Hotjar Tracking Code -->
+
+        <script type="text/javascript">
+            var app;
+            $(document).on('ready', function () {
+                app = App.init();
+                app.configure();
+
+                $("#loanButton").removeClass('Btn--paused');
+            });
+        </script>
+
+        <!-- 360 remarketing code  -->
+
+        <script type="text/javascript">
+            var _mvq = _mvq || [];
+            _mvq.push(['$setAccount', 'm-190899-0']);
+
+            _mvq.push(['$logConversion']);
+            (function() {
+                var mvl = document.createElement('script');
+                mvl.type = 'text/javascript'; mvl.async = true;
+                mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(mvl, s);
+            })();
+
+        </script>
+
+        <script type="text/javascript">
+            var _mvq = window._mvq || [];window._mvq = _mvq;
+            _mvq.push(['$setAccount', 'm-190899-0']);
+
+            _mvq.push(['$setGeneral', 'registered', '', /*”√ªß√˚*/ '', /*”√ªßid*/ Math.random()]);
+            _mvq.push(['$logConversion']);
+
+        </script>
+
+    </body>
+</html>

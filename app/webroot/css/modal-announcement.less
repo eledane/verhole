@@ -1,0 +1,47 @@
+.modal-announcement {
+    .modal-backdrop {
+        filter: alpha(opacity=80);
+        opacity: .8;
+        position: fixed;
+        height: 100% !important;
+    }
+
+    .modal-dialog {
+        @media(min-width: @screen-sm-min) {
+            width: 550px;
+        }
+        @media(max-width: @screen-xs-max) {
+            margin: 15px;
+        }
+    }
+
+    .modal-content {
+        .border-radius(5px);
+        box-shadow: none;
+    }
+
+    .modal-header {
+        border: none;
+        background: @bg-red;
+        margin-top: 45px;
+        padding: 30px 40px;
+        font-size: 18px;
+        line-height: 25px;
+        color: @white;
+        text-align: center;
+    }
+
+    .modal-body {
+        font-size: 14px;
+        line-height: 20px;
+        color: @text-gray;
+        padding: 40px 40px 30px 40px;
+    }
+
+    .close {
+        font-size: 35px;
+        position: absolute;
+        right: 15px;
+        top: 5px;    
+    }
+}

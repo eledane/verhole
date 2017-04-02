@@ -1,0 +1,95 @@
+           <?php  if ($this->request->here == '/' || $this->request->here == '/homepage' || $this->request->here == '/en' || $this->request->here == '/en/homepage'): ?>
+		<div class="d-bottom appblock-float">
+         <?php else: ?>
+		<div class="d-bottom appblock-float" style="display:none">
+         <?php endif;?> 
+			<div class="d-main pc">
+				<a href="#" target="_blank"><img src="img/appblock/download_app_bottom.png" class="bottomImg"></a>
+				<a href="javascript:;" class="d-b-close">关闭</a>
+			</div>
+			<div class="d-main mobile">
+				<div class="bottomImg">
+					<img src="img/appblock/download_app_bottom_m1.png" class="bottomImg1">
+					<a href="" class="download-btn-m"><img src="img/appblock/download_app_bottom_m2.png" class="bottomImg2"></a>
+				</div>
+				<a href="javascript:;" class="d-b-close"></a>
+			</div>
+		</div>	
+
+                <div class="d-right">
+			<ul>
+				<li class="r1" style="display:none"><a href="javascript:;"></a></li>
+				<li class="r2"><a href="javascript:;"></a><div class="rInfo"><img src="img/appblock/download_right_app.png"><!-- 这张图是首页调用的 非首页请调用 <img src="images/download_right_app_noIndex.png">--></div></li>
+				<li class="r3"><a href="javascript:;"></a><div class="rInfo"><img src="img/appblock/download_right_wechat_share_new.png"></div></li>
+			</ul>
+		</div>
+
+               <div class="d-right-m">
+			<a href="javascript:;" class="db1"><img src="img/appblock/download_db_k.png"></a>
+			<a href="javascript:;" class="db2 download-btn-m"><img src="img/appblock/download_db_k.png"></a>
+		</div>
+
+	<div class="bigBg"></div>
+	<div class="applicationForm"></div>
+	
+<script type="text/javascript">
+		$(function(){
+			
+           <?php  if ($this->request->here == '/' || $this->request->here == '/homepage' || $this->request->here == '/en' || $this->request->here == '/en/homepage'): ?>
+                      
+   			if(sessionStorage.getItem('dbse')) {
+
+				$(".d-bottom").hide()
+		       //	$(".d-bottom").css("display", "none")
+				$("header").removeClass('appfloat-header')
+        			$(".d-right").animate({"width":"38px"}, 200)
+				$(".d-right-m").slideDown();
+                          }
+
+                        
+                       $(".d-b-close").click(function(event) {
+                                sessionStorage.removeItem('dbse');
+                                sessionStorage.setItem('dbse', 1);
+				$(".d-bottom").hide()
+				$("header").removeClass('appfloat-header')
+				$(".d-right").animate({"width":"38px"}, 200)
+				$(".d-right-m").slideDown();
+			});
+			<?php else: ?>
+
+				$(".d-right").animate({"width":"38px"}, 200)
+				$(".d-right-m").slideDown();
+			<?php endif;?>
+			$(".d-right").hover(function(){
+				$(this).stop().animate({"width":"100px"}, 200)
+			},function(){
+				$(this).stop().animate({"width":"38px"}, 200)
+			})
+
+			$(".d-right a").hover(function(){
+				$(this).next(".rInfo").show()
+			},function(){
+				$(this).next(".rInfo").hide()
+			})
+
+			$(".d-right-m a").click(function(){
+				//$(this).addClass('on').siblings().removeClass('on').on('mouseleave', function(){ $(this).removeClass('on')})
+				$(this).addClass('on').siblings().removeClass('on')
+			})
+
+		})
+
+		//判断android & ios
+    	var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+		if(isAndroid){
+			$(".download-btn-m").attr({"href":"http://apk.hiapk.com/appdown/com.hcc.app/20161102"});
+		}
+		if(isiOS){
+			$(".download-btn-m").attr({"href":"https://itunes.apple.com/us/app/jie-xin-jin-rong/id921626073?l=zh&ls=1&mt=8"});
+		}
+
+
+	</script>
