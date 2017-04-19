@@ -1,0 +1,439 @@
+*{font-family:'黑体','OpenSans',sans-serif}
+.navbar .nav-main,.navbar .loans-wrapper,.navbar .nav-main,.navbar .loans-wrapper .link-wrapper .btn-loan,.navbar .loans-wrapper .link-wrapper .btn-loan,.btn.btn-danger,.guarantee-bar,.btn.btn-success,.calculator-switch-wrapper .calculator-switch:checked+label, .calculator-switch-wrapper .calculator-switch.fake+label,.slider-wrapper .ui-slider-range,.btn.btn-success,.call-to-action-box,.map .map-overlay button{background-color:#c8102e;}
+.color-red,a:hover, a:active, a:focus,a,.result span, .result strong, .result i{color:#d0092f !important;}
+.btn.btn-success{border:0;}
+.btn.btn-success:hover{background-color:#ac102a;}
+.guarantee-bar,.guarantee-bar a{background-image:none;text-decoration: none;}
+.navbar .loans-wrapper .nav-tag{width:78px;height:75px;}
+.sliders h2{font-size:20px !important;color:#d0092f;font-weight: normal;}
+.sliders h2 span{
+	background-image:url(../img/verhole/calculator-title-icon.png);
+	width:48px;
+	height:29px;
+	display:inline-block;
+	margin:0 auto;
+	margin-bottom:-3px;
+}
+.calculator-switch-wrapper .calculator-switch+label{background-color:#4e4e4e;}
+.box h1:after{background:none;}
+.slider-wrapper .ui-slider-handle{
+	background-image:url(../img/verhole/calculator-title-icon2.png);
+	background-size:28px 28px;
+	background-position:50% 9px;
+}
+.note p{color:#474747;}
+.navbar .loans-wrapper .link-wrapper .nb-prod-loan{
+	background-image:url(../img/verhole/navtow-icon-1.png);
+	background-size:45px;
+}
+.navbar .loans-wrapper .link-wrapper .nb-cash-loan{
+	background-image:url(../img/verhole/navtow-icon-2.png);
+	background-size:32px;
+	background-repeat:no-repeat;
+
+}
+.loan-process .see-details{
+	color:#fff !important;
+}
+.box .phone-text a strong:hover{
+	color:#d0092f;
+}
+.sliders .box .btn,.loan-process .btn,footer .footer-content ul.products li a, footer .footer-content ul.important-links li a,.testimonials-desktop .wrp .swiper-slide-content .testimonial-detail-link,.carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content .btn span{color:#fff !important;}
+.bg-greenish{
+	background-color:#666666;
+}
+.lp-step1:before, .lp-step2:before, .lp-step3:before, .lp-step4:before,.lp-step1:after, .lp-step2:after, .lp-step3:after{
+	display:none;
+}
+.loan-process .img-wrapper{
+	background-size:100%;
+}
+.loan-list a{
+	background-image:url(../img/verhole/calculator-title-icon3.png);
+	background-size:auto 20px;
+	padding-top:5px;
+}
+.vas-list,.loan-list{margin-top:0;}
+.vas-list a{
+	background-image:url(../img/verhole/calculator-title-icon4.png);
+	background-size:auto 23px;
+	padding-top:5px;
+}
+.loan-process h2.title{
+	margin:0 auto;
+	display:block;
+	float:none !important;
+	width:134px;
+	text-align:center;
+}
+.loan-process h2.title{font-size:25px !important;font-weight:normal;}
+.loan-process h2 span{
+	width:50px;
+	height:33px;
+	background-image:url(../img/verhole/step-title-icon.png);
+	display:block;
+	margin:0 auto;
+	margin-bottom:12px;
+
+}
+.sliders .box .btn{
+	font-weight:500;
+}
+.box h1 strong,.box .call-us-text{
+	font-weight:500;
+}
+.call-to-action-box:before{
+	border-color:#c8102e transparent transparent transparent;
+}
+.guarantee-bar, .guarantee-bar a strong{
+	color:#ffffff;
+}
+.navbar .loans-wrapper .link-wrapper .btn-loan span{
+	color:#ffffff;
+}
+.map .map-overlay button{color:#ffffff;}
+.btn.disabled{opacity: 1;cursor:pointer;}
+.d-main h3{color:#d0092f;}
+.d-main .phoneImg{width:360px;margin-top:30px;}
+.pc-erweima{
+	position:absolute;
+	top:130px;
+	left:350px;
+}
+.carousel-container .swiper-next, .carousel-container .swiper-prev{
+//	background-image:url(../img/verhole/banner-icon-right.png);
+}
+.textP{
+	left:500px;
+	top:-66px;
+}
+.navbar .nav-top ul.links a,.navbar .nav-top ul.langs li a,.navbar .nav-main .links li a{
+	color:#000000 !important;
+}
+.testimonials-desktop{
+	background-image:url(../img/verhole/case-bg.jpg);
+	background-color:none;
+}
+.testimonials-desktop .wrp .swiper-slide-content .step-info .testimonial-bubble{
+	background:none;
+	color:#ffffff;
+}
+.testimonials-desktop .wrp .swiper-slide-content .step-info .testimonial-bubble .content-wrapper{
+	color:#ffffff;
+}
+.testimonials-desktop .wrp .swiper-slide-content .step-info .testimonial-bubble:after{display:none;}
+.testimonials-desktop .wrp .swiper-slide-content{
+	max-width:76%;
+}
+.testimonials-desktop .wrp .swiper-slide-content .step-info .testimonial-bubble{
+	top:-61px;
+}
+.testimonials-desktop .testimonials-header .testimonials-headline{
+	font-size:20px !important; 
+	font-weight:normal;
+}
+.testimonials-desktop .testimonials-header .testimonials-headline span{
+	width:51px;
+	height:37px;
+	background-image:url(../img/verhole/case-icon.png);
+	display:inline-block;
+	margin:0 auto;
+	margin-bottom:-8px;
+}
+.sliders .cta-wrapper .box{
+	max-width:100% !important;
+	background:none;
+	border:1px solid #a3a3a3;
+}
+.navbar .nav-main .page-logo{top:10px;}
+.testimonials-desktop .wrp .swiper-slide-content .testimonial-profile-photo{border:0;}
+.main-btns ul li,.main-form,ul#navlist li span{
+	background-color:#c8102e !important;
+}
+.btn.btn-dark,.btn.btn-dark:hover{
+	background-color:#9c0723;
+}
+.main-des ul#navlist li span{
+	background:#F5F5F5!important;
+}
+.main-form:before{
+	display:none;
+}
+.note p{
+	font-size:14px;
+}
+.call-to-action-box span{
+	background:url(../img/verhole/map-icon.png) no-repeat center;
+	width:35px;
+	height:53px;
+	display:block;
+	margin:0 auto;
+}
+.call-to-action-box{
+	padding:10px 0;
+}
+@media (min-width){
+	.textP{min-width: 992px}
+}
+.navbar .nav-main .langs li:first-child a,.navbar .nav-main .langs li a.active{
+	color:#000000!important;
+}
+.ajaxLeaveForm .agreement input[type=checkbox]:checked+label:before{
+
+}
+
+/*  iphone  */
+.loan-process h2.title{
+	color:#ffffff;
+	font-size:20px !important;
+}
+.loan-process h2.title span{
+	width:50px;
+	height:33px;
+	background-image:url(../img/verhole/step-title-icon.png);
+	display:inline-block;
+	margin:0 auto;
+	margin-bottom:-8px;
+	-webkit-transform:scale(0.7,0.7);
+}
+.loan-process .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content{
+	background:#666666;
+}
+.loan-process .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content{
+	text-align:center;
+	padding-top:1px;
+}
+.loan-process .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content p{
+	font-size:14px;
+	padding:30px 0;
+}
+.swiper-slide{
+	padding-top:1px;
+}
+.swiper-slide-content img{
+	display:block;
+	margin:0 auto;
+	margin-top:100px;
+}
+
+.d-main .btn-app a{
+	display:block;
+	width:100%;
+	color:#ffffff !important;
+	font-size:16px;	
+	background:#c8102e;
+	text-align:center;
+	padding:10px 0;
+	border-radius:5px;
+}
+.testimonials .carousel-container .swiper-wrapper .swiper-slide{
+	background-image:url(../img/verhole/case-bg.jpg);
+	background-size:auto 100%;
+	background-position:center;
+}
+.testimonials .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content .step-info{
+	max-width: auto;
+}
+.testimonials .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content .step-info .testimonial-bubble{
+	background-color:initial;
+	padding-left:0;padding-right:0;
+}
+.testimonials .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content .step-info .testimonial-bubble .content-wrapper{
+	color:#fff !important;
+
+}
+.testimonials .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content .step-info .testimonial-bubble:after{
+	display:none;
+}
+.testimonials .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content .testimonial-detail-link{
+	color:#ffffff !important;
+	text-decoration: none;
+}
+.call-to-action-box{
+	text-align: center;
+}
+.box .we-contact-you{
+	color:#c8102e;
+	font-size:18px;
+}
+.box .phone-text a strong{
+	font-weight:normal;
+}
+.note p{
+	font-weight:normal;
+}
+
+@media (max-width:992px){
+	.d-main .phoneImg{
+		margin:0 auto;
+		display:block;
+		width: 300px;
+	}
+	.sliders .form .section.calculator-section{
+		font-size:14px;
+		font-weight:normal;
+	}
+	.sliders h2{
+		font-size:20px !important;
+	}
+	.sliders h2 span{
+		width:38px;
+		height:22px;
+		background-size:100%;
+		background-repeat:no-repeat;
+	}
+	.result{
+		font-size:15px;
+	}
+	.slider-wrapper .min, .slider-wrapper .max{
+		font-size:15px;
+	}
+	.navbar .loans-wrapper .nav-tag{
+		width:51px;
+		height:51px;
+	}
+	.downloadPart .pc{display: none;}
+	
+	.textP{
+		position: relative;
+		margin: 0 auto;
+		left: 0;
+		top: 0;
+	}
+	.d-main .btn-app{display: block;}
+	.d-main h3{font-size: 30px;}
+	.d-main h4{font-size: 20px;margin-top: 30px;}
+}
+
+#oneTimeSurvey .close{
+	background-image:url(../img/verhole/close.png);
+}
+#oneTimeSurvey .btn.btn-submit:hover, #oneTimeSurvey .btn.btn-submit:focus,#oneTimeSurvey .btn.btn-submit{
+	background-color:#c8102e;
+	color:#ffffff!important;
+	border:0;
+}
+#oneTimeSurvey [data-hearth="0"],
+#oneTimeSurvey [data-hearth="1"],
+#oneTimeSurvey [data-hearth="2"],
+#oneTimeSurvey [data-hearth="3"],
+#oneTimeSurvey [data-hearth="4"],
+#oneTimeSurvey [data-hearth="5"],
+#oneTimeSurvey [data-hearth="6"],
+#oneTimeSurvey [data-hearth="7"],
+#oneTimeSurvey [data-hearth="8"],
+#oneTimeSurvey [data-hearth="9"],
+#oneTimeSurvey [data-hearth="10"]{
+	background-image:url(../img/verhole/zan.png);
+}
+#oneTimeSurvey [data-hearth="0"]{margin-top:-4px;}
+#oneTimeSurvey [data-hearth="1"]{margin-top:-6px;}
+#oneTimeSurvey [data-hearth="2"]{margin-top:-7px;}
+#oneTimeSurvey [data-hearth="3"]{margin-top:-7px;}
+#oneTimeSurvey [data-hearth="4"]{margin-top:-8px;}
+#oneTimeSurvey [data-hearth="5"]{margin-top:-9px;}
+#oneTimeSurvey [data-hearth="6"]{margin-top:-10px;}
+#oneTimeSurvey [data-hearth="7"]{margin-top:-13px;}
+#oneTimeSurvey [data-hearth="8"]{margin-top:-14px;}
+#oneTimeSurvey [data-hearth="9"]{margin-top:-14px;}
+#oneTimeSurvey [data-hearth="10"]{margin-top:-14px;width:86px !important;height:74px !important;}
+object{display:none;}
+#oneTimeSurvey .thank-you .thank-you-message{font-size:14px;}
+#oneTimeSurvey .thank-you img{width:130px;}
+.d-bottom .d-b-close{color:#ffffff !important;}
+
+
+@media (max-width:480px){
+	.navbar .loans-wrapper .link-wrapper .btn-loan span{
+		height:31px;
+		margin-top:10px;
+		background-position:center;
+		background-repeat:no-repeat;
+	}
+	.navbar .loans-wrapper .link-wrapper .btn-loan span{
+		background-position:left top;
+	}
+	.navbar .loans-wrapper .link-wrapper .btn-loan span.nb-prod-loan{
+		padding-left:45px;
+		background-size:auto 88%;
+	}
+	.navbar .loans-wrapper .link-wrapper .btn-loan span.nb-cash-loan{
+		padding-left:34px;
+	}
+	.d-main .phoneImg{width: 80%;}
+	.call-to-action-box span{
+		background-size: 24px;
+	}
+	.call-to-action-box{
+		padding: 3px 0;
+	}
+	.call-to-action-box{font-size: 18px !important;}
+
+.loan-process .img-wrapper{
+background-size: 46%;
+}
+
+.loan-process .img-wrapper{
+margin-bottom: -55px;
+}
+
+.testimonials .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content{
+margin-top:30px;
+}
+
+.testimonials .carousel-container .swiper-next, .testimonials .carousel-container .swiper-prev{
+margin-top:15px;
+}
+
+.testimonials-headline span img{ margin-bottom: 10px;}
+.call-to-action-box .map-icon{margin-top: 10px;}
+
+}
+
+
+
+/* alert */
+#oneTimeSurvey .modal-content{
+	border:1px solid #d0092f;
+}
+#oneTimeSurvey h3{
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:normal;
+	width:80%;
+	line-height: 30px;
+}
+#oneTimeSurvey .button-group .btn span{
+	color:#ffffff;
+}
+#oneTimeSurvey .btn.btn-not-finished{
+	background-color:#e36b82;
+}
+#oneTimeSurvey{
+	line-height: 28px;
+}
+#oneTimeSurvey .btn.btn-not-finished:hover{
+	background-color:#cd586f;
+}
+#oneTimeSurvey .btn.btn-refuse{
+	background-color:#87898b;
+}
+#oneTimeSurvey .btn.btn-refuse:hover{
+	background-color:#737475;
+}
+#oneTimeSurvey .btn.btn-continue{
+	background-color:#c8102e;
+}
+#oneTimeSurvey .btn.btn-continue:hover{
+	background-color:#a70e27;
+
+}
+
+.testimonials-desktop .wrp .swiper-slide-content .testimonial-detail-link{
+text-decoration:none;
+}
+
+.call-to-action-box{
+
+font-size: 20px;
+}

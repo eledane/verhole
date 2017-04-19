@@ -10,6 +10,7 @@ if (!empty($testimonials)) {
 				<div class="row">
 					<div class="col-xs-12">
 						<h2 class="testimonials-headline">
+							<span></span>
 							<?php echo $this->StaticText->getStripped('Testimonials - headline'); ?>
 						</h2>
 					</div>
@@ -37,7 +38,6 @@ if (!empty($testimonials)) {
 									}
 									if(!empty($bubble)):
 								?>
-									<img src="/<?php echo $bubble; ?>" alt="" class="doodle">
 								<?php
 									endif;
 							}

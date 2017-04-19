@@ -73,7 +73,7 @@ $language = array_search(Configure::read('Config.language'), Configure::read('Co
 				$currentTemplate = $pageData['template'];
 				$poslTemplate = $posLoanPage['Page']['template'];
 				if($currentTemplate === $poslTemplate) {
-					$class = 'centered-box pos-loan-box';
+					$class = 'centered-box';
 				} else {
 					$class = 'centered-box';
 				}

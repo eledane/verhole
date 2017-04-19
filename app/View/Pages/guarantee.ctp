@@ -6,19 +6,6 @@
 		</div>
 		<div class="container">
 			<div class="ribbon-badge">
-				<?php
-					$language = array_search(Configure::read('Config.language'), Configure::read('Config.availableLanguages'));
-					if ($language !== 'en') {
-						$ribbonMobile = '/img/guarantee/zh/ribbon-mobile.png';
-						$ribbon = '/img/guarantee/zh/ribbon.png';
-						$arrow = '/img/guarantee/zh/yay.png';
-					} else {
-						$ribbonMobile = '/img/guarantee/ribbon-mobile.png';
-						$ribbon = '/img/guarantee/ribbon.png';
-						$arrow = '/img/guarantee/arrow.png';
-					}
-				?>
-				<img src="<?php echo $ribbonMobile; ?>" alt="" class="showMobile ribbon">
 				<img src="<?php echo $ribbon; ?>" alt="" class="showTablet ribbon ribbon-large">
 				<img src="<?php echo $arrow; ?>" alt="" class="showTablet arrow">
 				<h2 class="showTablet">
@@ -85,7 +72,7 @@
 			<p><?php echo $this->StaticText->getStripped('guarantee - slide 8 - paragraph'); ?></p>
 		</div>
 		<div>
-			<img src="/img/guarantee/person-9.jpg" alt="">
+			<?php echo $this->Element('box', array('class' => 'centered-box')); ?>
 			<h3><?php echo $this->StaticText->getStripped('guarantee - slide 9 - headline'); ?></h3>
 			<h4><?php echo $this->StaticText->getStripped('guarantee - slide 9 - subheadline'); ?></h4>
 			<p><?php echo $this->StaticText->getStripped('guarantee - slide 9 - paragraph'); ?></p>
@@ -179,7 +166,7 @@
 		<div class="clearfix"></div>
 		<div class="divider"><img src="/img/guarantee/divider-arrow.png" alt=""></div>
 		<div class="wrapper-box wrapper-box-left">
-			<div class="img-box"><img src="/img/guarantee/person-9.jpg" alt=""></div>
+			<div class="img-box"><?php echo $this->Element('box', array('class' => 'centered-box')); ?></div>
 			<div class="text-box">
 				<h3><?php echo $this->StaticText->getStripped('guarantee - box 9 - headline'); ?></h3>
 				<h4><?php echo $this->StaticText->getStripped('guarantee - box 9 - subheadline'); ?></h4>
@@ -191,6 +178,10 @@
 	</div>
 
 </div>
-
+<div class="ajaxLeaveForm" style="display: none;">
+		<?php
+			echo $this->element('ContactForms/ask-users',array('class_menu' => 'homepage-menu','class' => 'homepage-leaveForm', 'sectionNameContactForm' => $WCLPage['Page']['title']));
+		?>
+	</div>
 
 <script type="text/javascript" src="/js/guarantee.js"></script>

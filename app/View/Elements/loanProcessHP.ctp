@@ -10,7 +10,7 @@
 <section class="loan-process">
 	<div class="container-fluid no-loop">
 		<div class="row">
-			<h2 class="title loan-process-hp-mobile"><?php echo $this->StaticText->getStripped('Loan Process Homepage - title'); ?></h2>
+			<h2 class="title loan-process-hp-mobile"><span></span><?php echo $this->StaticText->getStripped('Loan Process Homepage - title'); ?></h2>
 			<div class="carousel-container">
 				<div class="swiper-wrapper">
 
@@ -36,14 +36,14 @@
 						    		<span>
 										<?php echo $this->StaticText->getStripped('Loan Process - Get a Loan'); ?>
 									</span>
-									<?php
+									<?php /*
 									echo $this->Html->image(
 										$this->Doodle->renderPath('young-fellow.png'),
 										array(
 											'class' => 'doodle fellow'
 										)
 									);
-									?>
+									*/ ?>
 						    	</a>
 						    </div>
 				    	</div>

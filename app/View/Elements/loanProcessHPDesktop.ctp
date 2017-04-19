@@ -12,7 +12,6 @@
 		<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h2 class="title pull-left"><?php echo $this->StaticText->getStripped('Loan Process Homepage - title'); ?></h2>
 				<?php
 					echo $this->Html->link(
 						$this->StaticText->getStripped('Link - My first loan page'),
@@ -20,6 +19,7 @@
 						array('class' => 'see-details pull-right','escape' => false)
 					);
 			?>
+				<h2 class="title pull-left"><span></span><?php echo $this->StaticText->getStripped('Loan Process Homepage - title'); ?></h2>
 			</div>
 		</div>
 		<div class="clearfix"></div>
@@ -55,14 +55,14 @@
 								<span>
 									<?php echo $this->StaticText->getStripped('Loan Process - Get a Loan'); ?>
 								</span>
-								<?php
+								<?php /*
 								echo $this->Html->image(
 									$this->Doodle->renderPath('young-fellow.png'),
 									array(
 										'class' => 'doodle'
 									)
 								);
-								?>
+							     */	?>
 							</a>
 						</div>
 					</div>

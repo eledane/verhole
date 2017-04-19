@@ -99,13 +99,21 @@
 <?php
 echo $this->Element('loanProcessPOSL');
 echo $this->Element('loanProcessPOSLDesktop');
-echo $this->Element('box', array('class' => 'centered-box pos-loan-box'));
+echo $this->Element('box', array('class' => 'centered-box'));
 ?>
+<?php /*
 <div class="ajaxLeaveForm" style="display: none;background: url(../img/cta-bg.jpg);margin-bottom: 0;padding-bottom: 30px;">
 	<?php
 	echo $this->element('ContactForms/default',array('class' => 'homepage-leaveForm'));
 	?>
-</div>
+</div> */ ?>
+
+	<div class="ajaxLeaveForm" style="display: none;">
+		<?php
+			echo $this->element('ContactForms/ask-users',array('class_menu' => 'homepage-menu','class' => 'homepage-leaveForm', 'sectionNameContactForm' => $WCLPage['Page']['title']));
+		?>
+	</div> 
+
 <?php echo $this->element('map'); ?>
 <script type="text/javascript">
 	var calcData = <?php echo $csvPOSL; ?>;

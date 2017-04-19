@@ -203,8 +203,6 @@ line-height: 0.428571;
     margin-left: -50px !important;
 }
 
-
-
 .loan-list{
 text-align: center !important;
 }
@@ -216,6 +214,17 @@ margin-top: 1px !important;
 .swiper-update{
 margin-top: 48px;
 }
+
+.guarantee .banner{
+height: 130px !important;
+}
+
+.guarantee .banner .container{
+padding-top: 16px !important;
+}
+
+.jiexin-app-text{ margin-top:40px !important;}
+footer .footer-content .logos:after{ bottom: -35px !important;}
 
 }
 
@@ -271,8 +280,89 @@ footer .client-hotline:after{
 
 }
 
+.page-heading{
+height: 150px !important;
+}
+
+.navbar + .server-kv {
+height: 130px !important;
 
 }
+
+.contact-us + .call-to-action-box{
+    text-align: center;
+    padding-left: 2px;
+} 
+
+.ajaxLeaveForm + .call-to-action-box{
+    text-align: center;
+    padding-left: 2px;
+} 
+
+.vas + .loan-process .img-wrapper{
+background-size: 46%;
+background-color: #666666;
+}
+
+.loan-process .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content{
+background-color: #666666;
+}
+
+.testimonials .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content .step-info .testimonial-bubble .content-wrapper{
+font-size: 14px;
+}
+
+.testimonials .carousel-container .swiper-pagination{
+bottom:9px;
+}
+
+.loan-process .carousel-container .swiper-wrapper .swiper-slide .swiper-slide-content .step-info .vertical-align{
+margin-bottom:60px;
+}
+
+.about-hc .page-heading {
+background-image: url(../img/nvas/page-head-mobile/about-hc-mobile.jpg) !important;
+}
+
+.first-loan .page-heading {
+background-image: url(../img/nvas/page-head-mobile/first-loan-mobile.jpg) !important;
+}
+
+.media-center .page-heading {
+background-image: url(../img/nvas/page-head-mobile/media-center-mobile.jpg) !important;
+}
+
+.contact-us .page-heading {
+background-image: url(../img/nvas/page-head-mobile/contact-us-mobile.jpg) !important;
+}
+
+.budget-tool .page-heading {
+background-image: url(../img/nvas/page-head-mobile/budget-tool-mobile.jpg) !important;
+}
+
+.about-us .about-us-item:first-child{
+background-image: url(../img/nvas/page-head-mobile/about-us-itme.jpg) !important;
+}
+
+.guarantee .banner{
+background: url(../img/nvas/page-head-mobile/guarantee-mobile.jpg) center center no-repeat !important;
+}
+
+.container-fluid .row .page-heading {
+background: url(../img/nvas/page-head-mobile/faq-mobile.jpg) !important;
+}
+
+.navbar + .page-heading {
+background-image: url(../img/nvas/page-head-mobile/customer-stories-mobile.jpg) !important;
+}
+
+}
+
+.guarantee .banner{
+background: url(../img/guarantee/banner.jpg) center center no-repeat;
+background-size:cover;
+}
+
 @media (min-width: 768px){
     .downloadPart .mobile{
         display: none;
@@ -575,4 +665,74 @@ text-align: right;
 .leave-form-provinces .form-control{
 padding: 6px 8px !important;
 }
+}
+
+.page-heading{
+height: 350px;
+}
+
+.first-loan .hidden{
+display: block !important;
+visibility: visible !important;
+}
+
+.guarantee .banner{
+height: 320px;
+}
+
+.guarantee .banner .container{
+padding-top: 90px;
+}
+
+.guarantee .ribbon-badge h2{
+left: 0;
+}
+
+footer .footer-content .logos:after{
+bottom: 2px;
+}
+
+.loans-wrapper .nav-tag{
+cursor:auto;
+}
+
+.testimonials-detail .description {
+display: none;
+}
+
+.testimonials-detail .row .col-sm-offset-1 p{
+font-size: 16px;
+}
+
+
+.testimonials-desktop .wrp .swiper-slide-content .step-info .testimonial-bubble .content-wrapper{
+font-size: 14px;
+}
+
+.page-logo{
+top: 10px;
+}
+
+.homepage-indicator .box-light-grey .box-part .scroll-to-form:hover{
+background-color: #e60000 !important;
+}
+
+.row .text-center a:hover{
+background-color: #e60000 !important;
+}
+
+.navbar + .server-kv {
+height: 180px;
+}
+
+.loan-process .pull-right{
+top: -15px;
+}
+
+.bg-greenish{
+    background: #666666;
+}
+
+.testimonials-desktop .wrp .swiper-slide-content .step-info{
+width: 90%;
 }

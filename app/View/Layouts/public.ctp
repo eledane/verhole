@@ -145,6 +145,10 @@ function fmp($a, $b)
 		<link rel="stylesheet" href="/css/style.min.css?<?php echo filemtime(WWW_ROOT . "/css/style.min.css"); ?>">
 		<link rel="stylesheet" href="/css/appblock.css?<?php echo filemtime(WWW_ROOT . "/css/appblock.css"); ?>">
 		<link rel="stylesheet" href="/css/nvas.css?<?php echo filemtime(WWW_ROOT . "/css/nvas.css"); ?>"> 
+	      <?php  }	?>
+	      <?php 
+               if ($this->request->here == '/' || $this->request->here == '/homepage' || $this->request->here == '/en' || $this->request->here == '/en/homepage') { ?>
+		<link rel="stylesheet" href="/css/home-style.css?<?php echo filemtime(WWW_ROOT . "/css/home-style.css"); ?>"> 
 		<?php
 	}
 	?>
@@ -274,7 +278,7 @@ echo $this->element('preview');
 					</div>
 					<?php
 					echo $this->Html->link(
-						'<img src="/img/logo-hc-main.png" alt="Home Credit"/>',
+						'<img src="/img/verhole/logo.png" alt="Home Credit"/>',
 						array(
 							'pageurl' => '/'
 						),

@@ -5,14 +5,14 @@
          <?php endif;?> 
 			<div class="d-main pc">
 				<a href="http://app.homecreditcfc.cn/promo1/" target="_blank"><img src="<?php echo $this->webroot; ?>img/appblock/p/download_app_bottom.png" class="bottomImg"></a>
-				<a href="javascript:;" onclick="stm_clicki('send', 'event', ‘homepagebanner', ‘Click', ‘closebutton');" class="d-b-close">关闭</a>
+				<a href="javascript:void(0)" onclick="stm_clicki('send', 'event', 'homepagebanner', 'Click', 'closebutton');" class="d-b-close">关闭</a>
 			</div>
 			<div class="d-main mobile">
 				<div class="bottomImg">
 					<img src="<?php echo $this->webroot; ?>img/appblock/p/download_app_bottom_m1_new.jpeg" class="bottomImg1">
 					<a href="" class="download-btn-m"><img src="<?php echo $this->webroot; ?>img/appblock/p/download_app_bottom_m2_new.jpeg" class="bottomImg2"></a>
 				</div>
-				<a href="javascript:;" onclick="stm_clicki('send', 'event', ‘homepagebanner', ‘Click', ‘closebutton');"  class="d-b-close"></a>
+				<a href="javascript:void(0)" onclick="stm_clicki('send', 'event', 'homepagebanner', 'Click', 'closebutton');"  class="d-b-close"></a>
 			</div>
 		</div>	
 

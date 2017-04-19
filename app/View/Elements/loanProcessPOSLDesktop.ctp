@@ -16,7 +16,7 @@ $images = array(
             <?php
             for ($i = 0; $i < 4; $i++) {
                 ?>
-                <div class="col-xs-3 text-center lp-step<?php echo $i+1 ?>">
+                <div class="col-xs-3 text-center">
                     <div class="img-wrapper" style="background-image: url('<?php echo $imgPath . $images[$i] ?>');">
                     </div>
                     <div class="step-info">

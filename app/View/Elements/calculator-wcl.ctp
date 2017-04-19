@@ -9,17 +9,18 @@
 	$minTime = '0';
 ?>
 	<div class="sliders">
-	<?php
+	<?php /*
 	echo $this->Html->image(
 		$this->Doodle->renderPath('go-for-it-calculator.png'),
 		array(
-			'class' => 'doodle d1-wcl'
+			'class' => 'doodle alex d1-wcl'
 		)
 	);
-	?>
+	*/ ?>
 		<div class="row">
 			<div class="col-xs-12">
 				<h2 class="slider-heading text-center">
+					<span></span>
 					<?php
 						echo $this->StaticText->getStripped('Calculator - WCL - Title');
 					?>
@@ -65,14 +66,14 @@
 					<div class="result">
 						<div><?php echo $this->StaticText->getStripped('Calculator - Monthly payment'); ?></div> <strong>¥</strong><span></span>
 						<i>
-							<?php
+							<?php /*
 							echo $this->Html->image(
 								$this->Doodle->renderPath('yay-red.png'),
 								array(
 									'class' => 'doodle d2'
 								)
 							);
-							?>
+							*/ ?>
 						</i>
 					</div>
 				</div>

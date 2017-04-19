@@ -89,7 +89,7 @@
 		echo $this->Element('box', array('class' => 'centered-box'));
 	?>
 
-	<div class="ajaxLeaveForm first-loan-leave-form hidden" style="display: none;">
+	<div class="ajaxLeaveForm" style="display: none;">
 		<?php
 			echo $this->element('ContactForms/ask-users',array('class_menu' => 'homepage-menu','class' => 'homepage-leaveForm', 'sectionNameContactForm' => $WCLPage['Page']['title']));
 		?>

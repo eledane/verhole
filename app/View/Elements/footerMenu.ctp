@@ -143,7 +143,7 @@
 								</a>
 							</span>
 						</div>
-						<div class="col-xs-6 col-md-3 col-lg-4 col-lg-offset-1 logos footer-social qr-download" data-title="<?php echo $this->StaticText->getStripped('Footer - Social APP'); ?>">
+						<div class="col-xs-6 col-md-3 col-lg-4 col-lg-offset-1 logos jiexin-app-text footer-social qr-download" data-title="<?php echo $this->StaticText->getStripped('Footer - Social APP'); ?>">
 							<div class="gr-download-box hidden-xs hidden-sm">
 								<img src="/img/footer/icons/hc.png" class="gr-download-logo">
 								<a href="http://app.homecreditcfc.cn?utm_source=hccwebsite&utm_medium=sitetraffic&utm_campaign=website_footer_ongoing" target="_blank">

@@ -2,7 +2,6 @@
 		<div>
 		<?php
 	    	echo $this->Html->link(
-	        $this->Html->image('/img/guarantee/ribbon-thumbs-up.png',array('class' => 'guarantee-ribbon')) .
 	        $this->Html->tag('span', $this->staticText->getStripped('guarantee bar - text'), array('class' => 'guarantee-text')),
 	        array(
 	            'pageurl' => $guarantee['Page']['tree_slug']

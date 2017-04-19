@@ -4,6 +4,7 @@ if(empty($type)) {
 }
 ?>
 <div class="call-to-action-box">
+    <img src="img/verhole/map-icon.png" class="map-icon"><br />
     <?php echo $this->staticText->getStripped('Map - Headline'); ?>
 	<div class="search-button-head init">
 		<i class="fa fa-search"></i>
@@ -85,3 +86,12 @@ if(empty($type)) {
     <div id="map-canvas"></div>
     <div id="map-container"></div>
 </section>
+
+
+<script>
+	$(document).ready(function () {
+	
+	$(".map .label-for-posl").trigger("click");
+
+	});
+</script>
