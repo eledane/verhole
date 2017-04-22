@@ -303,9 +303,12 @@ echo $this->element('preview');
 	</nav>
 </header>
 <?php
-
 echo $this->fetch('content');
-echo $this->element('footerMenu');
+if( $this->request->here == '/walk-in-cash-loan-social' || $this->request->here == '/en/walk-in-cash-loan-social'  ){
+	echo $this->element('footerMenuSocial');
+}else{
+	echo $this->element('footerMenu');
+}
 ?>
 
 <script>
