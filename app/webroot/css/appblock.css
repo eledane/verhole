@@ -736,3 +736,7 @@ top: -15px;
 .testimonials-desktop .wrp .swiper-slide-content .step-info{
 width: 90%;
 }
+
+.ajaxLeaveForm .main-form.sent{
+background-color: #fff !important;
+}

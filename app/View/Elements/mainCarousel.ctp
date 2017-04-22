@@ -21,7 +21,7 @@ if(!empty($currentPromotions)){
 
 	?>
 	<section class="swiper" data-class="promotion">
-		<div class="carousel-container">
+		<div class="carousel-container swiper-update">
 			<div class="swiper-wrapper">
 				<?php
 				foreach($currentPromotions as $promotion) {
